@@ -1,0 +1,1536 @@
+<http://www.w3id.org/Eurocodes/EC1990#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://www.w3.org/2002/07/owl#imports> <https://www.w3id.org/bot> .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/dc/terms/contributor> "Agnieszka Jędrzejewska (Silesian Unviersity of Technology)" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/dc/terms/contributor> "Carlos Ramonell (Politechnic University of Catalonia)" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/dc/terms/contributor> "Maria Laura Leonardi (University of Minho)" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/dc/terms/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu), Agnieszka Jędrzejewska (agnieszka.jedrzejewska@polsl.pl) and Maria Laura Leonardi (mlauraleonardi@gmail.com)" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/dc/terms/date> "2025-06-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/dc/terms/description> "Core ontology formalising knowledge from Eurocode 0 for automated structural design and verification" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/dc/terms/format> "ttl" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/dc/terms/language> "en" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/dc/terms/modified> "2025-06-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/dc/terms/title> "ECO - Eurocode Core Ontology" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ec" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/Eurocodes/EC1990#" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3id.org/Eurocodes/EC1990#ConstructionWork> .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3id.org/Eurocodes/EC1990#DesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> .
+<http://www.w3id.org/Eurocodes/EC1990#> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3id.org/Eurocodes/EC1990#LimitState> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/format
+<http://purl.org/dc/terms/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/language
+<http://purl.org/dc/terms/language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#hasTopConcept
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/3.1.2/schema/qudt/quantityValue
+<http://qudt.org/3.1.2/schema/qudt/quantityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#appliesTo
+<http://www.w3id.org/Eurocodes/EC1990#appliesTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#appliesTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#appliesTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#StructuralMember> .
+<http://www.w3id.org/Eurocodes/EC1990#appliesTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an action to the structural member or structure it acts upon."@en .
+<http://www.w3id.org/Eurocodes/EC1990#appliesTo> <http://www.w3.org/2000/01/rdf-schema#label> "applies to"@en .
+<http://www.w3id.org/Eurocodes/EC1990#appliesTo> <http://www.w3.org/2004/02/skos/core#definition> "Relates an action to the structural member or structure it acts upon." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#causesEffect
+<http://www.w3id.org/Eurocodes/EC1990#causesEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#causesEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> .
+<http://www.w3id.org/Eurocodes/EC1990#causesEffect> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> .
+<http://www.w3id.org/Eurocodes/EC1990#causesEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a combination of actions to the effects it causes in the structure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#causesEffect> <http://www.w3.org/2000/01/rdf-schema#label> "causes effect"@en .
+<http://www.w3id.org/Eurocodes/EC1990#causesEffect> <http://www.w3.org/2004/02/skos/core#definition> "Relates a combination of actions to the effects it causes in the structure." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#characteristicValue
+<http://www.w3id.org/Eurocodes/EC1990#characteristicValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#characteristicValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qudt.org/3.1.2/schema/qudt/quantityValue> .
+<http://www.w3id.org/Eurocodes/EC1990#characteristicValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://qudt.org/3.1.2/schema/qudt/Quantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#characteristicValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#CharacteristicValue> .
+<http://www.w3id.org/Eurocodes/EC1990#characteristicValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Quantity  with its Characteristic Value."@en .
+<http://www.w3id.org/Eurocodes/EC1990#characteristicValue> <http://www.w3.org/2000/01/rdf-schema#label> "characteristic value"@en .
+<http://www.w3id.org/Eurocodes/EC1990#characteristicValue> <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Characteristic Value." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#containsAction
+<http://www.w3id.org/Eurocodes/EC1990#containsAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#containsAction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> .
+<http://www.w3id.org/Eurocodes/EC1990#containsAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#containsAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a combination of actions to the individual actions it contains."@en .
+<http://www.w3id.org/Eurocodes/EC1990#containsAction> <http://www.w3.org/2000/01/rdf-schema#label> "contains action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#containsAction> <http://www.w3.org/2004/02/skos/core#definition> "Relates a combination of actions to the individual actions it contains." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember
+<http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/bot#hasElement> .
+<http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#StructuralSystem> .
+<http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#StructuralMember> .
+<http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a a structural element with the structural syste."@en .
+<http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember> <http://www.w3.org/2000/01/rdf-schema#label> "contains structural member"@en .
+<http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember> <http://www.w3.org/2004/02/skos/core#definition> "Relates a a structural element with the structural syste." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#designValue
+<http://www.w3id.org/Eurocodes/EC1990#designValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#designValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qudt.org/3.1.2/schema/qudt/quantityValue> .
+<http://www.w3id.org/Eurocodes/EC1990#designValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#designValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#DesignValue> .
+<http://www.w3id.org/Eurocodes/EC1990#designValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Quantity  with its Design Value."@en .
+<http://www.w3id.org/Eurocodes/EC1990#designValue> <http://www.w3.org/2000/01/rdf-schema#label> "design value"@en .
+<http://www.w3id.org/Eurocodes/EC1990#designValue> <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Design Value." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#forLimitState
+<http://www.w3id.org/Eurocodes/EC1990#forLimitState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#forLimitState> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#LimitStateValue> .
+<http://www.w3id.org/Eurocodes/EC1990#forLimitState> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#LimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#forLimitState> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a limit state value with its corresponding limit state."@en .
+<http://www.w3id.org/Eurocodes/EC1990#forLimitState> <http://www.w3.org/2000/01/rdf-schema#label> "for limit state"@en .
+<http://www.w3id.org/Eurocodes/EC1990#forLimitState> <http://www.w3.org/2004/02/skos/core#definition> "Relates a limit state value with its corresponding limit state." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasEffect
+<http://www.w3id.org/Eurocodes/EC1990#hasEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#StructuralMember> .
+<http://www.w3id.org/Eurocodes/EC1990#hasEffect> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> .
+<http://www.w3id.org/Eurocodes/EC1990#hasEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a structural member to the effect of action."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasEffect> <http://www.w3.org/2000/01/rdf-schema#label> "has effect"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasEffect> <http://www.w3.org/2004/02/skos/core#definition> "Relates a structural member to the effect of action." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty
+<http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#StructuralMember> .
+<http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a structural member with its geometrical properties."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has geometrical property"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty> <http://www.w3.org/2004/02/skos/core#definition> "Relates a structural member with its geometrical properties." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue
+<http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#StructuralMember> .
+<http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#LimitStateValue> .
+<http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a structural member to its capacity for the effect of action."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue> <http://www.w3.org/2000/01/rdf-schema#label> "has limit state value"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue> <http://www.w3.org/2004/02/skos/core#definition> "Relates a structural member to its capacity for the effect of action." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty
+<http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#Material> .
+<http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#MaterialProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a material with its properties."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty> <http://www.w3.org/2000/01/rdf-schema#label> "has Property"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty> <http://www.w3.org/2004/02/skos/core#definition> "Relates a material with its properties." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember
+<http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/bot#hasElement> .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/bot#Zone> .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#StructuralMember> .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a a structural element with the zone."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember> <http://www.w3.org/2000/01/rdf-schema#label> "has structural member"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember> <http://www.w3.org/2004/02/skos/core#definition> "Relates a a structural element with the zone." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasStructure
+<http://www.w3id.org/Eurocodes/EC1990#hasStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructure> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/bot#hasElement> .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructure> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#ConstructionWork> .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructure> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#Structure> .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a contrution work with the structure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructure> <http://www.w3.org/2000/01/rdf-schema#label> "has structure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasStructure> <http://www.w3.org/2004/02/skos/core#definition> "Relates a contrution work with the structure." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasSystem
+<http://www.w3id.org/Eurocodes/EC1990#hasSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#Structure> .
+<http://www.w3id.org/Eurocodes/EC1990#hasSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#StructuralSystem> .
+<http://www.w3id.org/Eurocodes/EC1990#hasSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a structure with its structural system."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasSystem> <http://www.w3.org/2000/01/rdf-schema#label> "has system"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasSystem> <http://www.w3.org/2004/02/skos/core#definition> "Relates a structure with its structural system." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#imposesCombination
+<http://www.w3id.org/Eurocodes/EC1990#imposesCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#imposesCombination> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#DesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#imposesCombination> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> .
+<http://www.w3id.org/Eurocodes/EC1990#imposesCombination> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a design situation to the relevant combination."@en .
+<http://www.w3id.org/Eurocodes/EC1990#imposesCombination> <http://www.w3.org/2000/01/rdf-schema#label> "imposes combination"@en .
+<http://www.w3id.org/Eurocodes/EC1990#imposesCombination> <http://www.w3.org/2004/02/skos/core#definition> "Relates a design situation to the relevant combination." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#isDesignedFor
+<http://www.w3id.org/Eurocodes/EC1990#isDesignedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#isDesignedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#StructuralMember> .
+<http://www.w3id.org/Eurocodes/EC1990#isDesignedFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#DesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#isDesignedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a structural memeber with the design situation it is designed for."@en .
+<http://www.w3id.org/Eurocodes/EC1990#isDesignedFor> <http://www.w3.org/2000/01/rdf-schema#label> "is designed for"@en .
+<http://www.w3id.org/Eurocodes/EC1990#isDesignedFor> <http://www.w3.org/2004/02/skos/core#definition> "Relates a structural memeber with the design situation it is designed for." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#isMadeOf
+<http://www.w3id.org/Eurocodes/EC1990#isMadeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#isMadeOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#StructuralMember> .
+<http://www.w3id.org/Eurocodes/EC1990#isMadeOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#Material> .
+<http://www.w3id.org/Eurocodes/EC1990#isMadeOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a structural member to the material which it is made of."@en .
+<http://www.w3id.org/Eurocodes/EC1990#isMadeOf> <http://www.w3.org/2000/01/rdf-schema#label> "is made of"@en .
+<http://www.w3id.org/Eurocodes/EC1990#isMadeOf> <http://www.w3.org/2004/02/skos/core#definition> "Relates a structural member to the material which it is made of." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#lowerValue
+<http://www.w3id.org/Eurocodes/EC1990#lowerValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#lowerValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qudt.org/3.1.2/schema/qudt/quantityValue> .
+<http://www.w3id.org/Eurocodes/EC1990#lowerValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#lowerValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#LowerValue> .
+<http://www.w3id.org/Eurocodes/EC1990#lowerValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Quantity  with its Lower Value."@en .
+<http://www.w3id.org/Eurocodes/EC1990#lowerValue> <http://www.w3.org/2000/01/rdf-schema#label> "lower value"@en .
+<http://www.w3id.org/Eurocodes/EC1990#lowerValue> <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Lower Value." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#meanValue
+<http://www.w3id.org/Eurocodes/EC1990#meanValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#meanValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qudt.org/3.1.2/schema/qudt/quantityValue> .
+<http://www.w3id.org/Eurocodes/EC1990#meanValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#meanValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#MeanValue> .
+<http://www.w3id.org/Eurocodes/EC1990#meanValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Quantity  with its Mean Value."@en .
+<http://www.w3id.org/Eurocodes/EC1990#meanValue> <http://www.w3.org/2000/01/rdf-schema#label> "mean value"@en .
+<http://www.w3id.org/Eurocodes/EC1990#meanValue> <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Mean Value." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#nominalValue
+<http://www.w3id.org/Eurocodes/EC1990#nominalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#nominalValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qudt.org/3.1.2/schema/qudt/quantityValue> .
+<http://www.w3id.org/Eurocodes/EC1990#nominalValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#nominalValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#NominalValue> .
+<http://www.w3id.org/Eurocodes/EC1990#nominalValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Quantity  with its Nominal Value."@en .
+<http://www.w3id.org/Eurocodes/EC1990#nominalValue> <http://www.w3.org/2000/01/rdf-schema#label> "nominal value"@en .
+<http://www.w3id.org/Eurocodes/EC1990#nominalValue> <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Nominal Value." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#representativeValue
+<http://www.w3id.org/Eurocodes/EC1990#representativeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#representativeValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qudt.org/3.1.2/schema/qudt/quantityValue> .
+<http://www.w3id.org/Eurocodes/EC1990#representativeValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#representativeValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#RepresentativeValue> .
+<http://www.w3id.org/Eurocodes/EC1990#representativeValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Quantity  with its Representative Value."@en .
+<http://www.w3id.org/Eurocodes/EC1990#representativeValue> <http://www.w3.org/2000/01/rdf-schema#label> "representative value"@en .
+<http://www.w3id.org/Eurocodes/EC1990#representativeValue> <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Representative Value." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf
+<http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#DesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#LimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a limit state to the combination of actions used for its verification."@en .
+<http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf> <http://www.w3.org/2000/01/rdf-schema#label> "requires verification of"@en .
+<http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf> <http://www.w3.org/2004/02/skos/core#definition> "Relates a limit state to the combination of actions used for its verification." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#upperValue
+<http://www.w3id.org/Eurocodes/EC1990#upperValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#upperValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qudt.org/3.1.2/schema/qudt/quantityValue> .
+<http://www.w3id.org/Eurocodes/EC1990#upperValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#upperValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#UpperValue> .
+<http://www.w3id.org/Eurocodes/EC1990#upperValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Quantity  with its Upper Value."@en .
+<http://www.w3id.org/Eurocodes/EC1990#upperValue> <http://www.w3.org/2000/01/rdf-schema#label> "upper value"@en .
+<http://www.w3id.org/Eurocodes/EC1990#upperValue> <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Upper Value." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect
+<http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#LimitStateValue> .
+<http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> .
+<http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a limitstate value with the Action Effect that needs to be verified against."@en .
+<http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect> <http://www.w3.org/2000/01/rdf-schema#label> "has limit state value"@en .
+<http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect> <http://www.w3.org/2004/02/skos/core#definition> "Relates a limitstate value with the Action Effect that needs to be verified against." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#verifiedFor
+<http://www.w3id.org/Eurocodes/EC1990#verifiedFor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#verifiedFor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#LimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#verifiedFor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> .
+<http://www.w3id.org/Eurocodes/EC1990#verifiedFor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a limit state to the combination of actions used for its verification."@en .
+<http://www.w3id.org/Eurocodes/EC1990#verifiedFor> <http://www.w3.org/2000/01/rdf-schema#label> "verified for"@en .
+<http://www.w3id.org/Eurocodes/EC1990#verifiedFor> <http://www.w3.org/2004/02/skos/core#definition> "Relates a limit state to the combination of actions used for its verification." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/Eurocodes/EC1990#combinationFactor
+<http://www.w3id.org/Eurocodes/EC1990#combinationFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#combinationFactor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3id.org/Eurocodes/EC1990#combinationFactor> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.16" .
+<http://www.w3id.org/Eurocodes/EC1990#combinationFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Factor for combination value of a variable action used in ultimate limit state verifications."@en .
+<http://www.w3id.org/Eurocodes/EC1990#combinationFactor> <http://www.w3.org/2000/01/rdf-schema#label> "has combination factor"@en .
+<http://www.w3id.org/Eurocodes/EC1990#combinationFactor> <http://www.w3.org/2004/02/skos/core#altLabel> "ψ_0" .
+<http://www.w3id.org/Eurocodes/EC1990#combinationFactor> <http://www.w3.org/2004/02/skos/core#definition> "Factor for combination value of a variable action used in ultimate limit state verifications." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife
+<http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#Structure> .
+<http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife> <http://www.w3.org/2000/01/rdf-schema#comment> "Period during which a structure or structural component is intended to remain functional and to fulfill its performance requirements without major repair or replacement, assuming appropriate maintenance."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife> <http://www.w3.org/2000/01/rdf-schema#label> "has design working life"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife> <http://www.w3.org/2004/02/skos/core#definition> "Period during which a structure or structural component is intended to remain functional and to fulfill its performance requirements without major repair or replacement, assuming appropriate maintenance." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor
+<http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.17" .
+<http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Factor for frequent value of a variable action, determined so that either the total time within the reference period during which it is exceeded is only a small given part of the reference period, or the frequency of it being exceeded is limited to a given value."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor> <http://www.w3.org/2000/01/rdf-schema#label> "has frequent factor"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor> <http://www.w3.org/2004/02/skos/core#altLabel> "ψ_1" .
+<http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor> <http://www.w3.org/2004/02/skos/core#definition> "Factor for frequent value of a variable action, determined so that either the total time within the reference period during which it is exceeded is only a small given part of the reference period, or the frequency of it being exceeded is limited to a given value." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor
+<http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.3.1" .
+<http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Safety factor applied to actions or material properties to account for uncertainties."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor> <http://www.w3.org/2000/01/rdf-schema#label> "Partial Factor"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor> <http://www.w3.org/2004/02/skos/core#altLabel> "γ_f" .
+<http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor> <http://www.w3.org/2004/02/skos/core#definition> "Safety factor applied to actions or material properties to account for uncertainties." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor
+<http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.18" .
+<http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Factor for quasi-permanent value of a variable action, determined so that the total period of time for which it will be exceeded is a large fraction of the reference period."@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor> <http://www.w3.org/2000/01/rdf-schema#label> "has quasi-permanent factor"@en .
+<http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor> <http://www.w3.org/2004/02/skos/core#altLabel> "ψ_2" .
+<http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor> <http://www.w3.org/2004/02/skos/core#definition> "Factor for quasi-permanent value of a variable action, determined so that the total period of time for which it will be exceeded is a large fraction of the reference period." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#isSatisfied
+<http://www.w3id.org/Eurocodes/EC1990#isSatisfied> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#isSatisfied> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3id.org/Eurocodes/EC1990#LimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#isSatisfied> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.w3id.org/Eurocodes/EC1990#isSatisfied> <http://www.w3.org/2000/01/rdf-schema#comment> "Result of verification of the limit state."@en .
+<http://www.w3id.org/Eurocodes/EC1990#isSatisfied> <http://www.w3.org/2000/01/rdf-schema#label> "is satisfied"@en .
+<http://www.w3id.org/Eurocodes/EC1990#isSatisfied> <http://www.w3.org/2004/02/skos/core#definition> "Result of verification of the limit state." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#reductionFactor
+<http://www.w3id.org/Eurocodes/EC1990#reductionFactor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#reductionFactor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.w3id.org/Eurocodes/EC1990#reductionFactor> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#reductionFactor> <http://www.w3.org/2000/01/rdf-schema#comment> "Reduction factor for unfavourable permanent action."@en .
+<http://www.w3id.org/Eurocodes/EC1990#reductionFactor> <http://www.w3.org/2000/01/rdf-schema#label> "has reduction factor"@en .
+<http://www.w3id.org/Eurocodes/EC1990#reductionFactor> <http://www.w3.org/2004/02/skos/core#altLabel> "ξ" .
+<http://www.w3id.org/Eurocodes/EC1990#reductionFactor> <http://www.w3.org/2004/02/skos/core#definition> "Reduction factor for unfavourable permanent action." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://qudt.org/3.1.2/schema/qudt/Quantity
+# 
+# http://qudt.org/3.1.2/schema/qudt/QuantityValue
+<http://qudt.org/3.1.2/schema/qudt/QuantityValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect
+<http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#DynamicEffect> .
+<http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 4.1.5(2)" .
+<http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Effect involving acceleration of the structure or structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect> <http://www.w3.org/2000/01/rdf-schema#label> "Acceleration Effect"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect> <http://www.w3.org/2004/02/skos/core#definition> "Effect involving acceleration of the structure or structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs
+<http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> .
+<http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.9" .
+<http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs> <http://www.w3.org/2000/01/rdf-schema#comment> "Roof accessible with occupancy according to categories A to G"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs> <http://www.w3.org/2000/01/rdf-schema#label> "Category I - Accessible Roofs"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs> <http://www.w3.org/2004/02/skos/core#definition> "Roof accessible with occupancy according to categories A to G" .
+<http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs> <http://www.w3.org/2004/02/skos/core#example> "Roof used as terraces, gardens, or other occupied spaces" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AccidentalAction
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.5" .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action, usually of short duration but of significant magnitude, that is unlikely to occur on a given structure during the design working life."@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalAction> <http://www.w3.org/2000/01/rdf-schema#label> "Accidental Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalAction> <http://www.w3.org/2004/02/skos/core#altLabel> "A" .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalAction> <http://www.w3.org/2004/02/skos/core#definition> "Action, usually of short duration but of significant magnitude, that is unlikely to occur on a given structure during the design working life." .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalAction> <http://www.w3.org/2004/02/skos/core#example> "explosions, impact from vehicles" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#ULSCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#SeismicCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.3.3" .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination> <http://www.w3.org/2000/01/rdf-schema#comment> "Combination of actions for accidental design situations."@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Accidental Combination"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination> <http://www.w3.org/2004/02/skos/core#definition> "Combination of actions for accidental design situations." .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for accidental design situations in ULS verifications" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#DesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.5" .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Design situation involving exceptional conditions of the structure or its exposure, including fire, explosion, impact or local failure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Accidental Design Situation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> <http://www.w3.org/2004/02/skos/core#definition> "Design situation involving exceptional conditions of the structure or its exposure, including fire, explosion, impact or local failure." .
+<http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> <http://www.w3.org/2004/02/skos/core#example> "fire, explosion, impact, local failure" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction
+<http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#VariableAction> .
+<http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction> .
+<http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction> <http://purl.org/dc/terms/source> "EN 1990:2003 Section 6.4.3.2(2)" .
+<http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction> <http://www.w3.org/2000/01/rdf-schema#comment> "."@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction> <http://www.w3.org/2000/01/rdf-schema#label> "Accompanying variable action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction> <http://www.w3.org/2004/02/skos/core#definition> "." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Action
+<http://www.w3id.org/Eurocodes/EC1990#Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#Action> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.1" .
+<http://www.w3id.org/Eurocodes/EC1990#Action> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of forces (loads) applied to the structure (direct action) or set of imposed deformations or accelerations caused for example, by temperature changes, moisture variation, uneven settlement or earthquakes (indirect action)."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Action> <http://www.w3.org/2004/02/skos/core#altLabel> "F" .
+<http://www.w3id.org/Eurocodes/EC1990#Action> <http://www.w3.org/2004/02/skos/core#definition> "Set of forces (loads) applied to the structure (direct action) or set of imposed deformations or accelerations caused for example, by temperature changes, moisture variation, uneven settlement or earthquakes (indirect action)." .
+<http://www.w3id.org/Eurocodes/EC1990#Action> <http://www.w3.org/2004/02/skos/core#example> "dead load, imopsed load, wind load, thermal action" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AngularDeformation
+<http://www.w3id.org/Eurocodes/EC1990#AngularDeformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AngularDeformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Deformation> .
+<http://www.w3id.org/Eurocodes/EC1990#AngularDeformation> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#LinearDeformation> .
+<http://www.w3id.org/Eurocodes/EC1990#AngularDeformation> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation> .
+<http://www.w3id.org/Eurocodes/EC1990#AngularDeformation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#AngularDeformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Deformation involving rotation or angular change in the structure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#AngularDeformation> <http://www.w3.org/2000/01/rdf-schema#label> "Angular Deformation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AngularDeformation> <http://www.w3.org/2004/02/skos/core#definition> "Deformation involving rotation or angular change in the structure." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AreaWithTables
+<http://www.w3id.org/Eurocodes/EC1990#AreaWithTables> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AreaWithTables> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#CongregationArea> .
+<http://www.w3id.org/Eurocodes/EC1990#AreaWithTables> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#AreaWithTables> <http://www.w3.org/2000/01/rdf-schema#comment> "Area with tables"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AreaWithTables> <http://www.w3.org/2000/01/rdf-schema#label> "Category C1 - Areas with tables"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AreaWithTables> <http://www.w3.org/2004/02/skos/core#definition> "Area with tables" .
+<http://www.w3id.org/Eurocodes/EC1990#AreaWithTables> <http://www.w3.org/2004/02/skos/core#example> "areas in schools, cafés, restaurants, dining halls, reading rooms, receptions" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#CongregationArea> .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats> <http://www.w3.org/2000/01/rdf-schema#comment> "Area with fixed seats"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats> <http://www.w3.org/2000/01/rdf-schema#label> "Category C2 - Areas with fixed seats"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats> <http://www.w3.org/2004/02/skos/core#definition> "Area with fixed seats" .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats> <http://www.w3.org/2004/02/skos/core#example> "areas in churches, theatres or cinemas, conference rooms, lecture halls, assembly halls, waiting rooms, railway waiting rooms" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#CongregationArea> .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle> <http://www.w3.org/2000/01/rdf-schema#comment> "Area without obstacles for moving people"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle> <http://www.w3.org/2000/01/rdf-schema#label> "Category C3 - Areas without obstacles"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle> <http://www.w3.org/2004/02/skos/core#definition> "Area without obstacles for moving people" .
+<http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle> <http://www.w3.org/2004/02/skos/core#example> "areas in museums, exhibition rooms, etc. and access areas in public and administration buildings, hotels, hospitals, railway station forecourts" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AxialForce
+<http://www.w3id.org/Eurocodes/EC1990#AxialForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#AxialForce> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#InternalForce> .
+<http://www.w3id.org/Eurocodes/EC1990#AxialForce> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#AxialForce> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal force acting along the axis of structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#AxialForce> <http://www.w3.org/2000/01/rdf-schema#label> "Axial Force"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AxialForce> <http://www.w3.org/2004/02/skos/core#altLabel> "N" .
+<http://www.w3id.org/Eurocodes/EC1990#AxialForce> <http://www.w3.org/2004/02/skos/core#definition> "Internal force acting along the axis of structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#BendingMoment
+<http://www.w3id.org/Eurocodes/EC1990#BendingMoment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMoment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#InternalForce> .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMoment> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMoment> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal moment causing bending in structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMoment> <http://www.w3.org/2000/01/rdf-schema#label> "Bending Moment"@en .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMoment> <http://www.w3.org/2004/02/skos/core#altLabel> "M" .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMoment> <http://www.w3.org/2004/02/skos/core#definition> "Internal moment causing bending in structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance
+<http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Resistance> .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance> <http://www.w3.org/2000/01/rdf-schema#comment> "Design value of the maximum bending moment that a structural cross-section can safely resist without failure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance> <http://www.w3.org/2000/01/rdf-schema#label> "Bending Moment Resistance"@en .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance> <http://www.w3.org/2004/02/skos/core#altLabel> "M_Rd" .
+<http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance> <http://www.w3.org/2004/02/skos/core#definition> "Design value of the maximum bending moment that a structural cross-section can safely resist without failure." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Building
+<http://www.w3id.org/Eurocodes/EC1990#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Building> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#ConstructionWork> .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#SLSCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#FrequentCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.5.3(2)a" .
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination> <http://www.w3.org/2000/01/rdf-schema#comment> "Serviceability combination normally used for irreversible limit states."@en .
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Characteristic Combination"@en .
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination> <http://www.w3.org/2004/02/skos/core#definition> "Serviceability combination normally used for irreversible limit states." .
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for irreversible serviceability limit state verifications" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#CharacteristicValue
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#CharacteristicValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#ConstructionWork> .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.2" .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of construction work for civil engineering purposes such as bridges, retaining walls, etc."@en .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork> <http://www.w3.org/2000/01/rdf-schema#label> "Civil Engineering Work"@en .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork> <http://www.w3.org/2004/02/skos/core#definition> "Type of construction work for civil engineering purposes such as bridges, retaining walls, etc." .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork> <http://www.w3.org/2004/02/skos/core#example> "bridge, retaining wall, tunnel" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions
+<http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.22" .
+<http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of design values used for the verification of the structural reliability for a limit state under the simultaneous influence of different actions."@en .
+<http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> <http://www.w3.org/2000/01/rdf-schema#label> "Combination of Actions"@en .
+<http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> <http://www.w3.org/2004/02/skos/core#definition> "Set of design values used for the verification of the structural reliability for a limit state under the simultaneous influence of different actions." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#CompressiveStrength
+<http://www.w3id.org/Eurocodes/EC1990#CompressiveStrength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#CompressiveStrength> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#MaterialProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#CompressiveStrength> <http://www.w3.org/2000/01/rdf-schema#comment> "Compressive strenght of a material."@en .
+<http://www.w3id.org/Eurocodes/EC1990#CompressiveStrength> <http://www.w3.org/2000/01/rdf-schema#label> "Compressive Strength"@en .
+<http://www.w3id.org/Eurocodes/EC1990#CompressiveStrength> <http://www.w3.org/2004/02/skos/core#definition> "Compressive Strength of a material." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Concrete
+<http://www.w3id.org/Eurocodes/EC1990#Concrete> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Concrete> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Material> .
+<http://www.w3id.org/Eurocodes/EC1990#Concrete> <http://www.w3.org/2000/01/rdf-schema#comment> "A composite material consisting of a mixture of cement, water, aggregates (coarse and fine), and, where appropriate, admixtures and additions, which develops its strength by hydration of the cement. "@en .
+<http://www.w3id.org/Eurocodes/EC1990#Concrete> <http://www.w3.org/2000/01/rdf-schema#label> "Concrete"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Concrete> <http://www.w3.org/2004/02/skos/core#definition> "A composite material consisting of a mixture of cement, water, aggregates (coarse and fine), and, where appropriate, admixtures and additions, which develops its strength by hydration of the cement. " .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#CongregationArea
+<http://www.w3id.org/Eurocodes/EC1990#CongregationArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#CongregationArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> .
+<http://www.w3id.org/Eurocodes/EC1990#CongregationArea> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#CongregationArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Area where people may congregate (except areas under category A, B, and D)"@en .
+<http://www.w3id.org/Eurocodes/EC1990#CongregationArea> <http://www.w3.org/2000/01/rdf-schema#label> "Category C - Congregation Areas"@en .
+<http://www.w3id.org/Eurocodes/EC1990#CongregationArea> <http://www.w3.org/2004/02/skos/core#definition> "Area where people may congregate (except areas under category A, B, and D)" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ConstructionWork
+<http://www.w3id.org/Eurocodes/EC1990#ConstructionWork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#ConstructionWork> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.1" .
+<http://www.w3id.org/Eurocodes/EC1990#ConstructionWork> <http://www.w3.org/2000/01/rdf-schema#comment> "Everything that is constructed or results from construction operations. The term covers both building and civil engineering works comprising structural, non-structural and geotechnical elements."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ConstructionWork> <http://www.w3.org/2000/01/rdf-schema#label> "Construction Works"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ConstructionWork> <http://www.w3.org/2004/02/skos/core#definition> "Everything that is constructed or results from construction operations. The term covers both building and civil engineering works comprising structural, non-structural and geotechnical elements." .
+<http://www.w3id.org/Eurocodes/EC1990#ConstructionWork> <http://www.w3.org/2004/02/skos/core#example> "building, bridge, nuclea power plant" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#CreepEffect
+<http://www.w3id.org/Eurocodes/EC1990#CreepEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#CreepEffect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect> .
+<http://www.w3id.org/Eurocodes/EC1990#CreepEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Long-term deformation effect due to sustained loading."@en .
+<http://www.w3id.org/Eurocodes/EC1990#CreepEffect> <http://www.w3.org/2000/01/rdf-schema#label> "Creep Effect"@en .
+<http://www.w3id.org/Eurocodes/EC1990#CreepEffect> <http://www.w3.org/2004/02/skos/core#definition> "Long-term deformation effect due to sustained loading." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#DeadLoad
+<http://www.w3id.org/Eurocodes/EC1990#DeadLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#DeadLoad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#PermanentAction> .
+<http://www.w3id.org/Eurocodes/EC1990#DeadLoad> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002" .
+<http://www.w3id.org/Eurocodes/EC1990#DeadLoad> <http://www.w3.org/2000/01/rdf-schema#comment> "."@en .
+<http://www.w3id.org/Eurocodes/EC1990#DeadLoad> <http://www.w3.org/2000/01/rdf-schema#label> "Dead load"@en .
+<http://www.w3id.org/Eurocodes/EC1990#DeadLoad> <http://www.w3.org/2004/02/skos/core#definition> "." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Deflection
+<http://www.w3id.org/Eurocodes/EC1990#Deflection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Deflection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#LinearDeformation> .
+<http://www.w3id.org/Eurocodes/EC1990#Deflection> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.6" .
+<http://www.w3id.org/Eurocodes/EC1990#Deflection> <http://www.w3.org/2000/01/rdf-schema#comment> "Vertical deflction of a structural member."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Deflection> <http://www.w3.org/2000/01/rdf-schema#label> "Deflection"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Deflection> <http://www.w3.org/2004/02/skos/core#altLabel> "w" .
+<http://www.w3id.org/Eurocodes/EC1990#Deflection> <http://www.w3.org/2004/02/skos/core#definition> "Vertical deflction of a structural member." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Deformation
+<http://www.w3id.org/Eurocodes/EC1990#Deformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Deformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#DeformationEffect> .
+<http://www.w3id.org/Eurocodes/EC1990#Deformation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#Deformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Change in shape or size of a structure or structural member due to actions."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Deformation> <http://www.w3.org/2000/01/rdf-schema#label> "Deformation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Deformation> <http://www.w3.org/2004/02/skos/core#definition> "Change in shape or size of a structure or structural member due to actions." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#DeformationEffect
+<http://www.w3id.org/Eurocodes/EC1990#DeformationEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#DeformationEffect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> .
+<http://www.w3id.org/Eurocodes/EC1990#DeformationEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Effect of actions in the form of deformations of the structure or structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#DeformationEffect> <http://www.w3.org/2000/01/rdf-schema#label> "Deformation Effect"@en .
+<http://www.w3id.org/Eurocodes/EC1990#DeformationEffect> <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions in the form of deformations of the structure or structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Density
+<http://www.w3id.org/Eurocodes/EC1990#Density> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Density> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#MaterialProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#Density> <http://www.w3.org/2000/01/rdf-schema#comment> "Mass per unit volume of a material."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Density> <http://www.w3.org/2000/01/rdf-schema#label> "Density"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Density> <http://www.w3.org/2004/02/skos/core#definition> "Mass per unit volume of a material." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#DepartmentStore
+<http://www.w3id.org/Eurocodes/EC1990#DepartmentStore> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#DepartmentStore> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas> .
+<http://www.w3id.org/Eurocodes/EC1990#DepartmentStore> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#DepartmentStore> <http://www.w3.org/2000/01/rdf-schema#comment> "Area in department stores"@en .
+<http://www.w3id.org/Eurocodes/EC1990#DepartmentStore> <http://www.w3.org/2000/01/rdf-schema#label> "Category D2 - Department stores"@en .
+<http://www.w3id.org/Eurocodes/EC1990#DepartmentStore> <http://www.w3.org/2004/02/skos/core#definition> "Area in department stores" .
+<http://www.w3id.org/Eurocodes/EC1990#DepartmentStore> <http://www.w3.org/2004/02/skos/core#example> "department stores" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#DesignAction
+<http://www.w3id.org/Eurocodes/EC1990#DesignAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#DesignAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#DesignAction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction> .
+<http://www.w3id.org/Eurocodes/EC1990#DesignAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.21" .
+<http://www.w3id.org/Eurocodes/EC1990#DesignAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Value ofan action used for limit state verification. A design valueo is btained by multiplying the representative value by the partial factor."@en .
+<http://www.w3id.org/Eurocodes/EC1990#DesignAction> <http://www.w3.org/2000/01/rdf-schema#label> "Design Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#DesignAction> <http://www.w3.org/2004/02/skos/core#definition> "Value ofan action used for limit state verification. A design valueo is btained by multiplying the representative value by the partial factor." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#DesignSituation
+<http://www.w3id.org/Eurocodes/EC1990#DesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#DesignSituation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.2" .
+<http://www.w3id.org/Eurocodes/EC1990#DesignSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Sets of physical conditions representing the real conditions occurring during a certain time interval for which the design will demonstrate that relevant limit states are not exceeded."@en .
+<http://www.w3id.org/Eurocodes/EC1990#DesignSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Design Situation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#DesignSituation> <http://www.w3.org/2004/02/skos/core#definition> "Sets of physical conditions representing the real conditions occurring during a certain time interval for which the design will demonstrate that relevant limit states are not exceeded." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#DesignValue
+<http://www.w3id.org/Eurocodes/EC1990#DesignValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#DesignValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#DirectAction
+<http://www.w3id.org/Eurocodes/EC1990#DirectAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#DirectAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#DirectAction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#IndirectAction> .
+<http://www.w3id.org/Eurocodes/EC1990#DirectAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.1 a)" .
+<http://www.w3id.org/Eurocodes/EC1990#DirectAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of forces (loads) applied to the structure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#DirectAction> <http://www.w3.org/2000/01/rdf-schema#label> "Direct Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#DirectAction> <http://www.w3.org/2004/02/skos/core#definition> "Set of forces (loads) applied to the structure." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Displacement
+<http://www.w3id.org/Eurocodes/EC1990#Displacement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Displacement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#LinearDeformation> .
+<http://www.w3id.org/Eurocodes/EC1990#Displacement> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.6" .
+<http://www.w3id.org/Eurocodes/EC1990#Displacement> <http://www.w3.org/2000/01/rdf-schema#comment> "Horizontal displacement of a structure or structural member."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Displacement> <http://www.w3.org/2000/01/rdf-schema#label> "Displacement"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Displacement> <http://www.w3.org/2004/02/skos/core#altLabel> "u" .
+<http://www.w3id.org/Eurocodes/EC1990#Displacement> <http://www.w3.org/2004/02/skos/core#definition> "Horizontal displacement of a structure or structural member." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#DynamicAction
+<http://www.w3id.org/Eurocodes/EC1990#DynamicAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#DynamicAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#DynamicAction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#StaticAction> .
+<http://www.w3id.org/Eurocodes/EC1990#DynamicAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.12" .
+<http://www.w3id.org/Eurocodes/EC1990#DynamicAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action that causes significant acceleration of the structure or structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#DynamicAction> <http://www.w3.org/2000/01/rdf-schema#label> "Dynamic Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#DynamicAction> <http://www.w3.org/2004/02/skos/core#definition> "Action that causes significant acceleration of the structure or structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#DynamicEffect
+<http://www.w3id.org/Eurocodes/EC1990#DynamicEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#DynamicEffect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> .
+<http://www.w3id.org/Eurocodes/EC1990#DynamicEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Effect of actions involving dynamic response, acceleration, or vibration."@en .
+<http://www.w3id.org/Eurocodes/EC1990#DynamicEffect> <http://www.w3.org/2000/01/rdf-schema#label> "Dynamic Effect"@en .
+<http://www.w3id.org/Eurocodes/EC1990#DynamicEffect> <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions involving dynamic response, acceleration, or vibration." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#EffectOfAction
+<http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Effect of actions on structural members (e.g. internal force, moment, stress, strain) or on the whole structure (e.g. deflection, rotation)."@en .
+<http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> <http://www.w3.org/2000/01/rdf-schema#label> "Effect of Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> <http://www.w3.org/2004/02/skos/core#altLabel> "E" .
+<http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions on structural members (e.g. internal force, moment, stress, strain) or on the whole structure (e.g. deflection, rotation)." .
+<http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> <http://www.w3.org/2004/02/skos/core#editorialNote> "Effects of actions can be calculated through structural analysis and must be compared against resistance for verification" .
+<http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> <http://www.w3.org/2004/02/skos/core#example> "internal force, moment, stress, strain, deflection, rotation" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#EurocodeZone
+<http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Zone> .
+<http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> <http://www.w3.org/2000/01/rdf-schema#comment> "A space classified according to EN 1991-1-1 usage categories"@en .
+<http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> <http://www.w3.org/2000/01/rdf-schema#label> "Eurocode Zone"@en .
+<http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> <http://www.w3.org/2004/02/skos/core#definition> "A space classified according to EN 1991-1-1 usage categories" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#FatigueAction
+<http://www.w3id.org/Eurocodes/EC1990#FatigueAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#FatigueAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#FatigueAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.7" .
+<http://www.w3id.org/Eurocodes/EC1990#FatigueAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Repeated or fluctuating mechanical action applied over time, which may cause failure even if the individual stress cycles are below the material's static strength."@en .
+<http://www.w3id.org/Eurocodes/EC1990#FatigueAction> <http://www.w3.org/2000/01/rdf-schema#label> "Fatigue Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#FatigueAction> <http://www.w3.org/2004/02/skos/core#definition> "Repeated or fluctuating mechanical action applied over time, which may cause failure even if the individual stress cycles are below the material's static strength." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#FatigueEffect
+<http://www.w3id.org/Eurocodes/EC1990#FatigueEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#FatigueEffect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect> .
+<http://www.w3id.org/Eurocodes/EC1990#FatigueEffect> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 3.1(5)" .
+<http://www.w3id.org/Eurocodes/EC1990#FatigueEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Progressive damage effect due to repeated loading cycles."@en .
+<http://www.w3id.org/Eurocodes/EC1990#FatigueEffect> <http://www.w3.org/2000/01/rdf-schema#label> "Fatigue Effect"@en .
+<http://www.w3id.org/Eurocodes/EC1990#FatigueEffect> <http://www.w3.org/2004/02/skos/core#definition> "Progressive damage effect due to repeated loading cycles." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#FavourableAction
+<http://www.w3id.org/Eurocodes/EC1990#FavourableAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#FavourableAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#FavourableAction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction> .
+<http://www.w3id.org/Eurocodes/EC1990#FavourableAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.3.2(3)P" .
+<http://www.w3id.org/Eurocodes/EC1990#FavourableAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action that reduces the effect of other actions on a structure, or otherwise contributes to structural safety."@en .
+<http://www.w3id.org/Eurocodes/EC1990#FavourableAction> <http://www.w3.org/2000/01/rdf-schema#label> "Favourable Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#FavourableAction> <http://www.w3.org/2004/02/skos/core#definition> "Action that reduces the effect of other actions on a structure, or otherwise contributes to structural safety." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#FixedAction
+<http://www.w3id.org/Eurocodes/EC1990#FixedAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#FixedAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#FixedAction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#FreeAction> .
+<http://www.w3id.org/Eurocodes/EC1990#FixedAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.8" .
+<http://www.w3id.org/Eurocodes/EC1990#FixedAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action that has a fixed distribution and position over the structure or structural member such that the magnitude and direction of the action are determined unambiguously for the whole structure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#FixedAction> <http://www.w3.org/2000/01/rdf-schema#label> "Fixed Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#FixedAction> <http://www.w3.org/2004/02/skos/core#definition> "Action that has a fixed distribution and position over the structure or structural member such that the magnitude and direction of the action are determined unambiguously for the whole structure." .
+<http://www.w3id.org/Eurocodes/EC1990#FixedAction> <http://www.w3.org/2004/02/skos/core#example> "Stored goods in a defined storage area with no alternative placement" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#FreeAction
+<http://www.w3id.org/Eurocodes/EC1990#FreeAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#FreeAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#FreeAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.9" .
+<http://www.w3id.org/Eurocodes/EC1990#FreeAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action that may have various spatial distributions over the structure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#FreeAction> <http://www.w3.org/2000/01/rdf-schema#label> "Free Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#FreeAction> <http://www.w3.org/2004/02/skos/core#definition> "Action that may have various spatial distributions over the structure." .
+<http://www.w3id.org/Eurocodes/EC1990#FreeAction> <http://www.w3.org/2004/02/skos/core#example> "Imposed floor load on individual rooms of a multi-storey building" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#FrequentCombination
+<http://www.w3id.org/Eurocodes/EC1990#FrequentCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#FrequentCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#SLSCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#FrequentCombination> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#FrequentCombination> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.5.3(2)b" .
+<http://www.w3id.org/Eurocodes/EC1990#FrequentCombination> <http://www.w3.org/2000/01/rdf-schema#comment> "Serviceability combination normally used for reversible limit states."@en .
+<http://www.w3id.org/Eurocodes/EC1990#FrequentCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Frequent Combination"@en .
+<http://www.w3id.org/Eurocodes/EC1990#FrequentCombination> <http://www.w3.org/2004/02/skos/core#definition> "Serviceability combination normally used for reversible limit states." .
+<http://www.w3id.org/Eurocodes/EC1990#FrequentCombination> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for reversible serviceability limit state verifications" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination
+<http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#ULSCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#SeismicCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination> <http://www.w3.org/2000/01/rdf-schema#comment> "Combination of actions for persistent or transient design situations."@en .
+<http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Fundamental Combination"@en .
+<http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination> <http://www.w3.org/2004/02/skos/core#definition> "Combination of actions for persistent or transient design situations." .
+<http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for persistent and transient design situations in ULS verifications" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops
+<http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas> .
+<http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops> <http://www.w3.org/2000/01/rdf-schema#comment> "Area in general retail shops"@en .
+<http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops> <http://www.w3.org/2000/01/rdf-schema#label> "Category D1 - General retail shops"@en .
+<http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops> <http://www.w3.org/2004/02/skos/core#definition> "Area in general retail shops" .
+<http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops> <http://www.w3.org/2004/02/skos/core#example> "general retail shops" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty
+<http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 4.3" .
+<http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Geometrical properties and dimensions of structural elements."@en .
+<http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Geometrical Data"@en .
+<http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty> <http://www.w3.org/2004/02/skos/core#definition> "Geometrical properties and dimensions of structural elements." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction
+<http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.7" .
+<http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action transmitted to the structure by the ground, fill or groundwater."@en .
+<http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction> <http://www.w3.org/2000/01/rdf-schema#label> "Geotechnical Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction> <http://www.w3.org/2004/02/skos/core#definition> "Action transmitted to the structure by the ground, fill or groundwater." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas
+<http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> .
+<http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.9" .
+<http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas> <http://www.w3.org/2000/01/rdf-schema#comment> "Roof accessible for special services, such as helicopter landing areas"@en .
+<http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas> <http://www.w3.org/2000/01/rdf-schema#label> "Category K - Helicopter Landing Areas"@en .
+<http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas> <http://www.w3.org/2004/02/skos/core#definition> "Roof accessible for special services, such as helicopter landing areas" .
+<http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas> <http://www.w3.org/2004/02/skos/core#example> "helicopter landing pads on roofs" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ImposedLoad
+<http://www.w3id.org/Eurocodes/EC1990#ImposedLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#ImposedLoad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#VariableAction> .
+<http://www.w3id.org/Eurocodes/EC1990#ImposedLoad> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#SnowLoad> .
+<http://www.w3id.org/Eurocodes/EC1990#ImposedLoad> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#ThermalAction> .
+<http://www.w3id.org/Eurocodes/EC1990#ImposedLoad> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#WindAction> .
+<http://www.w3id.org/Eurocodes/EC1990#ImposedLoad> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002" .
+<http://www.w3id.org/Eurocodes/EC1990#ImposedLoad> <http://www.w3.org/2000/01/rdf-schema#comment> "."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ImposedLoad> <http://www.w3.org/2000/01/rdf-schema#label> "Imposed load"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ImposedLoad> <http://www.w3.org/2004/02/skos/core#definition> "." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#IndirectAction
+<http://www.w3id.org/Eurocodes/EC1990#IndirectAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#IndirectAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#IndirectAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.1 b)" .
+<http://www.w3id.org/Eurocodes/EC1990#IndirectAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Set of imposed deformations or accelerations caused for example, by temperature changes, moisture variation, uneven settlement or earthquakes."@en .
+<http://www.w3id.org/Eurocodes/EC1990#IndirectAction> <http://www.w3.org/2000/01/rdf-schema#label> "Indirect Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#IndirectAction> <http://www.w3.org/2004/02/skos/core#definition> "Set of imposed deformations or accelerations caused for example, by temperature changes, moisture variation, uneven settlement or earthquakes." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#IndustrialUse
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialUse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialUse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage> .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialUse> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.3" .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialUse> <http://www.w3.org/2000/01/rdf-schema#comment> "Industrial use area"@en .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialUse> <http://www.w3.org/2000/01/rdf-schema#label> "Category E2 - Industrial use"@en .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialUse> <http://www.w3.org/2004/02/skos/core#definition> "Industrial use area" .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialUse> <http://www.w3.org/2004/02/skos/core#example> "industrial facilities: plant rooms, workshops" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.3" .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage> <http://www.w3.org/2000/01/rdf-schema#comment> "Storage and industrial area"@en .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage> <http://www.w3.org/2000/01/rdf-schema#label> "Category E - Storage and Industrial"@en .
+<http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage> <http://www.w3.org/2004/02/skos/core#definition> "Storage and industrial area" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#InternalForce
+<http://www.w3id.org/Eurocodes/EC1990#InternalForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#InternalForce> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect> .
+<http://www.w3id.org/Eurocodes/EC1990#InternalForce> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#InternalForce> <http://www.w3.org/2000/01/rdf-schema#comment> "Effect of actions in the form of internal forces in structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#InternalForce> <http://www.w3.org/2000/01/rdf-schema#label> "Internal Force"@en .
+<http://www.w3id.org/Eurocodes/EC1990#InternalForce> <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions in the form of internal forces in structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas
+<http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#CongregationArea> .
+<http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas> <http://www.w3.org/2000/01/rdf-schema#comment> "Area susceptible to large crowds"@en .
+<http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas> <http://www.w3.org/2000/01/rdf-schema#label> "Category C5 - Large crowds areas"@en .
+<http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas> <http://www.w3.org/2004/02/skos/core#definition> "Area susceptible to large crowds" .
+<http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas> <http://www.w3.org/2004/02/skos/core#example> "buildings for public events like concert halls, sports halls including stands, terraces and access areas and railway platforms" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction
+<http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#VariableAction> .
+<http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction> <http://purl.org/dc/terms/source> "EN 1990:2003 Section 6.4.3.2(2)" .
+<http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction> <http://www.w3.org/2000/01/rdf-schema#comment> "."@en .
+<http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction> <http://www.w3.org/2000/01/rdf-schema#label> "Leading variable action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction> <http://www.w3.org/2004/02/skos/core#definition> "." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic
+<http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> .
+<http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.7" .
+<http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic> <http://www.w3.org/2000/01/rdf-schema#comment> "Traffic and parking area for light vehicles (≤ 30 kN gross vehicle weight and ≤ 8 seats not including driver)"@en .
+<http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic> <http://www.w3.org/2000/01/rdf-schema#label> "Category F - Light Vehicle Traffic"@en .
+<http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic> <http://www.w3.org/2004/02/skos/core#definition> "Traffic and parking area for light vehicles (≤ 30 kN gross vehicle weight and ≤ 8 seats not including driver)" .
+<http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic> <http://www.w3.org/2004/02/skos/core#example> "garages, parking areas, parking halls" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#LimitState
+<http://www.w3id.org/Eurocodes/EC1990#LimitState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#LimitState> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.12" .
+<http://www.w3id.org/Eurocodes/EC1990#LimitState> <http://www.w3.org/2000/01/rdf-schema#comment> "State beyond which the structure no longer fulfils the relevant design criteria."@en .
+<http://www.w3id.org/Eurocodes/EC1990#LimitState> <http://www.w3.org/2000/01/rdf-schema#label> "Limit State"@en .
+<http://www.w3id.org/Eurocodes/EC1990#LimitState> <http://www.w3.org/2004/02/skos/core#definition> "State beyond which the structure no longer fulfils the relevant design criteria." .
+<http://www.w3id.org/Eurocodes/EC1990#LimitState> <http://www.w3.org/2004/02/skos/core#editorialNote> "Limit states define critical conditions that must not be exceeded to ensure structural safety and serviceability" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#LimitStateValue
+<http://www.w3id.org/Eurocodes/EC1990#LimitStateValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#LimitStateValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#LimitStateValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Design resistance or serviceability criterion used for verificatinon of a limit state."@en .
+<http://www.w3id.org/Eurocodes/EC1990#LimitStateValue> <http://www.w3.org/2000/01/rdf-schema#label> "Limit State Value"@en .
+<http://www.w3id.org/Eurocodes/EC1990#LimitStateValue> <http://www.w3.org/2004/02/skos/core#definition> "Design resistance or serviceability criterion used for verificatinon of a limit state." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion
+<http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#LimitStateValue> .
+<http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.5.1" .
+<http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion> <http://www.w3.org/2000/01/rdf-schema#comment> "Limiting design value of the relevant serviceability criterion."@en .
+<http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion> <http://www.w3.org/2000/01/rdf-schema#label> "Limiting Serviceability Criterion"@en .
+<http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion> <http://www.w3.org/2004/02/skos/core#definition> "Limiting design value of the relevant serviceability criterion." .
+<http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion> <http://www.w3.org/2004/02/skos/core#example> "allowable deflection, allowable crack width" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#LinearDeformation
+<http://www.w3id.org/Eurocodes/EC1990#LinearDeformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#LinearDeformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Deformation> .
+<http://www.w3id.org/Eurocodes/EC1990#LinearDeformation> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation> .
+<http://www.w3id.org/Eurocodes/EC1990#LinearDeformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Deformation involving linear displacement of points in the structure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#LinearDeformation> <http://www.w3.org/2000/01/rdf-schema#label> "Linear Deformation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#LinearDeformation> <http://www.w3.org/2004/02/skos/core#definition> "Deformation involving linear displacement of points in the structure." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#LowerValue
+<http://www.w3id.org/Eurocodes/EC1990#LowerValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#LowerValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Material
+<http://www.w3id.org/Eurocodes/EC1990#Material> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Material> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.3" .
+<http://www.w3id.org/Eurocodes/EC1990#Material> <http://www.w3.org/2000/01/rdf-schema#comment> "Indication of the principal structural material."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Material> <http://www.w3.org/2000/01/rdf-schema#label> "Material"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Material> <http://www.w3.org/2004/02/skos/core#definition> "Indication of the principal structural material." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#MaterialProperty
+<http://www.w3id.org/Eurocodes/EC1990#MaterialProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/Quantity> .
+<http://www.w3id.org/Eurocodes/EC1990#MaterialProperty> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 4.2" .
+<http://www.w3id.org/Eurocodes/EC1990#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical or mechanical property of construction materials."@en .
+<http://www.w3id.org/Eurocodes/EC1990#MaterialProperty> <http://www.w3.org/2000/01/rdf-schema#label> "Material Property"@en .
+<http://www.w3id.org/Eurocodes/EC1990#MaterialProperty> <http://www.w3.org/2004/02/skos/core#definition> "Physical or mechanical property of construction materials." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#MeanValue
+<http://www.w3id.org/Eurocodes/EC1990#MeanValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#MeanValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect
+<http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> .
+<http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Effect of actions in the form of forces, stresses, or strains in structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect> <http://www.w3.org/2000/01/rdf-schema#label> "Mechanical Effect"@en .
+<http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect> <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions in the form of forces, stresses, or strains in structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic
+<http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> .
+<http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.7" .
+<http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic> <http://www.w3.org/2000/01/rdf-schema#comment> "Traffic and parking area for medium vehicles (>30 kN, ≤ 160 kN gross vehicle weight, on 2 axles)"@en .
+<http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic> <http://www.w3.org/2000/01/rdf-schema#label> "Category G - Medium Vehicle Traffic"@en .
+<http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic> <http://www.w3.org/2004/02/skos/core#definition> "Traffic and parking area for medium vehicles (>30 kN, ≤ 160 kN gross vehicle weight, on 2 axles)" .
+<http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic> <http://www.w3.org/2004/02/skos/core#example> "access routes, delivery zones, zones accessible to fire engines (≤ 160 kN gross vehicle weight)" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#NominalValue
+<http://www.w3id.org/Eurocodes/EC1990#NominalValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#NominalValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#NormalStress
+<http://www.w3id.org/Eurocodes/EC1990#NormalStress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#NormalStress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Stress> .
+<http://www.w3id.org/Eurocodes/EC1990#NormalStress> <http://www.w3.org/2000/01/rdf-schema#comment> "Stress acting in the direction normal to a surface."@en .
+<http://www.w3id.org/Eurocodes/EC1990#NormalStress> <http://www.w3.org/2000/01/rdf-schema#label> "Normal Stress"@en .
+<http://www.w3id.org/Eurocodes/EC1990#NormalStress> <http://www.w3.org/2004/02/skos/core#definition> "Stress acting in the direction normal to a surface." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#OfficeArea
+<http://www.w3id.org/Eurocodes/EC1990#OfficeArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#OfficeArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> .
+<http://www.w3id.org/Eurocodes/EC1990#OfficeArea> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#OfficeArea> <http://www.w3.org/2000/01/rdf-schema#comment> "Office area"@en .
+<http://www.w3id.org/Eurocodes/EC1990#OfficeArea> <http://www.w3.org/2000/01/rdf-schema#label> "Category B - Office Areas"@en .
+<http://www.w3id.org/Eurocodes/EC1990#OfficeArea> <http://www.w3.org/2004/02/skos/core#definition> "Office area" .
+<http://www.w3id.org/Eurocodes/EC1990#OfficeArea> <http://www.w3.org/2004/02/skos/core#example> "General office spaces" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#PermanentAction
+<http://www.w3id.org/Eurocodes/EC1990#PermanentAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#PermanentAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#PermanentAction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#VariableAction> .
+<http://www.w3id.org/Eurocodes/EC1990#PermanentAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.3" .
+<http://www.w3id.org/Eurocodes/EC1990#PermanentAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action that is likely to act throughout a given reference period and for which the variation in magnitude with time is negligible, or for which the variation is always in the same direction (monotonic) until the action attains a certain limit value."@en .
+<http://www.w3id.org/Eurocodes/EC1990#PermanentAction> <http://www.w3.org/2000/01/rdf-schema#label> "Permanent Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#PermanentAction> <http://www.w3.org/2004/02/skos/core#altLabel> "G" .
+<http://www.w3id.org/Eurocodes/EC1990#PermanentAction> <http://www.w3.org/2004/02/skos/core#definition> "Action that is likely to act throughout a given reference period and for which the variation in magnitude with time is negligible, or for which the variation is always in the same direction (monotonic) until the action attains a certain limit value." .
+<http://www.w3id.org/Eurocodes/EC1990#PermanentAction> <http://www.w3.org/2004/02/skos/core#example> "self-weight, fixed equipment" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas
+<http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#CongregationArea> .
+<http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas> <http://www.w3.org/2000/01/rdf-schema#comment> "Area with possible physical activities"@en .
+<http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas> <http://www.w3.org/2000/01/rdf-schema#label> "Category C4 - Physical activities areas"@en .
+<http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas> <http://www.w3.org/2004/02/skos/core#definition> "Area with possible physical activities" .
+<http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas> <http://www.w3.org/2004/02/skos/core#example> "dance halls, gymnastic rooms, stages" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#PrincipalStress
+<http://www.w3id.org/Eurocodes/EC1990#PrincipalStress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#PrincipalStress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Stress> .
+<http://www.w3id.org/Eurocodes/EC1990#PrincipalStress> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum or minimum normal stress at a point."@en .
+<http://www.w3id.org/Eurocodes/EC1990#PrincipalStress> <http://www.w3.org/2000/01/rdf-schema#label> "Principal Stress"@en .
+<http://www.w3id.org/Eurocodes/EC1990#PrincipalStress> <http://www.w3.org/2004/02/skos/core#definition> "Maximum or minimum normal stress at a point." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination
+<http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#SLSCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.5.3(2)c" .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination> <http://www.w3.org/2000/01/rdf-schema#comment> "Serviceability combination normally used for long-term effects and the appearance of the structure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Quasi-Permanent Combination"@en .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination> <http://www.w3.org/2004/02/skos/core#definition> "Serviceability combination normally used for long-term effects and the appearance of the structure." .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for long-term effects and appearance considerations" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction
+<http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#DynamicAction> .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.13" .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Dynamic action represented by an equivalent static action in a static model."@en .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction> <http://www.w3.org/2000/01/rdf-schema#label> "Quasi-Static Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction> <http://www.w3.org/2004/02/skos/core#definition> "Dynamic action represented by an equivalent static action in a static model." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Reaction
+<http://www.w3id.org/Eurocodes/EC1990#Reaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Reaction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> .
+<http://www.w3id.org/Eurocodes/EC1990#Reaction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#Reaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Support reaction force or moment at structural supports."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Reaction> <http://www.w3.org/2000/01/rdf-schema#label> "Reaction"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Reaction> <http://www.w3.org/2004/02/skos/core#definition> "Support reaction force or moment at structural supports." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction
+<http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.20" .
+<http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Value ofan action used for limit state verification. A representative value may be the characteristic value or an accompanying value."@en .
+<http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction> <http://www.w3.org/2000/01/rdf-schema#label> "Representative Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction> <http://www.w3.org/2004/02/skos/core#definition> "Value ofan action used for limit state verification. A representative value may be the characteristic value or an accompanying value." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#RepresentativeValue
+<http://www.w3id.org/Eurocodes/EC1990#RepresentativeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#RepresentativeValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Residential
+<http://www.w3id.org/Eurocodes/EC1990#Residential> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Residential> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> .
+<http://www.w3id.org/Eurocodes/EC1990#Residential> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#Residential> <http://www.w3.org/2000/01/rdf-schema#comment> "Area for domestic and residential activities"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Residential> <http://www.w3.org/2000/01/rdf-schema#label> "Category A - Domestic and Residential"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Residential> <http://www.w3.org/2004/02/skos/core#definition> "Area for domestic and residential activities" .
+<http://www.w3id.org/Eurocodes/EC1990#Residential> <http://www.w3.org/2004/02/skos/core#example> "rooms in residential buildings and houses, bedrooms and wards in hospitals, bedrooms in hotels and hostels, kitchens and toilets" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding
+<http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Building> .
+<http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.2" .
+<http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding> <http://www.w3.org/2000/01/rdf-schema#comment> "Building intended primarily for the accommodation and permanent or temporary residence of individuals or households."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding> <http://www.w3.org/2000/01/rdf-schema#label> "Residential Building"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding> <http://www.w3.org/2004/02/skos/core#definition> "Building intended primarily for the accommodation and permanent or temporary residence of individuals or households." .
+<http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding> <http://www.w3.org/2004/02/skos/core#example> "detached house, apartment building, high-rise residential tower" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Resistance
+<http://www.w3id.org/Eurocodes/EC1990#Resistance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Resistance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#LimitStateValue> .
+<http://www.w3id.org/Eurocodes/EC1990#Resistance> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.15" .
+<http://www.w3id.org/Eurocodes/EC1990#Resistance> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacity of a member or component, or a cross-section of a member or component of a structure, to withstand actions without mechanical failure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Resistance> <http://www.w3.org/2000/01/rdf-schema#label> "Resistance"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Resistance> <http://www.w3.org/2004/02/skos/core#altLabel> "R" .
+<http://www.w3id.org/Eurocodes/EC1990#Resistance> <http://www.w3.org/2004/02/skos/core#definition> "Capacity of a member or component, or a cross-section of a member or component of a structure, to withstand actions without mechanical failure." .
+<http://www.w3id.org/Eurocodes/EC1990#Resistance> <http://www.w3.org/2004/02/skos/core#example> "bending resistance, buckling resistance, tension resistance" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Roof
+<http://www.w3id.org/Eurocodes/EC1990#Roof> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Roof> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> .
+<http://www.w3id.org/Eurocodes/EC1990#Roof> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.9" .
+<http://www.w3id.org/Eurocodes/EC1990#Roof> <http://www.w3.org/2000/01/rdf-schema#comment> "Roof not accessible except for normal maintenance and repair"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Roof> <http://www.w3.org/2000/01/rdf-schema#label> "Category H - Roofs"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Roof> <http://www.w3.org/2004/02/skos/core#definition> "Roof not accessible except for normal maintenance and repair" .
+<http://www.w3id.org/Eurocodes/EC1990#Roof> <http://www.w3.org/2004/02/skos/core#example> "roofs accessible only for maintenance" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Rotation
+<http://www.w3id.org/Eurocodes/EC1990#Rotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Rotation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#AngularDeformation> .
+<http://www.w3id.org/Eurocodes/EC1990#Rotation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#Rotation> <http://www.w3.org/2000/01/rdf-schema#comment> "Angular rotation of a structure or structural member."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Rotation> <http://www.w3.org/2000/01/rdf-schema#label> "Rotation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Rotation> <http://www.w3.org/2004/02/skos/core#definition> "Angular rotation of a structure or structural member." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#SLSCombination
+<http://www.w3id.org/Eurocodes/EC1990#SLSCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#SLSCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> .
+<http://www.w3id.org/Eurocodes/EC1990#SLSCombination> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#ULSCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#SLSCombination> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.5.3" .
+<http://www.w3id.org/Eurocodes/EC1990#SLSCombination> <http://www.w3.org/2000/01/rdf-schema#comment> "Combinations of actions for verifying serviceability limit states."@en .
+<http://www.w3id.org/Eurocodes/EC1990#SLSCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Serviceability Limit State Combination"@en .
+<http://www.w3id.org/Eurocodes/EC1990#SLSCombination> <http://www.w3.org/2004/02/skos/core#definition> "Combinations of actions for verifying serviceability limit states." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#SeismicAction
+<http://www.w3id.org/Eurocodes/EC1990#SeismicAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#AccidentalAction> .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.6" .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action that arises due to earthquake ground motions."@en .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicAction> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicAction> <http://www.w3.org/2004/02/skos/core#altLabel> "A_E" .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicAction> <http://www.w3.org/2004/02/skos/core#definition> "Action that arises due to earthquake ground motions." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#SeismicCombination
+<http://www.w3id.org/Eurocodes/EC1990#SeismicCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#ULSCombination> .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicCombination> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.3.4" .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicCombination> <http://www.w3.org/2000/01/rdf-schema#comment> "Combination of actions for seismic design situations."@en .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Combination"@en .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicCombination> <http://www.w3.org/2004/02/skos/core#definition> "Combination of actions for seismic design situations." .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicCombination> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for seismic design situations in ULS verifications" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#SelfWeight
+<http://www.w3id.org/Eurocodes/EC1990#SelfWeight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#SelfWeight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#PermanentAction> .
+<http://www.w3id.org/Eurocodes/EC1990#SelfWeight> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002" .
+<http://www.w3id.org/Eurocodes/EC1990#SelfWeight> <http://www.w3.org/2000/01/rdf-schema#comment> "."@en .
+<http://www.w3id.org/Eurocodes/EC1990#SelfWeight> <http://www.w3.org/2000/01/rdf-schema#label> "Self-weight"@en .
+<http://www.w3id.org/Eurocodes/EC1990#SelfWeight> <http://www.w3.org/2004/02/skos/core#definition> "." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState
+<http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#LimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.14" .
+<http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState> <http://www.w3.org/2000/01/rdf-schema#comment> "State that correspond to conditions beyond which specified service requirements for a structure or structural member are no longer met."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState> <http://www.w3.org/2000/01/rdf-schema#label> "Serviceability Limit State"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState> <http://www.w3.org/2004/02/skos/core#altLabel> "SLS" .
+<http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState> <http://www.w3.org/2004/02/skos/core#definition> "State that correspond to conditions beyond which specified service requirements for a structure or structural member are no longer met." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ShearForce
+<http://www.w3id.org/Eurocodes/EC1990#ShearForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#ShearForce> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#InternalForce> .
+<http://www.w3id.org/Eurocodes/EC1990#ShearForce> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#ShearForce> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal force acting perpendicular to the axis of structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ShearForce> <http://www.w3.org/2000/01/rdf-schema#label> "Shear Force"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ShearForce> <http://www.w3.org/2004/02/skos/core#altLabel> "V" .
+<http://www.w3id.org/Eurocodes/EC1990#ShearForce> <http://www.w3.org/2004/02/skos/core#definition> "Internal force acting perpendicular to the axis of structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ShearStress
+<http://www.w3id.org/Eurocodes/EC1990#ShearStress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#ShearStress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Stress> .
+<http://www.w3id.org/Eurocodes/EC1990#ShearStress> <http://www.w3.org/2000/01/rdf-schema#comment> "Stress acting in the direction parallel (tangential) to a surface."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ShearStress> <http://www.w3.org/2000/01/rdf-schema#label> "Shear Stress"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ShearStress> <http://www.w3.org/2004/02/skos/core#definition> "Stress acting in the direction parallel (tangential) to a surface." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas
+<http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EurocodeZone> .
+<http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" .
+<http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas> <http://www.w3.org/2000/01/rdf-schema#comment> "Shopping area"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas> <http://www.w3.org/2000/01/rdf-schema#label> "Category D - Shopping Areas"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas> <http://www.w3.org/2004/02/skos/core#definition> "Shopping area" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ShrinkageEffect
+<http://www.w3id.org/Eurocodes/EC1990#ShrinkageEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#ShrinkageEffect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect> .
+<http://www.w3id.org/Eurocodes/EC1990#ShrinkageEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Deformation effect due to material shrinkage over time."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ShrinkageEffect> <http://www.w3.org/2000/01/rdf-schema#label> "Shrinkage Effect"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ShrinkageEffect> <http://www.w3.org/2004/02/skos/core#definition> "Deformation effect due to material shrinkage over time." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#SnowLoad
+<http://www.w3id.org/Eurocodes/EC1990#SnowLoad> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#SnowLoad> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#VariableAction> .
+<http://www.w3id.org/Eurocodes/EC1990#SnowLoad> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#ThermalAction> .
+<http://www.w3id.org/Eurocodes/EC1990#SnowLoad> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#WindAction> .
+<http://www.w3id.org/Eurocodes/EC1990#SnowLoad> <http://purl.org/dc/terms/source> "EN 1991-1-3:2003" .
+<http://www.w3id.org/Eurocodes/EC1990#SnowLoad> <http://www.w3.org/2000/01/rdf-schema#comment> "."@en .
+<http://www.w3id.org/Eurocodes/EC1990#SnowLoad> <http://www.w3.org/2000/01/rdf-schema#label> "Snow load"@en .
+<http://www.w3id.org/Eurocodes/EC1990#SnowLoad> <http://www.w3.org/2004/02/skos/core#definition> "." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#StaticAction
+<http://www.w3id.org/Eurocodes/EC1990#StaticAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#StaticAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#StaticAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.11" .
+<http://www.w3id.org/Eurocodes/EC1990#StaticAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action that does not cause significant acceleration of the structure or structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#StaticAction> <http://www.w3.org/2000/01/rdf-schema#label> "Static Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#StaticAction> <http://www.w3.org/2004/02/skos/core#definition> "Action that does not cause significant acceleration of the structure or structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#StorageAreas
+<http://www.w3id.org/Eurocodes/EC1990#StorageAreas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#StorageAreas> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage> .
+<http://www.w3id.org/Eurocodes/EC1990#StorageAreas> <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.3" .
+<http://www.w3id.org/Eurocodes/EC1990#StorageAreas> <http://www.w3.org/2000/01/rdf-schema#comment> "Area susceptible to accumulation of goods, including access areas"@en .
+<http://www.w3id.org/Eurocodes/EC1990#StorageAreas> <http://www.w3.org/2000/01/rdf-schema#label> "Category E1 - Storage areas"@en .
+<http://www.w3id.org/Eurocodes/EC1990#StorageAreas> <http://www.w3.org/2004/02/skos/core#definition> "Area susceptible to accumulation of goods, including access areas" .
+<http://www.w3id.org/Eurocodes/EC1990#StorageAreas> <http://www.w3.org/2004/02/skos/core#example> "areas for storage use including storage of books and other documents: archives, libraries, stockrooms" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Strain
+<http://www.w3id.org/Eurocodes/EC1990#Strain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Strain> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect> .
+<http://www.w3id.org/Eurocodes/EC1990#Strain> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#Strain> <http://www.w3.org/2000/01/rdf-schema#comment> "Deformation per unit length in structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Strain> <http://www.w3.org/2000/01/rdf-schema#label> "Strain"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Strain> <http://www.w3.org/2004/02/skos/core#definition> "Deformation per unit length in structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Stress
+<http://www.w3id.org/Eurocodes/EC1990#Stress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Stress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect> .
+<http://www.w3id.org/Eurocodes/EC1990#Stress> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#Stress> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal stress in structural members due to actions."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Stress> <http://www.w3.org/2000/01/rdf-schema#label> "Stress"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Stress> <http://www.w3.org/2004/02/skos/core#definition> "Internal stress in structural members due to actions." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#StructuralMember
+<http://www.w3id.org/Eurocodes/EC1990#StructuralMember> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralMember> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/bot#Element> .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralMember> <http://purl.org/dc/terms/source> "EN 1990:200, Section 1.5.1.7" .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralMember> <http://www.w3.org/2000/01/rdf-schema#comment> "Physically distinguishable part of a structure, e.g. a column, a beam, a slab, a foundation pile."@en .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralMember> <http://www.w3.org/2000/01/rdf-schema#label> "Structural Member"@en .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralMember> <http://www.w3.org/2004/02/skos/core#definition> "Physically distinguishable part of a structure, e.g. a column, a beam, a slab, a foundation pile." .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralMember> <http://www.w3.org/2004/02/skos/core#example> "column, beam, slab, foundation pile" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#StructuralSystem
+<http://www.w3id.org/Eurocodes/EC1990#StructuralSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralSystem> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.9" .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Load-bearing members of a building or civil engineering works and the way in which these members function together."@en .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Structural System"@en .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralSystem> <http://www.w3.org/2004/02/skos/core#definition> "Load-bearing members of a building or civil engineering works and the way in which these members function together." .
+<http://www.w3id.org/Eurocodes/EC1990#StructuralSystem> <http://www.w3.org/2004/02/skos/core#example> "Flat-slab system with drop panels, steel potal frame, cable-stayed bridge system, trussed roof system" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Structure
+<http://www.w3id.org/Eurocodes/EC1990#Structure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Structure> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.6" .
+<http://www.w3id.org/Eurocodes/EC1990#Structure> <http://www.w3.org/2000/01/rdf-schema#comment> "Organised combination of connected parts designed to carry loads and provide adequate rigidity."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Structure> <http://www.w3.org/2000/01/rdf-schema#label> "Structure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Structure> <http://www.w3.org/2004/02/skos/core#definition> "Organised combination of connected parts designed to carry loads and provide adequate rigidity." .
+<http://www.w3id.org/Eurocodes/EC1990#Structure> <http://www.w3.org/2004/02/skos/core#example> "Residential building, reatining wall, suspension bridge, underground tunnel" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ThermalAction
+<http://www.w3id.org/Eurocodes/EC1990#ThermalAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#ThermalAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#VariableAction> .
+<http://www.w3id.org/Eurocodes/EC1990#ThermalAction> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.w3id.org/Eurocodes/EC1990#WindAction> .
+<http://www.w3id.org/Eurocodes/EC1990#ThermalAction> <http://purl.org/dc/terms/source> "EN 1991-1-5:2003" .
+<http://www.w3id.org/Eurocodes/EC1990#ThermalAction> <http://www.w3.org/2000/01/rdf-schema#comment> "."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ThermalAction> <http://www.w3.org/2000/01/rdf-schema#label> "Thermal action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ThermalAction> <http://www.w3.org/2004/02/skos/core#definition> "." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Thickness
+<http://www.w3id.org/Eurocodes/EC1990#Thickness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Thickness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty> .
+<http://www.w3id.org/Eurocodes/EC1990#Thickness> <http://www.w3.org/2000/01/rdf-schema#comment> "Dimension of a structural element measured perpendicular to its plane or surface."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Thickness> <http://www.w3.org/2000/01/rdf-schema#label> "Thickness"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Thickness> <http://www.w3.org/2004/02/skos/core#definition> "Dimension of a structural element measured perpendicular to its plane or surface." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect
+<http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#EffectOfAction> .
+<http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 3.1(5)" .
+<http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect> <http://www.w3.org/2000/01/rdf-schema#comment> "Effect of actions that varies with time due to material behavior or other time-related factors."@en .
+<http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect> <http://www.w3.org/2000/01/rdf-schema#label> "Time-Dependent Effect"@en .
+<http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect> <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions that varies with time due to material behavior or other time-related factors." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment
+<http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#InternalForce> .
+<http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" .
+<http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal moment causing twisting in structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment> <http://www.w3.org/2000/01/rdf-schema#label> "Torsional Moment"@en .
+<http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment> <http://www.w3.org/2004/02/skos/core#altLabel> "T" .
+<http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment> <http://www.w3.org/2004/02/skos/core#definition> "Internal moment causing twisting in structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Twist
+<http://www.w3id.org/Eurocodes/EC1990#Twist> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#Twist> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#AngularDeformation> .
+<http://www.w3id.org/Eurocodes/EC1990#Twist> <http://www.w3.org/2000/01/rdf-schema#comment> "Angular deformation about the longitudinal axis."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Twist> <http://www.w3.org/2000/01/rdf-schema#label> "Twist"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Twist> <http://www.w3.org/2004/02/skos/core#definition> "Angular deformation about the longitudinal axis." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ULSCombination
+<http://www.w3id.org/Eurocodes/EC1990#ULSCombination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#ULSCombination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions> .
+<http://www.w3id.org/Eurocodes/EC1990#ULSCombination> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.3" .
+<http://www.w3id.org/Eurocodes/EC1990#ULSCombination> <http://www.w3.org/2000/01/rdf-schema#comment> "Combination of actions for verifying ultimate limit states."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ULSCombination> <http://www.w3.org/2000/01/rdf-schema#label> "Ultimate Limit State Combination"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ULSCombination> <http://www.w3.org/2004/02/skos/core#definition> "Combination of actions for verifying ultimate limit states." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState
+<http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#LimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.13" .
+<http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> <http://www.w3.org/2000/01/rdf-schema#comment> "State associated with collapse or with other similar forms of structural failure. They generally correspond to the maximum load-carrying resistance of a structure or structural member."@en .
+<http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> <http://www.w3.org/2000/01/rdf-schema#label> "Ultimate Limit State"@en .
+<http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> <http://www.w3.org/2004/02/skos/core#altLabel> "ULS" .
+<http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> <http://www.w3.org/2004/02/skos/core#definition> "State associated with collapse or with other similar forms of structural failure. They generally correspond to the maximum load-carrying resistance of a structure or structural member." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction
+<http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.3.2(3)P" .
+<http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction> <http://www.w3.org/2000/01/rdf-schema#comment> "An action that increases the effect of other actions on a structure, or otherwise reduces structural safety."@en .
+<http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction> <http://www.w3.org/2000/01/rdf-schema#label> "UnfavourableAction Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction> <http://www.w3.org/2004/02/skos/core#definition> "An action that increases the effect of other actions on a structure, or otherwise reduces structural safety." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#UpperValue
+<http://www.w3id.org/Eurocodes/EC1990#UpperValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#UpperValue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#VariableAction
+<http://www.w3id.org/Eurocodes/EC1990#VariableAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#VariableAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Action> .
+<http://www.w3id.org/Eurocodes/EC1990#VariableAction> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.4" .
+<http://www.w3id.org/Eurocodes/EC1990#VariableAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Action for which the variation in magnitude with time is neither negligible nor monotonic."@en .
+<http://www.w3id.org/Eurocodes/EC1990#VariableAction> <http://www.w3.org/2000/01/rdf-schema#label> "Variable Action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#VariableAction> <http://www.w3.org/2004/02/skos/core#altLabel> "Q" .
+<http://www.w3id.org/Eurocodes/EC1990#VariableAction> <http://www.w3.org/2004/02/skos/core#definition> "Action for which the variation in magnitude with time is neither negligible nor monotonic." .
+<http://www.w3id.org/Eurocodes/EC1990#VariableAction> <http://www.w3.org/2004/02/skos/core#example> "imposed loads, wind, snow, thermal actions" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#VibrationResponse
+<http://www.w3id.org/Eurocodes/EC1990#VibrationResponse> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#VibrationResponse> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#DynamicEffect> .
+<http://www.w3id.org/Eurocodes/EC1990#VibrationResponse> <http://www.w3.org/2000/01/rdf-schema#comment> "Dynamic response of structures to oscillatory actions, important for serviceability considerations."@en .
+<http://www.w3id.org/Eurocodes/EC1990#VibrationResponse> <http://www.w3.org/2000/01/rdf-schema#label> "Vibration Response"@en .
+<http://www.w3id.org/Eurocodes/EC1990#VibrationResponse> <http://www.w3.org/2004/02/skos/core#definition> "Dynamic response of structures to oscillatory actions, important for serviceability considerations." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation
+<http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#Deformation> .
+<http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Deformation involving change in volume of structural elements."@en .
+<http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation> <http://www.w3.org/2000/01/rdf-schema#label> "Volumetric Deformation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation> <http://www.w3.org/2004/02/skos/core#definition> "Deformation involving change in volume of structural elements." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#WindAction
+<http://www.w3id.org/Eurocodes/EC1990#WindAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3id.org/Eurocodes/EC1990#WindAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3id.org/Eurocodes/EC1990#VariableAction> .
+<http://www.w3id.org/Eurocodes/EC1990#WindAction> <http://purl.org/dc/terms/source> "EN 1991-1-4:2005" .
+<http://www.w3id.org/Eurocodes/EC1990#WindAction> <http://www.w3.org/2000/01/rdf-schema#comment> "."@en .
+<http://www.w3id.org/Eurocodes/EC1990#WindAction> <http://www.w3.org/2000/01/rdf-schema#label> "Wind action"@en .
+<http://www.w3id.org/Eurocodes/EC1990#WindAction> <http://www.w3.org/2004/02/skos/core#definition> "." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure
+<http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#Structure> .
+<http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure> <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" .
+<http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "A building or construction primarily designed and used for farming-related activities."@en .
+<http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Agricultural Structure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure> <http://www.w3.org/2004/02/skos/core#definition> "A building or construction primarily designed and used for farming-related activities." .
+<http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure> <http://www.w3.org/2004/02/skos/core#example> "barn, greenhouse, animal shelter" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#BridgeStructure
+<http://www.w3id.org/Eurocodes/EC1990#BridgeStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#BridgeStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#Structure> .
+<http://www.w3id.org/Eurocodes/EC1990#BridgeStructure> <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" .
+<http://www.w3id.org/Eurocodes/EC1990#BridgeStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Engineered construction designed to span physical obstacles such as rivers, valleys, roads, or railways, providing a safe passage for vehicles, pedestrians, or utilities."@en .
+<http://www.w3id.org/Eurocodes/EC1990#BridgeStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Bridge Structure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#BridgeStructure> <http://www.w3.org/2004/02/skos/core#definition> "Engineered construction designed to span physical obstacles such as rivers, valleys, roads, or railways, providing a safe passage for vehicles, pedestrians, or utilities." .
+<http://www.w3id.org/Eurocodes/EC1990#BridgeStructure> <http://www.w3.org/2004/02/skos/core#example> "beam bridge, arch bridge, suspension bridge" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#Building
+<http://www.w3id.org/Eurocodes/EC1990#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#Building> <http://www.w3.org/2002/07/owl#sameAs> <https://w3id.org/bot#Building> .
+<https://w3id.org/bot#Building> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# https://w3id.org/bot#Building
+# 
+# http://www.w3id.org/Eurocodes/EC1990#BuildingStructure
+<http://www.w3id.org/Eurocodes/EC1990#BuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#BuildingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#Structure> .
+<http://www.w3id.org/Eurocodes/EC1990#BuildingStructure> <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" .
+<http://www.w3id.org/Eurocodes/EC1990#BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Load-bearing framework or system designed to support and transfer all applied loads safely to the foundation and ultimately to the ground."@en .
+<http://www.w3id.org/Eurocodes/EC1990#BuildingStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Building Structure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#BuildingStructure> <http://www.w3.org/2004/02/skos/core#definition> "Load-bearing framework or system designed to support and transfer all applied loads safely to the foundation and ultimately to the ground." .
+<http://www.w3id.org/Eurocodes/EC1990#BuildingStructure> <http://www.w3.org/2004/02/skos/core#example> "masonry building, steel frame building, timber-framed house" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#Structure> .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure> <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Constructed system composed of interconnected physical elements designed, analyzed, and built to withstand environmental and operational loads, enabling the provision of essential services such as transport, shelter, water management, or energy distribution."@en .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Civil Engineering Structure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure> <http://www.w3.org/2004/02/skos/core#definition> "Constructed system composed of interconnected physical elements designed, analyzed, and built to withstand environmental and operational loads, enabling the provision of essential services such as transport, shelter, water management, or energy distribution." .
+<http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure> <http://www.w3.org/2004/02/skos/core#example> "dam, tunnel, airport, retaining wall, power station, road" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#EQU
+<http://www.w3id.org/Eurocodes/EC1990#EQU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#EQU> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#EQU> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.1(1)P a)" .
+<http://www.w3id.org/Eurocodes/EC1990#EQU> <http://www.w3.org/2000/01/rdf-schema#comment> "Loss of static equilibrium of the structure or any part of it considered as a rigid body."@en .
+<http://www.w3id.org/Eurocodes/EC1990#EQU> <http://www.w3.org/2000/01/rdf-schema#label> "Static Equilibrium"@en .
+<http://www.w3id.org/Eurocodes/EC1990#EQU> <http://www.w3.org/2004/02/skos/core#definition> "Loss of static equilibrium of the structure or any part of it considered as a rigid body." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation
+<http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.5" .
+<http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Accidental design situation involving explosion conditions."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Explosion Design Situation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation> <http://www.w3.org/2004/02/skos/core#definition> "Accidental design situation involving explosion conditions." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#FAT
+<http://www.w3id.org/Eurocodes/EC1990#FAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#FAT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#FAT> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.1(1)P d)" .
+<http://www.w3id.org/Eurocodes/EC1990#FAT> <http://www.w3.org/2000/01/rdf-schema#comment> "Fatigue failure of the structure or structural members."@en .
+<http://www.w3id.org/Eurocodes/EC1990#FAT> <http://www.w3.org/2000/01/rdf-schema#label> "Fatigue Failure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#FAT> <http://www.w3.org/2004/02/skos/core#definition> "Fatigue failure of the structure or structural members." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation
+<http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.5 & 6" .
+<http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Accidental design situation involving fire conditions requiring specific design considerations."@en .
+<http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Fire Design Situation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation> <http://www.w3.org/2004/02/skos/core#definition> "Accidental design situation involving fire conditions requiring specific design considerations." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#GEO
+<http://www.w3id.org/Eurocodes/EC1990#GEO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#GEO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#GEO> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.1(1)P c)" .
+<http://www.w3id.org/Eurocodes/EC1990#GEO> <http://www.w3.org/2000/01/rdf-schema#comment> "Failure or excessive deformation of the ground where the strengths of soil or rock are significant in providing resistance."@en .
+<http://www.w3id.org/Eurocodes/EC1990#GEO> <http://www.w3.org/2000/01/rdf-schema#label> "Geotechnical Failure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#GEO> <http://www.w3.org/2004/02/skos/core#definition> "Failure or excessive deformation of the ground where the strengths of soil or rock are significant in providing resistance." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#HYD
+<http://www.w3id.org/Eurocodes/EC1990#HYD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#HYD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#HYD> <http://purl.org/dc/terms/source> "EN 1990:2002/A1:2005, Section 6.4.1(1)P f)" .
+<http://www.w3id.org/Eurocodes/EC1990#HYD> <http://www.w3.org/2000/01/rdf-schema#comment> "Hydraulic heave, internal erosion and piping in the ground caused by hydraulic gradients."@en .
+<http://www.w3id.org/Eurocodes/EC1990#HYD> <http://www.w3.org/2000/01/rdf-schema#label> "Hydraulic Failure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#HYD> <http://www.w3.org/2004/02/skos/core#definition> "Hydraulic heave, internal erosion and piping in the ground caused by hydraulic gradients." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ISLS
+<http://www.w3id.org/Eurocodes/EC1990#ISLS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#ISLS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#ISLS> <http://purl.org/dc/terms/source> "UNE-EN 1990:2019, Section 1.5.2.14.1" .
+<http://www.w3id.org/Eurocodes/EC1990#ISLS> <http://www.w3.org/2000/01/rdf-schema#comment> "Serviceability limit state where some consequences of actions exceeding the specified service requirements will remain when the actions are removed."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ISLS> <http://www.w3.org/2000/01/rdf-schema#label> "Irreversible Serviceability Limit State"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ISLS> <http://www.w3.org/2004/02/skos/core#definition> "Serviceability limit state where some consequences of actions exceeding the specified service requirements will remain when the actions are removed." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation
+<http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.5" .
+<http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Accidental design situation involving impact conditions."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Impact Design Situation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation> <http://www.w3.org/2004/02/skos/core#definition> "Accidental design situation involving impact conditions." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation
+<http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.5" .
+<http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Accidental design situation involving local failure conditions."@en .
+<http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Localized Failure Design Situation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation> <http://www.w3.org/2004/02/skos/core#definition> "Accidental design situation involving local failure conditions." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure
+<http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#Structure> .
+<http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure> <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" .
+<http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Large-scale, architecturally significant structure designed to serve as a landmark, memorial, or symbol of cultural, historical, or civic importance."@en .
+<http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Monumental Building Structure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure> <http://www.w3.org/2004/02/skos/core#definition> "Large-scale, architecturally significant structure designed to serve as a landmark, memorial, or symbol of cultural, historical, or civic importance." .
+<http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure> <http://www.w3.org/2004/02/skos/core#example> "national parliment building, museum of significant importance, major cathedral" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation
+<http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#DesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.4" .
+<http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Design situation that is relevant during a period of the same order as the design working life of the structure. Generally refers to conditions of normal use."@en .
+<http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Persistent Design Situation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation> <http://www.w3.org/2004/02/skos/core#definition> "Design situation that is relevant during a period of the same order as the design working life of the structure. Generally refers to conditions of normal use." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#RSLS
+<http://www.w3id.org/Eurocodes/EC1990#RSLS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#RSLS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#RSLS> <http://purl.org/dc/terms/source> "UNE-EN 1990:2019, Section 1.5.2.14.2" .
+<http://www.w3id.org/Eurocodes/EC1990#RSLS> <http://www.w3.org/2000/01/rdf-schema#comment> "Serviceability limit state where no consequences of actions exceeding the specified service requirements will remain when the actions are removed."@en .
+<http://www.w3id.org/Eurocodes/EC1990#RSLS> <http://www.w3.org/2000/01/rdf-schema#label> "Reversible Serviceability Limit State"@en .
+<http://www.w3id.org/Eurocodes/EC1990#RSLS> <http://www.w3.org/2004/02/skos/core#definition> "Serviceability limit state where no consequences of actions exceeding the specified service requirements will remain when the actions are removed." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements
+<http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#Structure> .
+<http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements> <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" .
+<http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements> <http://www.w3.org/2000/01/rdf-schema#comment> "structure designed such that certain primary or secondary structural components can be removed, replaced, or upgraded during its service life without compromising the overall stability, integrity, or usability of the structure."@en .
+<http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements> <http://www.w3.org/2000/01/rdf-schema#label> "Structure with replaceable elements"@en .
+<http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements> <http://www.w3.org/2004/02/skos/core#definition> "structure designed such that certain primary or secondary structural components can be removed, replaced, or upgraded during its service life without compromising the overall stability, integrity, or usability of the structure." .
+<http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements> <http://www.w3.org/2004/02/skos/core#example> "modular steel bridge with replaceable girders, industrial building with precast concrete roof panels" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#STR
+<http://www.w3id.org/Eurocodes/EC1990#STR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#STR> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#STR> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.1(1)P b)" .
+<http://www.w3id.org/Eurocodes/EC1990#STR> <http://www.w3.org/2000/01/rdf-schema#comment> "Internal failure or excessive deformation of the structure or structural members where the strength of construction materials governs."@en .
+<http://www.w3id.org/Eurocodes/EC1990#STR> <http://www.w3.org/2000/01/rdf-schema#label> "Structural Resistance"@en .
+<http://www.w3id.org/Eurocodes/EC1990#STR> <http://www.w3.org/2004/02/skos/core#definition> "Internal failure or excessive deformation of the structure or structural members where the strength of construction materials governs." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation
+<http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#DesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.7" .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Design situation involving exceptional conditions of the structure when subjected to a seismic event."@en .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Seismic Design Situation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation> <http://www.w3.org/2004/02/skos/core#definition> "Design situation involving exceptional conditions of the structure when subjected to a seismic event." .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure
+<http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#Structure> .
+<http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure> <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" .
+<http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "Structre that is intended to be used for a limited period of time, typically to support, protect, or provide access during the execution of permanent works, or to serve a short-term purpose."@en .
+<http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Temporary Structure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure> <http://www.w3.org/2004/02/skos/core#definition> "Structre that is intended to be used for a limited period of time, typically to support, protect, or provide access during the execution of permanent works, or to serve a short-term purpose." .
+<http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure> <http://www.w3.org/2004/02/skos/core#example> "formwork system, steel scaffolding, temoprary bridge" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation
+<http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#DesignSituation> .
+<http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.3" .
+<http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation> <http://www.w3.org/2000/01/rdf-schema#comment> "Design situation that is relevant during a period much shorter than the design working life of the structure and which has a high probability of occurrence, e.g. during construction or repair."@en .
+<http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation> <http://www.w3.org/2000/01/rdf-schema#label> "Transient Design Situation"@en .
+<http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation> <http://www.w3.org/2004/02/skos/core#definition> "Design situation that is relevant during a period much shorter than the design working life of the structure and which has a high probability of occurrence, e.g. during construction or repair." .
+<http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation> <http://www.w3.org/2004/02/skos/core#example> "construction phase, repair operations" .
+# 
+# http://www.w3id.org/Eurocodes/EC1990#UPL
+<http://www.w3id.org/Eurocodes/EC1990#UPL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3id.org/Eurocodes/EC1990#UPL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState> .
+<http://www.w3id.org/Eurocodes/EC1990#UPL> <http://purl.org/dc/terms/source> "EN 1990:2002/A1:2005, Section 6.4.1(1)P e)" .
+<http://www.w3id.org/Eurocodes/EC1990#UPL> <http://www.w3.org/2000/01/rdf-schema#comment> "Loss of equilibrium of the structure or the ground due to uplift by water pressure (buoyancy) or other vertical actions."@en .
+<http://www.w3id.org/Eurocodes/EC1990#UPL> <http://www.w3.org/2000/01/rdf-schema#label> "Uplift Failure"@en .
+<http://www.w3id.org/Eurocodes/EC1990#UPL> <http://www.w3.org/2004/02/skos/core#definition> "Loss of equilibrium of the structure or the ground due to uplift by water pressure (buoyancy) or other vertical actions." .
+# 
+# https://w3id.org/bot#Building
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.w3id.org/Eurocodes/EC1990#Building> <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.2" .
+<http://www.w3id.org/Eurocodes/EC1990#Building> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of construction work for building purposes such as dwelling houses, office buildings, etc."@en .
+<http://www.w3id.org/Eurocodes/EC1990#Building> <http://www.w3.org/2000/01/rdf-schema#label> "Building"@en .
+<http://www.w3id.org/Eurocodes/EC1990#Building> <http://www.w3.org/2004/02/skos/core#definition> "Type of construction work for building purposes such as dwelling houses, office buildings, etc." .
+<http://www.w3id.org/Eurocodes/EC1990#Building> <http://www.w3.org/2004/02/skos/core#example> "dwelling house, office building, industrial building" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
