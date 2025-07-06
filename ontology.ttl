@@ -1,18 +1,22 @@
-@prefix : <http://www.w3id.org/Eurocodes/EC1990#> .
+@prefix : <http://www.w3id.org/eurocodes/ec1990#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.w3id.org/Eurocodes/EC1990#> .
+@base <http://www.w3id.org/eurocodes/ec1990#> .
 
-<http://www.w3id.org/Eurocodes/EC1990#> rdf:type owl:Ontology ;
+<http://www.w3id.org/eurocodes/ec1990#> rdf:type owl:Ontology ;
                                          owl:imports <https://www.w3id.org/bot> ;
                                          <http://creativecommons.org/ns#license> "http://creativecommons.org/licenses/by/3.0/" ;
                                          <http://purl.org/dc/terms/contributor> "Agnieszka Jędrzejewska (Silesian Unviersity of Technology)" ,
                                                                                 "Carlos Ramonell (Politechnic University of Catalonia)" ,
-                                                                                "Maria Laura Leonardi (University of Minho)" ;
-                                         <http://purl.org/dc/terms/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu), Agnieszka Jędrzejewska (agnieszka.jedrzejewska@polsl.pl) and Maria Laura Leonardi (mlauraleonardi@gmail.com)" ;
+                                                                                "Daniel V. Oliveira (ISISE, University of Minho)" ,
+                                                                                "Jose Granja (ISISE, University of Minho)" ,
+                                                                                "Maria Laura Leonardi (ISISE, University of Minho)" ,
+                                                                                "Miguel Azenha (ISISE, University of Minho)" ,
+                                                                                "Rolando Chacon (Politechnic University of Catalonia)" ;
+                                         <http://purl.org/dc/terms/creator> "Carlos Ramonell Cazador (carlos.ramonell@upc.edu), Agnieszka Jędrzejewska (agnieszka.jedrzejewska@polsl.pl), Maria Laura Leonardi (mlauraleonardi@gmail.com), Jose Granja (granja@civil.uminho.pt), Rolando Chacon (rolando.chacon@upc.edu), Daniel V. Oliveira (danvco@civil.uminho.pt), Miguel Azenha (miguel.azenha@civil.uminho.pt)" ;
                                          <http://purl.org/dc/terms/date> "2025-06-30"^^xsd:date ;
                                          <http://purl.org/dc/terms/description> "Core ontology formalising knowledge from Eurocode 0 for automated structural design and verification" ;
                                          <http://purl.org/dc/terms/format> "ttl" ;
@@ -20,7 +24,7 @@
                                          <http://purl.org/dc/terms/modified> "2025-06-30"^^xsd:date ;
                                          <http://purl.org/dc/terms/title> "ECO - Eurocode Core Ontology" ;
                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "ec" ;
-                                         <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/Eurocodes/EC1990#" ;
+                                         <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.w3id.org/eurocodes/ec1990#" ;
                                          owl:versionInfo "1.0.0" ;
                                          <http://www.w3.org/2004/02/skos/core#hasTopConcept> :Action ,
                                                                                              :CombinationOfActions ,
@@ -93,7 +97,7 @@ xsd:date rdf:type rdfs:Datatype .
 <http://qudt.org/3.1.2/schema/qudt/quantityValue> rdf:type owl:ObjectProperty .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#appliesTo
+###  http://www.w3id.org/eurocodes/ec1990#appliesTo
 :appliesTo rdf:type owl:ObjectProperty ;
            rdfs:domain :Action ;
            rdfs:range :StructuralMember ;
@@ -102,7 +106,7 @@ xsd:date rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#definition> "Relates an action to the structural member or structure it acts upon." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#causesEffect
+###  http://www.w3id.org/eurocodes/ec1990#causesEffect
 :causesEffect rdf:type owl:ObjectProperty ;
               rdfs:domain :CombinationOfActions ;
               rdfs:range :EffectOfAction ;
@@ -111,7 +115,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "Relates a combination of actions to the effects it causes in the structure." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#characteristicValue
+###  http://www.w3id.org/eurocodes/ec1990#characteristicValue
 :characteristicValue rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf <http://qudt.org/3.1.2/schema/qudt/quantityValue> ;
                      rdfs:domain <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
@@ -121,7 +125,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Characteristic Value." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#containsAction
+###  http://www.w3id.org/eurocodes/ec1990#containsAction
 :containsAction rdf:type owl:ObjectProperty ;
                 rdfs:domain :CombinationOfActions ;
                 rdfs:range :Action ;
@@ -130,7 +134,7 @@ xsd:date rdf:type rdfs:Datatype .
                 <http://www.w3.org/2004/02/skos/core#definition> "Relates a combination of actions to the individual actions it contains." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember
+###  http://www.w3id.org/eurocodes/ec1990#containsStructuralMember
 :containsStructuralMember rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf <https://w3id.org/bot#hasElement> ;
                           rdfs:domain :StructuralSystem ;
@@ -140,7 +144,7 @@ xsd:date rdf:type rdfs:Datatype .
                           <http://www.w3.org/2004/02/skos/core#definition> "Relates a a structural element with the structural syste." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#designValue
+###  http://www.w3id.org/eurocodes/ec1990#designValue
 :designValue rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf <http://qudt.org/3.1.2/schema/qudt/quantityValue> ;
              rdfs:domain <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
@@ -150,7 +154,7 @@ xsd:date rdf:type rdfs:Datatype .
              <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Design Value." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#forLimitState
+###  http://www.w3id.org/eurocodes/ec1990#forLimitState
 :forLimitState rdf:type owl:ObjectProperty ;
                rdfs:domain :LimitStateValue ;
                rdfs:range :LimitState ;
@@ -159,7 +163,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "Relates a limit state value with its corresponding limit state." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasEffect
+###  http://www.w3id.org/eurocodes/ec1990#hasEffect
 :hasEffect rdf:type owl:ObjectProperty ;
            rdfs:domain :StructuralMember ;
            rdfs:range :EffectOfAction ;
@@ -168,7 +172,7 @@ xsd:date rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#definition> "Relates a structural member to the effect of action." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty
+###  http://www.w3id.org/eurocodes/ec1990#hasGeometricalProperty
 :hasGeometricalProperty rdf:type owl:ObjectProperty ;
                         rdfs:domain :StructuralMember ;
                         rdfs:range :GeometricalProperty ;
@@ -177,7 +181,7 @@ xsd:date rdf:type rdfs:Datatype .
                         <http://www.w3.org/2004/02/skos/core#definition> "Relates a structural member with its geometrical properties." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue
+###  http://www.w3id.org/eurocodes/ec1990#hasLimitStateValue
 :hasLimitStateValue rdf:type owl:ObjectProperty ;
                     rdfs:domain :StructuralMember ;
                     rdfs:range :LimitStateValue ;
@@ -186,7 +190,7 @@ xsd:date rdf:type rdfs:Datatype .
                     <http://www.w3.org/2004/02/skos/core#definition> "Relates a structural member to its capacity for the effect of action." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty
+###  http://www.w3id.org/eurocodes/ec1990#hasMaterialProperty
 :hasMaterialProperty rdf:type owl:ObjectProperty ;
                      rdfs:domain :Material ;
                      rdfs:range :MaterialProperty ;
@@ -195,7 +199,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#definition> "Relates a material with its properties." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember
+###  http://www.w3id.org/eurocodes/ec1990#hasStructuralMember
 :hasStructuralMember rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf <https://w3id.org/bot#hasElement> ;
                      rdfs:domain <https://w3id.org/bot#Zone> ;
@@ -205,7 +209,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#definition> "Relates a a structural element with the zone." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasStructure
+###  http://www.w3id.org/eurocodes/ec1990#hasStructure
 :hasStructure rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <https://w3id.org/bot#hasElement> ;
               rdfs:domain :ConstructionWork ;
@@ -215,7 +219,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "Relates a contrution work with the structure." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasSystem
+###  http://www.w3id.org/eurocodes/ec1990#hasSystem
 :hasSystem rdf:type owl:ObjectProperty ;
            rdfs:domain :Structure ;
            rdfs:range :StructuralSystem ;
@@ -224,7 +228,7 @@ xsd:date rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#definition> "Relates a structure with its structural system." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#imposesCombination
+###  http://www.w3id.org/eurocodes/ec1990#imposesCombination
 :imposesCombination rdf:type owl:ObjectProperty ;
                     rdfs:domain :DesignSituation ;
                     rdfs:range :CombinationOfActions ;
@@ -233,7 +237,7 @@ xsd:date rdf:type rdfs:Datatype .
                     <http://www.w3.org/2004/02/skos/core#definition> "Relates a design situation to the relevant combination." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#isDesignedFor
+###  http://www.w3id.org/eurocodes/ec1990#isDesignedFor
 :isDesignedFor rdf:type owl:ObjectProperty ;
                rdfs:domain :StructuralMember ;
                rdfs:range :DesignSituation ;
@@ -242,7 +246,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "Relates a structural memeber with the design situation it is designed for." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#isMadeOf
+###  http://www.w3id.org/eurocodes/ec1990#isMadeOf
 :isMadeOf rdf:type owl:ObjectProperty ;
           rdfs:domain :StructuralMember ;
           rdfs:range :Material ;
@@ -251,7 +255,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#definition> "Relates a structural member to the material which it is made of." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#lowerValue
+###  http://www.w3id.org/eurocodes/ec1990#lowerValue
 :lowerValue rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://qudt.org/3.1.2/schema/qudt/quantityValue> ;
             rdfs:domain <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
@@ -261,7 +265,7 @@ xsd:date rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Lower Value." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#meanValue
+###  http://www.w3id.org/eurocodes/ec1990#meanValue
 :meanValue rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf <http://qudt.org/3.1.2/schema/qudt/quantityValue> ;
            rdfs:domain <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
@@ -271,7 +275,7 @@ xsd:date rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Mean Value." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#nominalValue
+###  http://www.w3id.org/eurocodes/ec1990#nominalValue
 :nominalValue rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf <http://qudt.org/3.1.2/schema/qudt/quantityValue> ;
               rdfs:domain <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
@@ -281,7 +285,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Nominal Value." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#representativeValue
+###  http://www.w3id.org/eurocodes/ec1990#representativeValue
 :representativeValue rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf <http://qudt.org/3.1.2/schema/qudt/quantityValue> ;
                      rdfs:domain <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
@@ -291,7 +295,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Representative Value." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf
+###  http://www.w3id.org/eurocodes/ec1990#requiresVerficationOf
 :requiresVerficationOf rdf:type owl:ObjectProperty ;
                        rdfs:domain :DesignSituation ;
                        rdfs:range :LimitState ;
@@ -300,7 +304,7 @@ xsd:date rdf:type rdfs:Datatype .
                        <http://www.w3.org/2004/02/skos/core#definition> "Relates a limit state to the combination of actions used for its verification." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#upperValue
+###  http://www.w3id.org/eurocodes/ec1990#upperValue
 :upperValue rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf <http://qudt.org/3.1.2/schema/qudt/quantityValue> ;
             rdfs:domain <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
@@ -310,7 +314,7 @@ xsd:date rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#definition> "Relates a Quantity  with its Upper Value." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect
+###  http://www.w3id.org/eurocodes/ec1990#verifiedAgainstEffect
 :verifiedAgainstEffect rdf:type owl:ObjectProperty ;
                        rdfs:domain :LimitStateValue ;
                        rdfs:range :EffectOfAction ;
@@ -319,7 +323,7 @@ xsd:date rdf:type rdfs:Datatype .
                        <http://www.w3.org/2004/02/skos/core#definition> "Relates a limitstate value with the Action Effect that needs to be verified against." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#verifiedFor
+###  http://www.w3id.org/eurocodes/ec1990#verifiedFor
 :verifiedFor rdf:type owl:ObjectProperty ;
              rdfs:domain :LimitState ;
              rdfs:range :CombinationOfActions ;
@@ -332,7 +336,7 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  http://www.w3id.org/Eurocodes/EC1990#combinationFactor
+###  http://www.w3id.org/eurocodes/ec1990#combinationFactor
 :combinationFactor rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:decimal ;
                    <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.16" ;
@@ -342,7 +346,7 @@ xsd:date rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#definition> "Factor for combination value of a variable action used in ultimate limit state verifications." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife
+###  http://www.w3id.org/eurocodes/ec1990#hasDesignWorkingLife
 :hasDesignWorkingLife rdf:type owl:DatatypeProperty ;
                       rdfs:domain :Structure ;
                       rdfs:range xsd:decimal ;
@@ -351,7 +355,7 @@ xsd:date rdf:type rdfs:Datatype .
                       <http://www.w3.org/2004/02/skos/core#definition> "Period during which a structure or structural component is intended to remain functional and to fulfill its performance requirements without major repair or replacement, assuming appropriate maintenance." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor
+###  http://www.w3id.org/eurocodes/ec1990#hasFrequentFactor
 :hasFrequentFactor rdf:type owl:DatatypeProperty ;
                    rdfs:range xsd:decimal ;
                    <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.17" ;
@@ -361,7 +365,7 @@ xsd:date rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#definition> "Factor for frequent value of a variable action, determined so that either the total time within the reference period during which it is exceeded is only a small given part of the reference period, or the frequency of it being exceeded is limited to a given value." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor
+###  http://www.w3id.org/eurocodes/ec1990#hasPartialFactor
 :hasPartialFactor rdf:type owl:DatatypeProperty ;
                   rdfs:range xsd:decimal ;
                   <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.3.1" ;
@@ -371,7 +375,7 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#definition> "Safety factor applied to actions or material properties to account for uncertainties." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor
+###  http://www.w3id.org/eurocodes/ec1990#hasQuasiPermanentFactor
 :hasQuasiPermanentFactor rdf:type owl:DatatypeProperty ;
                          rdfs:range xsd:decimal ;
                          <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.18" ;
@@ -381,7 +385,7 @@ xsd:date rdf:type rdfs:Datatype .
                          <http://www.w3.org/2004/02/skos/core#definition> "Factor for quasi-permanent value of a variable action, determined so that the total period of time for which it will be exceeded is a large fraction of the reference period." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#isSatisfied
+###  http://www.w3id.org/eurocodes/ec1990#isSatisfied
 :isSatisfied rdf:type owl:DatatypeProperty ;
              rdfs:domain :LimitState ;
              rdfs:range xsd:boolean ;
@@ -390,7 +394,7 @@ xsd:date rdf:type rdfs:Datatype .
              <http://www.w3.org/2004/02/skos/core#definition> "Result of verification of the limit state." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#reductionFactor
+###  http://www.w3id.org/eurocodes/ec1990#reductionFactor
 :reductionFactor rdf:type owl:DatatypeProperty ;
                  rdfs:range xsd:decimal ;
                  <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.3.2" ;
@@ -412,7 +416,7 @@ xsd:date rdf:type rdfs:Datatype .
 <http://qudt.org/3.1.2/schema/qudt/QuantityValue> rdf:type owl:Class .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect
+###  http://www.w3id.org/eurocodes/ec1990#AccelerationEffect
 :AccelerationEffect rdf:type owl:Class ;
                     rdfs:subClassOf :DynamicEffect ;
                     <http://purl.org/dc/terms/source> "EN 1990:2002, Section 4.1.5(2)" ;
@@ -421,7 +425,7 @@ xsd:date rdf:type rdfs:Datatype .
                     <http://www.w3.org/2004/02/skos/core#definition> "Effect involving acceleration of the structure or structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs
+###  http://www.w3id.org/eurocodes/ec1990#AccessibleRoofs
 :AccessibleRoofs rdf:type owl:Class ;
                  rdfs:subClassOf :EurocodeZone ;
                  <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.9" ;
@@ -431,7 +435,7 @@ xsd:date rdf:type rdfs:Datatype .
                  <http://www.w3.org/2004/02/skos/core#example> "Roof used as terraces, gardens, or other occupied spaces" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AccidentalAction
+###  http://www.w3id.org/eurocodes/ec1990#AccidentalAction
 :AccidentalAction rdf:type owl:Class ;
                   rdfs:subClassOf :Action ;
                   <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.5" ;
@@ -442,7 +446,7 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#example> "explosions, impact from vehicles" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination
+###  http://www.w3id.org/eurocodes/ec1990#AccidentalCombination
 :AccidentalCombination rdf:type owl:Class ;
                        rdfs:subClassOf :ULSCombination ;
                        owl:disjointWith :FundamentalCombination ,
@@ -454,7 +458,7 @@ xsd:date rdf:type rdfs:Datatype .
                        <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for accidental design situations in ULS verifications" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation
+###  http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation
 :AccidentalDesignSituation rdf:type owl:Class ;
                            rdfs:subClassOf :DesignSituation ;
                            <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.5" ;
@@ -464,7 +468,7 @@ xsd:date rdf:type rdfs:Datatype .
                            <http://www.w3.org/2004/02/skos/core#example> "fire, explosion, impact, local failure" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction
+###  http://www.w3id.org/eurocodes/ec1990#AccompanyingVariableAction
 :AccompanyingVariableAction rdf:type owl:Class ;
                             rdfs:subClassOf :VariableAction ;
                             owl:disjointWith :LeadingVariableAction ;
@@ -474,7 +478,7 @@ xsd:date rdf:type rdfs:Datatype .
                             <http://www.w3.org/2004/02/skos/core#definition> "." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Action
+###  http://www.w3id.org/eurocodes/ec1990#Action
 :Action rdf:type owl:Class ;
         rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
         <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.1" ;
@@ -485,7 +489,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#example> "dead load, imopsed load, wind load, thermal action" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AngularDeformation
+###  http://www.w3id.org/eurocodes/ec1990#AngularDeformation
 :AngularDeformation rdf:type owl:Class ;
                     rdfs:subClassOf :Deformation ;
                     owl:disjointWith :LinearDeformation ,
@@ -496,7 +500,7 @@ xsd:date rdf:type rdfs:Datatype .
                     <http://www.w3.org/2004/02/skos/core#definition> "Deformation involving rotation or angular change in the structure." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AreaWithTables
+###  http://www.w3id.org/eurocodes/ec1990#AreaWithTables
 :AreaWithTables rdf:type owl:Class ;
                 rdfs:subClassOf :CongregationArea ;
                 <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -506,7 +510,7 @@ xsd:date rdf:type rdfs:Datatype .
                 <http://www.w3.org/2004/02/skos/core#example> "areas in schools, cafés, restaurants, dining halls, reading rooms, receptions" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats
+###  http://www.w3id.org/eurocodes/ec1990#AreasWithFixedSeats
 :AreasWithFixedSeats rdf:type owl:Class ;
                      rdfs:subClassOf :CongregationArea ;
                      <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -516,7 +520,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#example> "areas in churches, theatres or cinemas, conference rooms, lecture halls, assembly halls, waiting rooms, railway waiting rooms" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle
+###  http://www.w3id.org/eurocodes/ec1990#AreasWithoutObstacle
 :AreasWithoutObstacle rdf:type owl:Class ;
                       rdfs:subClassOf :CongregationArea ;
                       <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -526,7 +530,7 @@ xsd:date rdf:type rdfs:Datatype .
                       <http://www.w3.org/2004/02/skos/core#example> "areas in museums, exhibition rooms, etc. and access areas in public and administration buildings, hotels, hospitals, railway station forecourts" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#AxialForce
+###  http://www.w3id.org/eurocodes/ec1990#AxialForce
 :AxialForce rdf:type owl:Class ;
             rdfs:subClassOf :InternalForce ;
             <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -536,7 +540,7 @@ xsd:date rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#definition> "Internal force acting along the axis of structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#BendingMoment
+###  http://www.w3id.org/eurocodes/ec1990#BendingMoment
 :BendingMoment rdf:type owl:Class ;
                rdfs:subClassOf :InternalForce ;
                <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -546,7 +550,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "Internal moment causing bending in structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance
+###  http://www.w3id.org/eurocodes/ec1990#BendingMomentResistance
 :BendingMomentResistance rdf:type owl:Class ;
                          rdfs:subClassOf :Resistance ;
                          rdfs:comment "Design value of the maximum bending moment that a structural cross-section can safely resist without failure."@en ;
@@ -555,12 +559,12 @@ xsd:date rdf:type rdfs:Datatype .
                          <http://www.w3.org/2004/02/skos/core#definition> "Design value of the maximum bending moment that a structural cross-section can safely resist without failure." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Building
+###  http://www.w3id.org/eurocodes/ec1990#Building
 :Building rdf:type owl:Class ;
           rdfs:subClassOf :ConstructionWork .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination
+###  http://www.w3id.org/eurocodes/ec1990#CharacteristicCombination
 :CharacteristicCombination rdf:type owl:Class ;
                            rdfs:subClassOf :SLSCombination ;
                            owl:disjointWith :FrequentCombination ,
@@ -572,12 +576,12 @@ xsd:date rdf:type rdfs:Datatype .
                            <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for irreversible serviceability limit state verifications" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#CharacteristicValue
+###  http://www.w3id.org/eurocodes/ec1990#CharacteristicValue
 :CharacteristicValue rdf:type owl:Class ;
                      rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork
+###  http://www.w3id.org/eurocodes/ec1990#CivilEngineeringWork
 :CivilEngineeringWork rdf:type owl:Class ;
                       rdfs:subClassOf :ConstructionWork ;
                       <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.2" ;
@@ -587,7 +591,7 @@ xsd:date rdf:type rdfs:Datatype .
                       <http://www.w3.org/2004/02/skos/core#example> "bridge, retaining wall, tunnel" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions
+###  http://www.w3id.org/eurocodes/ec1990#CombinationOfActions
 :CombinationOfActions rdf:type owl:Class ;
                       <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.22" ;
                       rdfs:comment "Set of design values used for the verification of the structural reliability for a limit state under the simultaneous influence of different actions."@en ;
@@ -595,7 +599,7 @@ xsd:date rdf:type rdfs:Datatype .
                       <http://www.w3.org/2004/02/skos/core#definition> "Set of design values used for the verification of the structural reliability for a limit state under the simultaneous influence of different actions." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#CompressiveStrength
+###  http://www.w3id.org/eurocodes/ec1990#CompressiveStrength
 :CompressiveStrength rdf:type owl:Class ;
                      rdfs:subClassOf :MaterialProperty ;
                      rdfs:comment "Compressive strenght of a material."@en ;
@@ -603,7 +607,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#definition> "Compressive Strength of a material." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Concrete
+###  http://www.w3id.org/eurocodes/ec1990#Concrete
 :Concrete rdf:type owl:Class ;
           rdfs:subClassOf :Material ;
           rdfs:comment "A composite material consisting of a mixture of cement, water, aggregates (coarse and fine), and, where appropriate, admixtures and additions, which develops its strength by hydration of the cement. "@en ;
@@ -611,7 +615,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#definition> "A composite material consisting of a mixture of cement, water, aggregates (coarse and fine), and, where appropriate, admixtures and additions, which develops its strength by hydration of the cement. " .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#CongregationArea
+###  http://www.w3id.org/eurocodes/ec1990#CongregationArea
 :CongregationArea rdf:type owl:Class ;
                   rdfs:subClassOf :EurocodeZone ;
                   <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -620,7 +624,7 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#definition> "Area where people may congregate (except areas under category A, B, and D)" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ConstructionWork
+###  http://www.w3id.org/eurocodes/ec1990#ConstructionWork
 :ConstructionWork rdf:type owl:Class ;
                   <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.1" ;
                   rdfs:comment "Everything that is constructed or results from construction operations. The term covers both building and civil engineering works comprising structural, non-structural and geotechnical elements."@en ;
@@ -629,7 +633,7 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#example> "building, bridge, nuclea power plant" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#CreepEffect
+###  http://www.w3id.org/eurocodes/ec1990#CreepEffect
 :CreepEffect rdf:type owl:Class ;
              rdfs:subClassOf :TimeDependentEffect ;
              rdfs:comment "Long-term deformation effect due to sustained loading."@en ;
@@ -637,7 +641,7 @@ xsd:date rdf:type rdfs:Datatype .
              <http://www.w3.org/2004/02/skos/core#definition> "Long-term deformation effect due to sustained loading." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#DeadLoad
+###  http://www.w3id.org/eurocodes/ec1990#DeadLoad
 :DeadLoad rdf:type owl:Class ;
           rdfs:subClassOf :PermanentAction ;
           <http://purl.org/dc/terms/source> "EN 1991-1-1:2002" ;
@@ -646,7 +650,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#definition> "." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Deflection
+###  http://www.w3id.org/eurocodes/ec1990#Deflection
 :Deflection rdf:type owl:Class ;
             rdfs:subClassOf :LinearDeformation ;
             <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.6" ;
@@ -656,7 +660,7 @@ xsd:date rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#definition> "Vertical deflction of a structural member." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Deformation
+###  http://www.w3id.org/eurocodes/ec1990#Deformation
 :Deformation rdf:type owl:Class ;
              rdfs:subClassOf :DeformationEffect ;
              <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -665,7 +669,7 @@ xsd:date rdf:type rdfs:Datatype .
              <http://www.w3.org/2004/02/skos/core#definition> "Change in shape or size of a structure or structural member due to actions." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#DeformationEffect
+###  http://www.w3id.org/eurocodes/ec1990#DeformationEffect
 :DeformationEffect rdf:type owl:Class ;
                    rdfs:subClassOf :EffectOfAction ;
                    rdfs:comment "Effect of actions in the form of deformations of the structure or structural members."@en ;
@@ -673,7 +677,7 @@ xsd:date rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions in the form of deformations of the structure or structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Density
+###  http://www.w3id.org/eurocodes/ec1990#Density
 :Density rdf:type owl:Class ;
          rdfs:subClassOf :MaterialProperty ;
          rdfs:comment "Mass per unit volume of a material."@en ;
@@ -681,7 +685,7 @@ xsd:date rdf:type rdfs:Datatype .
          <http://www.w3.org/2004/02/skos/core#definition> "Mass per unit volume of a material." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#DepartmentStore
+###  http://www.w3id.org/eurocodes/ec1990#DepartmentStore
 :DepartmentStore rdf:type owl:Class ;
                  rdfs:subClassOf :ShoppingAreas ;
                  <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -691,7 +695,7 @@ xsd:date rdf:type rdfs:Datatype .
                  <http://www.w3.org/2004/02/skos/core#example> "department stores" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#DesignAction
+###  http://www.w3id.org/eurocodes/ec1990#DesignAction
 :DesignAction rdf:type owl:Class ;
               rdfs:subClassOf :Action ;
               owl:disjointWith :RepresentativeAction ;
@@ -701,7 +705,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "Value ofan action used for limit state verification. A design valueo is btained by multiplying the representative value by the partial factor." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#DesignSituation
+###  http://www.w3id.org/eurocodes/ec1990#DesignSituation
 :DesignSituation rdf:type owl:Class ;
                  <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.2" ;
                  rdfs:comment "Sets of physical conditions representing the real conditions occurring during a certain time interval for which the design will demonstrate that relevant limit states are not exceeded."@en ;
@@ -709,12 +713,12 @@ xsd:date rdf:type rdfs:Datatype .
                  <http://www.w3.org/2004/02/skos/core#definition> "Sets of physical conditions representing the real conditions occurring during a certain time interval for which the design will demonstrate that relevant limit states are not exceeded." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#DesignValue
+###  http://www.w3id.org/eurocodes/ec1990#DesignValue
 :DesignValue rdf:type owl:Class ;
              rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#DirectAction
+###  http://www.w3id.org/eurocodes/ec1990#DirectAction
 :DirectAction rdf:type owl:Class ;
               rdfs:subClassOf :Action ;
               owl:disjointWith :IndirectAction ;
@@ -724,7 +728,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "Set of forces (loads) applied to the structure." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Displacement
+###  http://www.w3id.org/eurocodes/ec1990#Displacement
 :Displacement rdf:type owl:Class ;
               rdfs:subClassOf :LinearDeformation ;
               <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.6" ;
@@ -734,7 +738,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "Horizontal displacement of a structure or structural member." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#DynamicAction
+###  http://www.w3id.org/eurocodes/ec1990#DynamicAction
 :DynamicAction rdf:type owl:Class ;
                rdfs:subClassOf :Action ;
                owl:disjointWith :StaticAction ;
@@ -744,7 +748,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "Action that causes significant acceleration of the structure or structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#DynamicEffect
+###  http://www.w3id.org/eurocodes/ec1990#DynamicEffect
 :DynamicEffect rdf:type owl:Class ;
                rdfs:subClassOf :EffectOfAction ;
                rdfs:comment "Effect of actions involving dynamic response, acceleration, or vibration."@en ;
@@ -752,7 +756,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions involving dynamic response, acceleration, or vibration." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#EffectOfAction
+###  http://www.w3id.org/eurocodes/ec1990#EffectOfAction
 :EffectOfAction rdf:type owl:Class ;
                 rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
                 <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -764,7 +768,7 @@ xsd:date rdf:type rdfs:Datatype .
                 <http://www.w3.org/2004/02/skos/core#example> "internal force, moment, stress, strain, deflection, rotation" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#EurocodeZone
+###  http://www.w3id.org/eurocodes/ec1990#EurocodeZone
 :EurocodeZone rdf:type owl:Class ;
               rdfs:subClassOf <https://w3id.org/bot#Zone> ;
               <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -773,7 +777,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "A space classified according to EN 1991-1-1 usage categories" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#FatigueAction
+###  http://www.w3id.org/eurocodes/ec1990#FatigueAction
 :FatigueAction rdf:type owl:Class ;
                rdfs:subClassOf :Action ;
                <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.7" ;
@@ -782,7 +786,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "Repeated or fluctuating mechanical action applied over time, which may cause failure even if the individual stress cycles are below the material's static strength." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#FatigueEffect
+###  http://www.w3id.org/eurocodes/ec1990#FatigueEffect
 :FatigueEffect rdf:type owl:Class ;
                rdfs:subClassOf :TimeDependentEffect ;
                <http://purl.org/dc/terms/source> "EN 1990:2002, Section 3.1(5)" ;
@@ -791,7 +795,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "Progressive damage effect due to repeated loading cycles." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#FavourableAction
+###  http://www.w3id.org/eurocodes/ec1990#FavourableAction
 :FavourableAction rdf:type owl:Class ;
                   rdfs:subClassOf :Action ;
                   owl:disjointWith :UnfavourableAction ;
@@ -801,7 +805,7 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#definition> "Action that reduces the effect of other actions on a structure, or otherwise contributes to structural safety." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#FixedAction
+###  http://www.w3id.org/eurocodes/ec1990#FixedAction
 :FixedAction rdf:type owl:Class ;
              rdfs:subClassOf :Action ;
              owl:disjointWith :FreeAction ;
@@ -812,7 +816,7 @@ xsd:date rdf:type rdfs:Datatype .
              <http://www.w3.org/2004/02/skos/core#example> "Stored goods in a defined storage area with no alternative placement" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#FreeAction
+###  http://www.w3id.org/eurocodes/ec1990#FreeAction
 :FreeAction rdf:type owl:Class ;
             rdfs:subClassOf :Action ;
             <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.9" ;
@@ -822,7 +826,7 @@ xsd:date rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#example> "Imposed floor load on individual rooms of a multi-storey building" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#FrequentCombination
+###  http://www.w3id.org/eurocodes/ec1990#FrequentCombination
 :FrequentCombination rdf:type owl:Class ;
                      rdfs:subClassOf :SLSCombination ;
                      owl:disjointWith :QuasiPermanentCombination ;
@@ -833,7 +837,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for reversible serviceability limit state verifications" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination
+###  http://www.w3id.org/eurocodes/ec1990#FundamentalCombination
 :FundamentalCombination rdf:type owl:Class ;
                         rdfs:subClassOf :ULSCombination ;
                         owl:disjointWith :SeismicCombination ;
@@ -844,7 +848,7 @@ xsd:date rdf:type rdfs:Datatype .
                         <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for persistent and transient design situations in ULS verifications" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops
+###  http://www.w3id.org/eurocodes/ec1990#GeneralRetailShops
 :GeneralRetailShops rdf:type owl:Class ;
                     rdfs:subClassOf :ShoppingAreas ;
                     <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -854,7 +858,7 @@ xsd:date rdf:type rdfs:Datatype .
                     <http://www.w3.org/2004/02/skos/core#example> "general retail shops" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty
+###  http://www.w3id.org/eurocodes/ec1990#GeometricalProperty
 :GeometricalProperty rdf:type owl:Class ;
                      rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
                      <http://purl.org/dc/terms/source> "EN 1990:2002, Section 4.3" ;
@@ -863,7 +867,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#definition> "Geometrical properties and dimensions of structural elements." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction
+###  http://www.w3id.org/eurocodes/ec1990#GeotechnicalAction
 :GeotechnicalAction rdf:type owl:Class ;
                     rdfs:subClassOf :Action ;
                     <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.7" ;
@@ -872,7 +876,7 @@ xsd:date rdf:type rdfs:Datatype .
                     <http://www.w3.org/2004/02/skos/core#definition> "Action transmitted to the structure by the ground, fill or groundwater." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas
+###  http://www.w3id.org/eurocodes/ec1990#HelicopterLandingAreas
 :HelicopterLandingAreas rdf:type owl:Class ;
                         rdfs:subClassOf :EurocodeZone ;
                         <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.9" ;
@@ -882,7 +886,7 @@ xsd:date rdf:type rdfs:Datatype .
                         <http://www.w3.org/2004/02/skos/core#example> "helicopter landing pads on roofs" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ImposedLoad
+###  http://www.w3id.org/eurocodes/ec1990#ImposedLoad
 :ImposedLoad rdf:type owl:Class ;
              rdfs:subClassOf :VariableAction ;
              owl:disjointWith :SnowLoad ,
@@ -894,7 +898,7 @@ xsd:date rdf:type rdfs:Datatype .
              <http://www.w3.org/2004/02/skos/core#definition> "." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#IndirectAction
+###  http://www.w3id.org/eurocodes/ec1990#IndirectAction
 :IndirectAction rdf:type owl:Class ;
                 rdfs:subClassOf :Action ;
                 <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.1 b)" ;
@@ -903,7 +907,7 @@ xsd:date rdf:type rdfs:Datatype .
                 <http://www.w3.org/2004/02/skos/core#definition> "Set of imposed deformations or accelerations caused for example, by temperature changes, moisture variation, uneven settlement or earthquakes." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#IndustrialUse
+###  http://www.w3id.org/eurocodes/ec1990#IndustrialUse
 :IndustrialUse rdf:type owl:Class ;
                rdfs:subClassOf :IndustrialandStorage ;
                <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.3" ;
@@ -913,7 +917,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#example> "industrial facilities: plant rooms, workshops" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage
+###  http://www.w3id.org/eurocodes/ec1990#IndustrialandStorage
 :IndustrialandStorage rdf:type owl:Class ;
                       rdfs:subClassOf :EurocodeZone ;
                       <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.3" ;
@@ -922,7 +926,7 @@ xsd:date rdf:type rdfs:Datatype .
                       <http://www.w3.org/2004/02/skos/core#definition> "Storage and industrial area" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#InternalForce
+###  http://www.w3id.org/eurocodes/ec1990#InternalForce
 :InternalForce rdf:type owl:Class ;
                rdfs:subClassOf :MechanicalEffect ;
                <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -931,7 +935,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions in the form of internal forces in structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas
+###  http://www.w3id.org/eurocodes/ec1990#LargeCrowdsAreas
 :LargeCrowdsAreas rdf:type owl:Class ;
                   rdfs:subClassOf :CongregationArea ;
                   <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -941,7 +945,7 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#example> "buildings for public events like concert halls, sports halls including stands, terraces and access areas and railway platforms" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction
+###  http://www.w3id.org/eurocodes/ec1990#LeadingVariableAction
 :LeadingVariableAction rdf:type owl:Class ;
                        rdfs:subClassOf :VariableAction ;
                        <http://purl.org/dc/terms/source> "EN 1990:2003 Section 6.4.3.2(2)" ;
@@ -950,7 +954,7 @@ xsd:date rdf:type rdfs:Datatype .
                        <http://www.w3.org/2004/02/skos/core#definition> "." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic
+###  http://www.w3id.org/eurocodes/ec1990#LightVehicleTraffic
 :LightVehicleTraffic rdf:type owl:Class ;
                      rdfs:subClassOf :EurocodeZone ;
                      <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.7" ;
@@ -960,7 +964,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#example> "garages, parking areas, parking halls" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#LimitState
+###  http://www.w3id.org/eurocodes/ec1990#LimitState
 :LimitState rdf:type owl:Class ;
             <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.12" ;
             rdfs:comment "State beyond which the structure no longer fulfils the relevant design criteria."@en ;
@@ -969,7 +973,7 @@ xsd:date rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#editorialNote> "Limit states define critical conditions that must not be exceeded to ensure structural safety and serviceability" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#LimitStateValue
+###  http://www.w3id.org/eurocodes/ec1990#LimitStateValue
 :LimitStateValue rdf:type owl:Class ;
                  rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
                  rdfs:comment "Design resistance or serviceability criterion used for verificatinon of a limit state."@en ;
@@ -977,7 +981,7 @@ xsd:date rdf:type rdfs:Datatype .
                  <http://www.w3.org/2004/02/skos/core#definition> "Design resistance or serviceability criterion used for verificatinon of a limit state." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion
+###  http://www.w3id.org/eurocodes/ec1990#LimitingServicabilityCriterion
 :LimitingServicabilityCriterion rdf:type owl:Class ;
                                 rdfs:subClassOf :LimitStateValue ;
                                 <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.5.1" ;
@@ -987,7 +991,7 @@ xsd:date rdf:type rdfs:Datatype .
                                 <http://www.w3.org/2004/02/skos/core#example> "allowable deflection, allowable crack width" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#LinearDeformation
+###  http://www.w3id.org/eurocodes/ec1990#LinearDeformation
 :LinearDeformation rdf:type owl:Class ;
                    rdfs:subClassOf :Deformation ;
                    owl:disjointWith :VolumetricDeformation ;
@@ -996,12 +1000,12 @@ xsd:date rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#definition> "Deformation involving linear displacement of points in the structure." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#LowerValue
+###  http://www.w3id.org/eurocodes/ec1990#LowerValue
 :LowerValue rdf:type owl:Class ;
             rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Material
+###  http://www.w3id.org/eurocodes/ec1990#Material
 :Material rdf:type owl:Class ;
           <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.3" ;
           rdfs:comment "Indication of the principal structural material."@en ;
@@ -1009,7 +1013,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#definition> "Indication of the principal structural material." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#MaterialProperty
+###  http://www.w3id.org/eurocodes/ec1990#MaterialProperty
 :MaterialProperty rdf:type owl:Class ;
                   rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/Quantity> ;
                   <http://purl.org/dc/terms/source> "EN 1990:2002, Section 4.2" ;
@@ -1018,12 +1022,12 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#definition> "Physical or mechanical property of construction materials." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#MeanValue
+###  http://www.w3id.org/eurocodes/ec1990#MeanValue
 :MeanValue rdf:type owl:Class ;
            rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect
+###  http://www.w3id.org/eurocodes/ec1990#MechanicalEffect
 :MechanicalEffect rdf:type owl:Class ;
                   rdfs:subClassOf :EffectOfAction ;
                   rdfs:comment "Effect of actions in the form of forces, stresses, or strains in structural members."@en ;
@@ -1031,7 +1035,7 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions in the form of forces, stresses, or strains in structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic
+###  http://www.w3id.org/eurocodes/ec1990#MediumVehicleTraffic
 :MediumVehicleTraffic rdf:type owl:Class ;
                       rdfs:subClassOf :EurocodeZone ;
                       <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.7" ;
@@ -1041,12 +1045,12 @@ xsd:date rdf:type rdfs:Datatype .
                       <http://www.w3.org/2004/02/skos/core#example> "access routes, delivery zones, zones accessible to fire engines (≤ 160 kN gross vehicle weight)" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#NominalValue
+###  http://www.w3id.org/eurocodes/ec1990#NominalValue
 :NominalValue rdf:type owl:Class ;
               rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#NormalStress
+###  http://www.w3id.org/eurocodes/ec1990#NormalStress
 :NormalStress rdf:type owl:Class ;
               rdfs:subClassOf :Stress ;
               rdfs:comment "Stress acting in the direction normal to a surface."@en ;
@@ -1054,7 +1058,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "Stress acting in the direction normal to a surface." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#OfficeArea
+###  http://www.w3id.org/eurocodes/ec1990#OfficeArea
 :OfficeArea rdf:type owl:Class ;
             rdfs:subClassOf :EurocodeZone ;
             <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -1064,7 +1068,7 @@ xsd:date rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#example> "General office spaces" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#PermanentAction
+###  http://www.w3id.org/eurocodes/ec1990#PermanentAction
 :PermanentAction rdf:type owl:Class ;
                  rdfs:subClassOf :Action ;
                  owl:disjointWith :VariableAction ;
@@ -1076,7 +1080,7 @@ xsd:date rdf:type rdfs:Datatype .
                  <http://www.w3.org/2004/02/skos/core#example> "self-weight, fixed equipment" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas
+###  http://www.w3id.org/eurocodes/ec1990#PhysicalActivitiesAreas
 :PhysicalActivitiesAreas rdf:type owl:Class ;
                          rdfs:subClassOf :CongregationArea ;
                          <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -1086,7 +1090,7 @@ xsd:date rdf:type rdfs:Datatype .
                          <http://www.w3.org/2004/02/skos/core#example> "dance halls, gymnastic rooms, stages" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#PrincipalStress
+###  http://www.w3id.org/eurocodes/ec1990#PrincipalStress
 :PrincipalStress rdf:type owl:Class ;
                  rdfs:subClassOf :Stress ;
                  rdfs:comment "Maximum or minimum normal stress at a point."@en ;
@@ -1094,7 +1098,7 @@ xsd:date rdf:type rdfs:Datatype .
                  <http://www.w3.org/2004/02/skos/core#definition> "Maximum or minimum normal stress at a point." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination
+###  http://www.w3id.org/eurocodes/ec1990#QuasiPermanentCombination
 :QuasiPermanentCombination rdf:type owl:Class ;
                            rdfs:subClassOf :SLSCombination ;
                            <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.5.3(2)c" ;
@@ -1104,7 +1108,7 @@ xsd:date rdf:type rdfs:Datatype .
                            <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for long-term effects and appearance considerations" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction
+###  http://www.w3id.org/eurocodes/ec1990#QuasiStaticAction
 :QuasiStaticAction rdf:type owl:Class ;
                    rdfs:subClassOf :DynamicAction ;
                    <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.13" ;
@@ -1113,7 +1117,7 @@ xsd:date rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#definition> "Dynamic action represented by an equivalent static action in a static model." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Reaction
+###  http://www.w3id.org/eurocodes/ec1990#Reaction
 :Reaction rdf:type owl:Class ;
           rdfs:subClassOf :EffectOfAction ;
           <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -1122,7 +1126,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#definition> "Support reaction force or moment at structural supports." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction
+###  http://www.w3id.org/eurocodes/ec1990#RepresentativeAction
 :RepresentativeAction rdf:type owl:Class ;
                       rdfs:subClassOf :Action ;
                       <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.20" ;
@@ -1131,12 +1135,12 @@ xsd:date rdf:type rdfs:Datatype .
                       <http://www.w3.org/2004/02/skos/core#definition> "Value ofan action used for limit state verification. A representative value may be the characteristic value or an accompanying value." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#RepresentativeValue
+###  http://www.w3id.org/eurocodes/ec1990#RepresentativeValue
 :RepresentativeValue rdf:type owl:Class ;
                      rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Residential
+###  http://www.w3id.org/eurocodes/ec1990#Residential
 :Residential rdf:type owl:Class ;
              rdfs:subClassOf :EurocodeZone ;
              <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -1146,7 +1150,7 @@ xsd:date rdf:type rdfs:Datatype .
              <http://www.w3.org/2004/02/skos/core#example> "rooms in residential buildings and houses, bedrooms and wards in hospitals, bedrooms in hotels and hostels, kitchens and toilets" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding
+###  http://www.w3id.org/eurocodes/ec1990#ResidentialBuilding
 :ResidentialBuilding rdf:type owl:Class ;
                      rdfs:subClassOf :Building ;
                      <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.2" ;
@@ -1156,7 +1160,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#example> "detached house, apartment building, high-rise residential tower" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Resistance
+###  http://www.w3id.org/eurocodes/ec1990#Resistance
 :Resistance rdf:type owl:Class ;
             rdfs:subClassOf :LimitStateValue ;
             <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.15" ;
@@ -1167,7 +1171,7 @@ xsd:date rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#example> "bending resistance, buckling resistance, tension resistance" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Roof
+###  http://www.w3id.org/eurocodes/ec1990#Roof
 :Roof rdf:type owl:Class ;
       rdfs:subClassOf :EurocodeZone ;
       <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.9" ;
@@ -1177,7 +1181,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#example> "roofs accessible only for maintenance" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Rotation
+###  http://www.w3id.org/eurocodes/ec1990#Rotation
 :Rotation rdf:type owl:Class ;
           rdfs:subClassOf :AngularDeformation ;
           <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -1186,7 +1190,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#definition> "Angular rotation of a structure or structural member." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#SLSCombination
+###  http://www.w3id.org/eurocodes/ec1990#SLSCombination
 :SLSCombination rdf:type owl:Class ;
                 rdfs:subClassOf :CombinationOfActions ;
                 owl:disjointWith :ULSCombination ;
@@ -1196,7 +1200,7 @@ xsd:date rdf:type rdfs:Datatype .
                 <http://www.w3.org/2004/02/skos/core#definition> "Combinations of actions for verifying serviceability limit states." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#SeismicAction
+###  http://www.w3id.org/eurocodes/ec1990#SeismicAction
 :SeismicAction rdf:type owl:Class ;
                rdfs:subClassOf :AccidentalAction ;
                <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.6" ;
@@ -1206,7 +1210,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "Action that arises due to earthquake ground motions." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#SeismicCombination
+###  http://www.w3id.org/eurocodes/ec1990#SeismicCombination
 :SeismicCombination rdf:type owl:Class ;
                     rdfs:subClassOf :ULSCombination ;
                     <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.3.4" ;
@@ -1216,7 +1220,7 @@ xsd:date rdf:type rdfs:Datatype .
                     <http://www.w3.org/2004/02/skos/core#scopeNote> "Used for seismic design situations in ULS verifications" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#SelfWeight
+###  http://www.w3id.org/eurocodes/ec1990#SelfWeight
 :SelfWeight rdf:type owl:Class ;
             rdfs:subClassOf :PermanentAction ;
             <http://purl.org/dc/terms/source> "EN 1991-1-1:2002" ;
@@ -1225,7 +1229,7 @@ xsd:date rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#definition> "." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState
+###  http://www.w3id.org/eurocodes/ec1990#ServiceabilityLimitState
 :ServiceabilityLimitState rdf:type owl:Class ;
                           rdfs:subClassOf :LimitState ;
                           owl:disjointWith :UltimateLimitState ;
@@ -1236,7 +1240,7 @@ xsd:date rdf:type rdfs:Datatype .
                           <http://www.w3.org/2004/02/skos/core#definition> "State that correspond to conditions beyond which specified service requirements for a structure or structural member are no longer met." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ShearForce
+###  http://www.w3id.org/eurocodes/ec1990#ShearForce
 :ShearForce rdf:type owl:Class ;
             rdfs:subClassOf :InternalForce ;
             <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -1246,7 +1250,7 @@ xsd:date rdf:type rdfs:Datatype .
             <http://www.w3.org/2004/02/skos/core#definition> "Internal force acting perpendicular to the axis of structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ShearStress
+###  http://www.w3id.org/eurocodes/ec1990#ShearStress
 :ShearStress rdf:type owl:Class ;
              rdfs:subClassOf :Stress ;
              rdfs:comment "Stress acting in the direction parallel (tangential) to a surface."@en ;
@@ -1254,7 +1258,7 @@ xsd:date rdf:type rdfs:Datatype .
              <http://www.w3.org/2004/02/skos/core#definition> "Stress acting in the direction parallel (tangential) to a surface." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas
+###  http://www.w3id.org/eurocodes/ec1990#ShoppingAreas
 :ShoppingAreas rdf:type owl:Class ;
                rdfs:subClassOf :EurocodeZone ;
                <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.1" ;
@@ -1263,7 +1267,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "Shopping area" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ShrinkageEffect
+###  http://www.w3id.org/eurocodes/ec1990#ShrinkageEffect
 :ShrinkageEffect rdf:type owl:Class ;
                  rdfs:subClassOf :TimeDependentEffect ;
                  rdfs:comment "Deformation effect due to material shrinkage over time."@en ;
@@ -1271,7 +1275,7 @@ xsd:date rdf:type rdfs:Datatype .
                  <http://www.w3.org/2004/02/skos/core#definition> "Deformation effect due to material shrinkage over time." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#SnowLoad
+###  http://www.w3id.org/eurocodes/ec1990#SnowLoad
 :SnowLoad rdf:type owl:Class ;
           rdfs:subClassOf :VariableAction ;
           owl:disjointWith :ThermalAction ,
@@ -1282,7 +1286,7 @@ xsd:date rdf:type rdfs:Datatype .
           <http://www.w3.org/2004/02/skos/core#definition> "." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#StaticAction
+###  http://www.w3id.org/eurocodes/ec1990#StaticAction
 :StaticAction rdf:type owl:Class ;
               rdfs:subClassOf :Action ;
               <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.11" ;
@@ -1291,7 +1295,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#definition> "Action that does not cause significant acceleration of the structure or structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#StorageAreas
+###  http://www.w3id.org/eurocodes/ec1990#StorageAreas
 :StorageAreas rdf:type owl:Class ;
               rdfs:subClassOf :IndustrialandStorage ;
               <http://purl.org/dc/terms/source> "EN 1991-1-1:2002 Table 6.3" ;
@@ -1301,7 +1305,7 @@ xsd:date rdf:type rdfs:Datatype .
               <http://www.w3.org/2004/02/skos/core#example> "areas for storage use including storage of books and other documents: archives, libraries, stockrooms" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Strain
+###  http://www.w3id.org/eurocodes/ec1990#Strain
 :Strain rdf:type owl:Class ;
         rdfs:subClassOf :MechanicalEffect ;
         <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -1310,7 +1314,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#definition> "Deformation per unit length in structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Stress
+###  http://www.w3id.org/eurocodes/ec1990#Stress
 :Stress rdf:type owl:Class ;
         rdfs:subClassOf :MechanicalEffect ;
         <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -1319,7 +1323,7 @@ xsd:date rdf:type rdfs:Datatype .
         <http://www.w3.org/2004/02/skos/core#definition> "Internal stress in structural members due to actions." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#StructuralMember
+###  http://www.w3id.org/eurocodes/ec1990#StructuralMember
 :StructuralMember rdf:type owl:Class ;
                   rdfs:subClassOf <https://w3id.org/bot#Element> ;
                   <http://purl.org/dc/terms/source> "EN 1990:200, Section 1.5.1.7" ;
@@ -1329,7 +1333,7 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#example> "column, beam, slab, foundation pile" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#StructuralSystem
+###  http://www.w3id.org/eurocodes/ec1990#StructuralSystem
 :StructuralSystem rdf:type owl:Class ;
                   <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.9" ;
                   rdfs:comment "Load-bearing members of a building or civil engineering works and the way in which these members function together."@en ;
@@ -1338,7 +1342,7 @@ xsd:date rdf:type rdfs:Datatype .
                   <http://www.w3.org/2004/02/skos/core#example> "Flat-slab system with drop panels, steel potal frame, cable-stayed bridge system, trussed roof system" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Structure
+###  http://www.w3id.org/eurocodes/ec1990#Structure
 :Structure rdf:type owl:Class ;
            <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.1.6" ;
            rdfs:comment "Organised combination of connected parts designed to carry loads and provide adequate rigidity."@en ;
@@ -1347,7 +1351,7 @@ xsd:date rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#example> "Residential building, reatining wall, suspension bridge, underground tunnel" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ThermalAction
+###  http://www.w3id.org/eurocodes/ec1990#ThermalAction
 :ThermalAction rdf:type owl:Class ;
                rdfs:subClassOf :VariableAction ;
                owl:disjointWith :WindAction ;
@@ -1357,7 +1361,7 @@ xsd:date rdf:type rdfs:Datatype .
                <http://www.w3.org/2004/02/skos/core#definition> "." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Thickness
+###  http://www.w3id.org/eurocodes/ec1990#Thickness
 :Thickness rdf:type owl:Class ;
            rdfs:subClassOf :GeometricalProperty ;
            rdfs:comment "Dimension of a structural element measured perpendicular to its plane or surface."@en ;
@@ -1365,7 +1369,7 @@ xsd:date rdf:type rdfs:Datatype .
            <http://www.w3.org/2004/02/skos/core#definition> "Dimension of a structural element measured perpendicular to its plane or surface." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect
+###  http://www.w3id.org/eurocodes/ec1990#TimeDependentEffect
 :TimeDependentEffect rdf:type owl:Class ;
                      rdfs:subClassOf :EffectOfAction ;
                      <http://purl.org/dc/terms/source> "EN 1990:2002, Section 3.1(5)" ;
@@ -1374,7 +1378,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#definition> "Effect of actions that varies with time due to material behavior or other time-related factors." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment
+###  http://www.w3id.org/eurocodes/ec1990#TorsionalMoment
 :TorsionalMoment rdf:type owl:Class ;
                  rdfs:subClassOf :InternalForce ;
                  <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.2" ;
@@ -1384,7 +1388,7 @@ xsd:date rdf:type rdfs:Datatype .
                  <http://www.w3.org/2004/02/skos/core#definition> "Internal moment causing twisting in structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Twist
+###  http://www.w3id.org/eurocodes/ec1990#Twist
 :Twist rdf:type owl:Class ;
        rdfs:subClassOf :AngularDeformation ;
        rdfs:comment "Angular deformation about the longitudinal axis."@en ;
@@ -1392,7 +1396,7 @@ xsd:date rdf:type rdfs:Datatype .
        <http://www.w3.org/2004/02/skos/core#definition> "Angular deformation about the longitudinal axis." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ULSCombination
+###  http://www.w3id.org/eurocodes/ec1990#ULSCombination
 :ULSCombination rdf:type owl:Class ;
                 rdfs:subClassOf :CombinationOfActions ;
                 <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.3" ;
@@ -1401,7 +1405,7 @@ xsd:date rdf:type rdfs:Datatype .
                 <http://www.w3.org/2004/02/skos/core#definition> "Combination of actions for verifying ultimate limit states." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState
+###  http://www.w3id.org/eurocodes/ec1990#UltimateLimitState
 :UltimateLimitState rdf:type owl:Class ;
                     rdfs:subClassOf :LimitState ;
                     <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.13" ;
@@ -1411,7 +1415,7 @@ xsd:date rdf:type rdfs:Datatype .
                     <http://www.w3.org/2004/02/skos/core#definition> "State associated with collapse or with other similar forms of structural failure. They generally correspond to the maximum load-carrying resistance of a structure or structural member." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction
+###  http://www.w3id.org/eurocodes/ec1990#UnfavourableAction
 :UnfavourableAction rdf:type owl:Class ;
                     rdfs:subClassOf :Action ;
                     <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.3.2(3)P" ;
@@ -1420,12 +1424,12 @@ xsd:date rdf:type rdfs:Datatype .
                     <http://www.w3.org/2004/02/skos/core#definition> "An action that increases the effect of other actions on a structure, or otherwise reduces structural safety." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#UpperValue
+###  http://www.w3id.org/eurocodes/ec1990#UpperValue
 :UpperValue rdf:type owl:Class ;
             rdfs:subClassOf <http://qudt.org/3.1.2/schema/qudt/QuantityValue> .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#VariableAction
+###  http://www.w3id.org/eurocodes/ec1990#VariableAction
 :VariableAction rdf:type owl:Class ;
                 rdfs:subClassOf :Action ;
                 <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.3.4" ;
@@ -1436,7 +1440,7 @@ xsd:date rdf:type rdfs:Datatype .
                 <http://www.w3.org/2004/02/skos/core#example> "imposed loads, wind, snow, thermal actions" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#VibrationResponse
+###  http://www.w3id.org/eurocodes/ec1990#VibrationResponse
 :VibrationResponse rdf:type owl:Class ;
                    rdfs:subClassOf :DynamicEffect ;
                    rdfs:comment "Dynamic response of structures to oscillatory actions, important for serviceability considerations."@en ;
@@ -1444,7 +1448,7 @@ xsd:date rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#definition> "Dynamic response of structures to oscillatory actions, important for serviceability considerations." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation
+###  http://www.w3id.org/eurocodes/ec1990#VolumetricDeformation
 :VolumetricDeformation rdf:type owl:Class ;
                        rdfs:subClassOf :Deformation ;
                        rdfs:comment "Deformation involving change in volume of structural elements."@en ;
@@ -1452,7 +1456,7 @@ xsd:date rdf:type rdfs:Datatype .
                        <http://www.w3.org/2004/02/skos/core#definition> "Deformation involving change in volume of structural elements." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#WindAction
+###  http://www.w3id.org/eurocodes/ec1990#WindAction
 :WindAction rdf:type owl:Class ;
             rdfs:subClassOf :VariableAction ;
             <http://purl.org/dc/terms/source> "EN 1991-1-4:2005" ;
@@ -1465,7 +1469,7 @@ xsd:date rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
-###  http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure
+###  http://www.w3id.org/eurocodes/ec1990#AgriculturalStructure
 :AgriculturalStructure rdf:type owl:NamedIndividual ,
                                 :Structure ;
                        <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" ;
@@ -1475,7 +1479,7 @@ xsd:date rdf:type rdfs:Datatype .
                        <http://www.w3.org/2004/02/skos/core#example> "barn, greenhouse, animal shelter" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#BridgeStructure
+###  http://www.w3id.org/eurocodes/ec1990#BridgeStructure
 :BridgeStructure rdf:type owl:NamedIndividual ,
                           :Structure ;
                  <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" ;
@@ -1485,16 +1489,14 @@ xsd:date rdf:type rdfs:Datatype .
                  <http://www.w3.org/2004/02/skos/core#example> "beam bridge, arch bridge, suspension bridge" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#Building
+###  http://www.w3id.org/eurocodes/ec1990#Building
 :Building rdf:type owl:NamedIndividual ;
           owl:sameAs <https://w3id.org/bot#Building> .
 
 
 ###  https://w3id.org/bot#Building
-<https://w3id.org/bot#Building> rdf:type owl:NamedIndividual .
 
-
-###  http://www.w3id.org/Eurocodes/EC1990#BuildingStructure
+###  http://www.w3id.org/eurocodes/ec1990#BuildingStructure
 :BuildingStructure rdf:type owl:NamedIndividual ,
                             :Structure ;
                    <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" ;
@@ -1504,7 +1506,7 @@ xsd:date rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#example> "masonry building, steel frame building, timber-framed house" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure
+###  http://www.w3id.org/eurocodes/ec1990#CivilEngineeringStructure
 :CivilEngineeringStructure rdf:type owl:NamedIndividual ,
                                     :Structure ;
                            <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" ;
@@ -1514,7 +1516,7 @@ xsd:date rdf:type rdfs:Datatype .
                            <http://www.w3.org/2004/02/skos/core#example> "dam, tunnel, airport, retaining wall, power station, road" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#EQU
+###  http://www.w3id.org/eurocodes/ec1990#EQU
 :EQU rdf:type owl:NamedIndividual ,
               :UltimateLimitState ;
      <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.1(1)P a)" ;
@@ -1523,7 +1525,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#definition> "Loss of static equilibrium of the structure or any part of it considered as a rigid body." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation
+###  http://www.w3id.org/eurocodes/ec1990#ExplosionDesignSituation
 :ExplosionDesignSituation rdf:type owl:NamedIndividual ,
                                    :AccidentalDesignSituation ;
                           <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.5" ;
@@ -1532,7 +1534,7 @@ xsd:date rdf:type rdfs:Datatype .
                           <http://www.w3.org/2004/02/skos/core#definition> "Accidental design situation involving explosion conditions." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#FAT
+###  http://www.w3id.org/eurocodes/ec1990#FAT
 :FAT rdf:type owl:NamedIndividual ,
               :UltimateLimitState ;
      <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.1(1)P d)" ;
@@ -1541,7 +1543,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#definition> "Fatigue failure of the structure or structural members." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation
+###  http://www.w3id.org/eurocodes/ec1990#FireDesignSituation
 :FireDesignSituation rdf:type owl:NamedIndividual ,
                               :AccidentalDesignSituation ;
                      <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.5 & 6" ;
@@ -1550,7 +1552,7 @@ xsd:date rdf:type rdfs:Datatype .
                      <http://www.w3.org/2004/02/skos/core#definition> "Accidental design situation involving fire conditions requiring specific design considerations." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#GEO
+###  http://www.w3id.org/eurocodes/ec1990#GEO
 :GEO rdf:type owl:NamedIndividual ,
               :UltimateLimitState ;
      <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.1(1)P c)" ;
@@ -1559,7 +1561,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#definition> "Failure or excessive deformation of the ground where the strengths of soil or rock are significant in providing resistance." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#HYD
+###  http://www.w3id.org/eurocodes/ec1990#HYD
 :HYD rdf:type owl:NamedIndividual ,
               :UltimateLimitState ;
      <http://purl.org/dc/terms/source> "EN 1990:2002/A1:2005, Section 6.4.1(1)P f)" ;
@@ -1568,7 +1570,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#definition> "Hydraulic heave, internal erosion and piping in the ground caused by hydraulic gradients." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ISLS
+###  http://www.w3id.org/eurocodes/ec1990#ISLS
 :ISLS rdf:type owl:NamedIndividual ,
                :ServiceabilityLimitState ;
       <http://purl.org/dc/terms/source> "UNE-EN 1990:2019, Section 1.5.2.14.1" ;
@@ -1577,7 +1579,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#definition> "Serviceability limit state where some consequences of actions exceeding the specified service requirements will remain when the actions are removed." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation
+###  http://www.w3id.org/eurocodes/ec1990#ImpactDesignSituation
 :ImpactDesignSituation rdf:type owl:NamedIndividual ,
                                 :AccidentalDesignSituation ;
                        <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.5" ;
@@ -1586,7 +1588,7 @@ xsd:date rdf:type rdfs:Datatype .
                        <http://www.w3.org/2004/02/skos/core#definition> "Accidental design situation involving impact conditions." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation
+###  http://www.w3id.org/eurocodes/ec1990#LocalizedFailureDesignSituation
 :LocalizedFailureDesignSituation rdf:type owl:NamedIndividual ,
                                           :AccidentalDesignSituation ;
                                  <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.5" ;
@@ -1595,7 +1597,7 @@ xsd:date rdf:type rdfs:Datatype .
                                  <http://www.w3.org/2004/02/skos/core#definition> "Accidental design situation involving local failure conditions." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure
+###  http://www.w3id.org/eurocodes/ec1990#MonumentalBuldingStructure
 :MonumentalBuldingStructure rdf:type owl:NamedIndividual ,
                                      :Structure ;
                             <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" ;
@@ -1605,7 +1607,7 @@ xsd:date rdf:type rdfs:Datatype .
                             <http://www.w3.org/2004/02/skos/core#example> "national parliment building, museum of significant importance, major cathedral" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation
+###  http://www.w3id.org/eurocodes/ec1990#PersistentDesignSituation
 :PersistentDesignSituation rdf:type owl:NamedIndividual ,
                                     :DesignSituation ;
                            <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.4" ;
@@ -1614,7 +1616,7 @@ xsd:date rdf:type rdfs:Datatype .
                            <http://www.w3.org/2004/02/skos/core#definition> "Design situation that is relevant during a period of the same order as the design working life of the structure. Generally refers to conditions of normal use." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#RSLS
+###  http://www.w3id.org/eurocodes/ec1990#RSLS
 :RSLS rdf:type owl:NamedIndividual ,
                :ServiceabilityLimitState ;
       <http://purl.org/dc/terms/source> "UNE-EN 1990:2019, Section 1.5.2.14.2" ;
@@ -1623,7 +1625,7 @@ xsd:date rdf:type rdfs:Datatype .
       <http://www.w3.org/2004/02/skos/core#definition> "Serviceability limit state where no consequences of actions exceeding the specified service requirements will remain when the actions are removed." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements
+###  http://www.w3id.org/eurocodes/ec1990#ReplacableStructuralElements
 :ReplacableStructuralElements rdf:type owl:NamedIndividual ,
                                        :Structure ;
                               <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" ;
@@ -1633,7 +1635,7 @@ xsd:date rdf:type rdfs:Datatype .
                               <http://www.w3.org/2004/02/skos/core#example> "modular steel bridge with replaceable girders, industrial building with precast concrete roof panels" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#STR
+###  http://www.w3id.org/eurocodes/ec1990#STR
 :STR rdf:type owl:NamedIndividual ,
               :UltimateLimitState ;
      <http://purl.org/dc/terms/source> "EN 1990:2002, Section 6.4.1(1)P b)" ;
@@ -1642,7 +1644,7 @@ xsd:date rdf:type rdfs:Datatype .
      <http://www.w3.org/2004/02/skos/core#definition> "Internal failure or excessive deformation of the structure or structural members where the strength of construction materials governs." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation
+###  http://www.w3id.org/eurocodes/ec1990#SeismicDesignSituation
 :SeismicDesignSituation rdf:type owl:NamedIndividual ,
                                  :DesignSituation ;
                         <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.7" ;
@@ -1651,7 +1653,7 @@ xsd:date rdf:type rdfs:Datatype .
                         <http://www.w3.org/2004/02/skos/core#definition> "Design situation involving exceptional conditions of the structure when subjected to a seismic event." .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure
+###  http://www.w3id.org/eurocodes/ec1990#TemporaryStructure
 :TemporaryStructure rdf:type owl:NamedIndividual ,
                              :Structure ;
                     <http://purl.org/dc/terms/source> "EN 1990:2002, Table 2.1" ;
@@ -1661,7 +1663,7 @@ xsd:date rdf:type rdfs:Datatype .
                     <http://www.w3.org/2004/02/skos/core#example> "formwork system, steel scaffolding, temoprary bridge" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation
+###  http://www.w3id.org/eurocodes/ec1990#TransientDesignSituation
 :TransientDesignSituation rdf:type owl:NamedIndividual ,
                                    :DesignSituation ;
                           <http://purl.org/dc/terms/source> "EN 1990:2002, Section 1.5.2.3" ;
@@ -1671,7 +1673,7 @@ xsd:date rdf:type rdfs:Datatype .
                           <http://www.w3.org/2004/02/skos/core#example> "construction phase, repair operations" .
 
 
-###  http://www.w3id.org/Eurocodes/EC1990#UPL
+###  http://www.w3id.org/eurocodes/ec1990#UPL
 :UPL rdf:type owl:NamedIndividual ,
               :UltimateLimitState ;
      <http://purl.org/dc/terms/source> "EN 1990:2002/A1:2005, Section 6.4.1(1)P e)" ;

@@ -44,7 +44,7 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://creativecommons.org/ns#license" : [ {
     "@value" : "http://creativecommons.org/licenses/by/3.0/"
@@ -54,10 +54,18 @@
   }, {
     "@value" : "Carlos Ramonell (Politechnic University of Catalonia)"
   }, {
-    "@value" : "Maria Laura Leonardi (University of Minho)"
+    "@value" : "Daniel V. Oliveira (ISISE, University of Minho)"
+  }, {
+    "@value" : "Jose Granja (ISISE, University of Minho)"
+  }, {
+    "@value" : "Maria Laura Leonardi (ISISE, University of Minho)"
+  }, {
+    "@value" : "Miguel Azenha (ISISE, University of Minho)"
+  }, {
+    "@value" : "Rolando Chacon (Politechnic University of Catalonia)"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu), Agnieszka Jędrzejewska (agnieszka.jedrzejewska@polsl.pl) and Maria Laura Leonardi (mlauraleonardi@gmail.com)"
+    "@value" : "Carlos Ramonell Cazador (carlos.ramonell@upc.edu), Agnieszka Jędrzejewska (agnieszka.jedrzejewska@polsl.pl), Maria Laura Leonardi (mlauraleonardi@gmail.com), Jose Granja (granja@civil.uminho.pt), Rolando Chacon (rolando.chacon@upc.edu), Daniel V. Oliveira (danvco@civil.uminho.pt), Miguel Azenha (miguel.azenha@civil.uminho.pt)"
   } ],
   "http://purl.org/dc/terms/date" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
@@ -83,7 +91,7 @@
     "@value" : "ec"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "http://www.w3id.org/Eurocodes/EC1990#"
+    "@value" : "http://www.w3id.org/eurocodes/ec1990#"
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "https://www.w3id.org/bot"
@@ -92,20 +100,20 @@
     "@value" : "1.0.0"
   } ],
   "http://www.w3.org/2004/02/skos/core#hasTopConcept" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ConstructionWork"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ConstructionWork"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignSituation"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EffectOfAction"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitState"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AccelerationEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 4.1.5(2)"
@@ -119,13 +127,13 @@
     "@value" : "Acceleration Effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DynamicEffect"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DynamicEffect"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Effect involving acceleration of the structure or structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AccessibleRoofs",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.9"
@@ -139,7 +147,7 @@
     "@value" : "Category I - Accessible Roofs"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Roof accessible with occupancy according to categories A to G"
@@ -148,7 +156,7 @@
     "@value" : "Roof used as terraces, gardens, or other occupied spaces"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccidentalAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AccidentalAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.5"
@@ -162,7 +170,7 @@
     "@value" : "Accidental Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "A"
@@ -174,7 +182,7 @@
     "@value" : "explosions, impact from vehicles"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AccidentalCombination",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.4.3.3"
@@ -188,12 +196,12 @@
     "@value" : "Accidental Combination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ULSCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ULSCombination"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#FundamentalCombination"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#SeismicCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#SeismicCombination"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Combination of actions for accidental design situations."
@@ -202,7 +210,7 @@
     "@value" : "Used for accidental design situations in ULS verifications"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.5"
@@ -216,7 +224,7 @@
     "@value" : "Accidental Design Situation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignSituation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Design situation involving exceptional conditions of the structure or its exposure, including fire, explosion, impact or local failure."
@@ -225,7 +233,7 @@
     "@value" : "fire, explosion, impact, local failure"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AccompanyingVariableAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2003 Section 6.4.3.2(2)"
@@ -239,16 +247,16 @@
     "@value" : "Accompanying variable action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#VariableAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#VariableAction"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LeadingVariableAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Action",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.1"
@@ -274,13 +282,13 @@
     "@value" : "dead load, imopsed load, wind load, thermal action"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AgriculturalStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Table 2.1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -297,7 +305,7 @@
     "@value" : "barn, greenhouse, animal shelter"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AngularDeformation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AngularDeformation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -311,18 +319,18 @@
     "@value" : "Angular Deformation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Deformation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Deformation"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LinearDeformation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LinearDeformation"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#VolumetricDeformation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Deformation involving rotation or angular change in the structure."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AreaWithTables",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AreaWithTables",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -336,7 +344,7 @@
     "@value" : "Category C1 - Areas with tables"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CongregationArea"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CongregationArea"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Area with tables"
@@ -345,7 +353,7 @@
     "@value" : "areas in schools, cafés, restaurants, dining halls, reading rooms, receptions"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AreasWithFixedSeats",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -359,7 +367,7 @@
     "@value" : "Category C2 - Areas with fixed seats"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CongregationArea"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CongregationArea"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Area with fixed seats"
@@ -368,7 +376,7 @@
     "@value" : "areas in churches, theatres or cinemas, conference rooms, lecture halls, assembly halls, waiting rooms, railway waiting rooms"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AreasWithoutObstacle",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -382,7 +390,7 @@
     "@value" : "Category C3 - Areas without obstacles"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CongregationArea"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CongregationArea"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Area without obstacles for moving people"
@@ -391,7 +399,7 @@
     "@value" : "areas in museums, exhibition rooms, etc. and access areas in public and administration buildings, hotels, hospitals, railway station forecourts"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#AxialForce",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#AxialForce",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -405,7 +413,7 @@
     "@value" : "Axial Force"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#InternalForce"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#InternalForce"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "N"
@@ -414,7 +422,7 @@
     "@value" : "Internal force acting along the axis of structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#BendingMoment",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#BendingMoment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -428,7 +436,7 @@
     "@value" : "Bending Moment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#InternalForce"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#InternalForce"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "M"
@@ -437,7 +445,7 @@
     "@value" : "Internal moment causing bending in structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#BendingMomentResistance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -448,7 +456,7 @@
     "@value" : "Bending Moment Resistance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Resistance"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Resistance"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "M_Rd"
@@ -457,13 +465,13 @@
     "@value" : "Design value of the maximum bending moment that a structural cross-section can safely resist without failure."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#BridgeStructure",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#BridgeStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Table 2.1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -480,7 +488,7 @@
     "@value" : "beam bridge, arch bridge, suspension bridge"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Building",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Building",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.1.2"
@@ -494,7 +502,7 @@
     "@value" : "Building"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ConstructionWork"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ConstructionWork"
   } ],
   "http://www.w3.org/2002/07/owl#sameAs" : [ {
     "@id" : "https://w3id.org/bot#Building"
@@ -506,13 +514,13 @@
     "@value" : "dwelling house, office building, industrial building"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#BuildingStructure",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#BuildingStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Table 2.1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -529,7 +537,7 @@
     "@value" : "masonry building, steel frame building, timber-framed house"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#CharacteristicCombination",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.5.3(2)a"
@@ -543,12 +551,12 @@
     "@value" : "Characteristic Combination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#SLSCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#SLSCombination"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#FrequentCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#FrequentCombination"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#QuasiPermanentCombination"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Serviceability combination normally used for irreversible limit states."
@@ -557,19 +565,19 @@
     "@value" : "Used for irreversible serviceability limit state verifications"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#CharacteristicValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#CharacteristicValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/QuantityValue"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#CivilEngineeringStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Table 2.1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -586,7 +594,7 @@
     "@value" : "dam, tunnel, airport, retaining wall, power station, road"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#CivilEngineeringWork",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.1.2"
@@ -600,7 +608,7 @@
     "@value" : "Civil Engineering Work"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ConstructionWork"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ConstructionWork"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Type of construction work for civil engineering purposes such as bridges, retaining walls, etc."
@@ -609,7 +617,7 @@
     "@value" : "bridge, retaining wall, tunnel"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#CombinationOfActions",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.22"
@@ -626,7 +634,7 @@
     "@value" : "Set of design values used for the verification of the structural reliability for a limit state under the simultaneous influence of different actions."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#CompressiveStrength",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#CompressiveStrength",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -637,13 +645,13 @@
     "@value" : "Compressive Strength"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#MaterialProperty"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#MaterialProperty"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Compressive Strength of a material."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Concrete",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Concrete",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -654,13 +662,13 @@
     "@value" : "Concrete"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Material"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Material"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "A composite material consisting of a mixture of cement, water, aggregates (coarse and fine), and, where appropriate, admixtures and additions, which develops its strength by hydration of the cement. "
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#CongregationArea",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#CongregationArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -674,13 +682,13 @@
     "@value" : "Category C - Congregation Areas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Area where people may congregate (except areas under category A, B, and D)"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ConstructionWork",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ConstructionWork",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.1.1"
@@ -700,7 +708,7 @@
     "@value" : "building, bridge, nuclea power plant"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#CreepEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#CreepEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -711,13 +719,13 @@
     "@value" : "Creep Effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#TimeDependentEffect"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Long-term deformation effect due to sustained loading."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#DeadLoad",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#DeadLoad",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002"
@@ -731,13 +739,13 @@
     "@value" : "Dead load"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#PermanentAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#PermanentAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Deflection",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Deflection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.6"
@@ -751,7 +759,7 @@
     "@value" : "Deflection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LinearDeformation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LinearDeformation"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "w"
@@ -760,7 +768,7 @@
     "@value" : "Vertical deflction of a structural member."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Deformation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Deformation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -774,13 +782,13 @@
     "@value" : "Deformation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DeformationEffect"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DeformationEffect"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Change in shape or size of a structure or structural member due to actions."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#DeformationEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#DeformationEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -791,13 +799,13 @@
     "@value" : "Deformation Effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EffectOfAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Effect of actions in the form of deformations of the structure or structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Density",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Density",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -808,13 +816,13 @@
     "@value" : "Density"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#MaterialProperty"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#MaterialProperty"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Mass per unit volume of a material."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#DepartmentStore",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#DepartmentStore",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -828,7 +836,7 @@
     "@value" : "Category D2 - Department stores"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ShoppingAreas"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Area in department stores"
@@ -837,7 +845,7 @@
     "@value" : "department stores"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.21"
@@ -851,16 +859,16 @@
     "@value" : "Design Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#RepresentativeAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Value ofan action used for limit state verification. A design valueo is btained by multiplying the representative value by the partial factor."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignSituation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.2"
@@ -877,13 +885,13 @@
     "@value" : "Sets of physical conditions representing the real conditions occurring during a certain time interval for which the design will demonstrate that relevant limit states are not exceeded."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/QuantityValue"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#DirectAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#DirectAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.1 a)"
@@ -897,16 +905,16 @@
     "@value" : "Direct Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#IndirectAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#IndirectAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Set of forces (loads) applied to the structure."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Displacement",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Displacement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.6"
@@ -920,7 +928,7 @@
     "@value" : "Displacement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LinearDeformation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LinearDeformation"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "u"
@@ -929,7 +937,7 @@
     "@value" : "Horizontal displacement of a structure or structural member."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#DynamicAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#DynamicAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.12"
@@ -943,16 +951,16 @@
     "@value" : "Dynamic Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StaticAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StaticAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Action that causes significant acceleration of the structure or structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#DynamicEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#DynamicEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -963,19 +971,19 @@
     "@value" : "Dynamic Effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EffectOfAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Effect of actions involving dynamic response, acceleration, or vibration."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#EQU",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#EQU",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.4.1(1)P a)"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -989,7 +997,7 @@
     "@value" : "Loss of static equilibrium of the structure or any part of it considered as a rigid body."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#EffectOfAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#EffectOfAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -1018,7 +1026,7 @@
     "@value" : "internal force, moment, stress, strain, deflection, rotation"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -1038,13 +1046,13 @@
     "@value" : "A space classified according to EN 1991-1-1 usage categories"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ExplosionDesignSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.5"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1058,13 +1066,13 @@
     "@value" : "Accidental design situation involving explosion conditions."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#FAT",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#FAT",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.4.1(1)P d)"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1078,7 +1086,7 @@
     "@value" : "Fatigue failure of the structure or structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#FatigueAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#FatigueAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.7"
@@ -1092,13 +1100,13 @@
     "@value" : "Fatigue Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Repeated or fluctuating mechanical action applied over time, which may cause failure even if the individual stress cycles are below the material's static strength."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#FatigueEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#FatigueEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 3.1(5)"
@@ -1112,13 +1120,13 @@
     "@value" : "Fatigue Effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#TimeDependentEffect"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Progressive damage effect due to repeated loading cycles."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#FavourableAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#FavourableAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.3.2(3)P"
@@ -1132,22 +1140,22 @@
     "@value" : "Favourable Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#UnfavourableAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Action that reduces the effect of other actions on a structure, or otherwise contributes to structural safety."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#FireDesignSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.5 & 6"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1161,7 +1169,7 @@
     "@value" : "Accidental design situation involving fire conditions requiring specific design considerations."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#FixedAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#FixedAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.8"
@@ -1175,10 +1183,10 @@
     "@value" : "Fixed Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#FreeAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#FreeAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Action that has a fixed distribution and position over the structure or structural member such that the magnitude and direction of the action are determined unambiguously for the whole structure."
@@ -1187,7 +1195,7 @@
     "@value" : "Stored goods in a defined storage area with no alternative placement"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#FreeAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#FreeAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.9"
@@ -1201,7 +1209,7 @@
     "@value" : "Free Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Action that may have various spatial distributions over the structure."
@@ -1210,7 +1218,7 @@
     "@value" : "Imposed floor load on individual rooms of a multi-storey building"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#FrequentCombination",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#FrequentCombination",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.5.3(2)b"
@@ -1224,10 +1232,10 @@
     "@value" : "Frequent Combination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#SLSCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#SLSCombination"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#QuasiPermanentCombination"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Serviceability combination normally used for reversible limit states."
@@ -1236,7 +1244,7 @@
     "@value" : "Used for reversible serviceability limit state verifications"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#FundamentalCombination",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.4.3.2"
@@ -1250,10 +1258,10 @@
     "@value" : "Fundamental Combination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ULSCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ULSCombination"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#SeismicCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#SeismicCombination"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Combination of actions for persistent or transient design situations."
@@ -1262,13 +1270,13 @@
     "@value" : "Used for persistent and transient design situations in ULS verifications"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#GEO",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#GEO",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.4.1(1)P c)"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1282,7 +1290,7 @@
     "@value" : "Failure or excessive deformation of the ground where the strengths of soil or rock are significant in providing resistance."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#GeneralRetailShops",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -1296,7 +1304,7 @@
     "@value" : "Category D1 - General retail shops"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ShoppingAreas"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Area in general retail shops"
@@ -1305,7 +1313,7 @@
     "@value" : "general retail shops"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#GeometricalProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 4.3"
@@ -1325,7 +1333,7 @@
     "@value" : "Geometrical properties and dimensions of structural elements."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#GeotechnicalAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.7"
@@ -1339,19 +1347,19 @@
     "@value" : "Geotechnical Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Action transmitted to the structure by the ground, fill or groundwater."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#HYD",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#HYD",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002/A1:2005, Section 6.4.1(1)P f)"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1365,7 +1373,7 @@
     "@value" : "Hydraulic heave, internal erosion and piping in the ground caused by hydraulic gradients."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#HelicopterLandingAreas",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.9"
@@ -1379,7 +1387,7 @@
     "@value" : "Category K - Helicopter Landing Areas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Roof accessible for special services, such as helicopter landing areas"
@@ -1388,13 +1396,13 @@
     "@value" : "helicopter landing pads on roofs"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ISLS",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ISLS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "UNE-EN 1990:2019, Section 1.5.2.14.1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ServiceabilityLimitState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1408,13 +1416,13 @@
     "@value" : "Serviceability limit state where some consequences of actions exceeding the specified service requirements will remain when the actions are removed."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ImpactDesignSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.5"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1428,7 +1436,7 @@
     "@value" : "Accidental design situation involving impact conditions."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ImposedLoad",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ImposedLoad",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002"
@@ -1442,20 +1450,20 @@
     "@value" : "Imposed load"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#VariableAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#VariableAction"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#SnowLoad"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#SnowLoad"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ThermalAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ThermalAction"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#WindAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#WindAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#IndirectAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#IndirectAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.1 b)"
@@ -1469,13 +1477,13 @@
     "@value" : "Indirect Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Set of imposed deformations or accelerations caused for example, by temperature changes, moisture variation, uneven settlement or earthquakes."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#IndustrialUse",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#IndustrialUse",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.3"
@@ -1489,7 +1497,7 @@
     "@value" : "Category E2 - Industrial use"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#IndustrialandStorage"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Industrial use area"
@@ -1498,7 +1506,7 @@
     "@value" : "industrial facilities: plant rooms, workshops"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#IndustrialandStorage",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.3"
@@ -1512,13 +1520,13 @@
     "@value" : "Category E - Storage and Industrial"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Storage and industrial area"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#InternalForce",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#InternalForce",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -1532,13 +1540,13 @@
     "@value" : "Internal Force"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#MechanicalEffect"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Effect of actions in the form of internal forces in structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#LargeCrowdsAreas",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -1552,7 +1560,7 @@
     "@value" : "Category C5 - Large crowds areas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CongregationArea"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CongregationArea"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Area susceptible to large crowds"
@@ -1561,7 +1569,7 @@
     "@value" : "buildings for public events like concert halls, sports halls including stands, terraces and access areas and railway platforms"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#LeadingVariableAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2003 Section 6.4.3.2(2)"
@@ -1575,13 +1583,13 @@
     "@value" : "Leading variable action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#VariableAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#VariableAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#LightVehicleTraffic",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.7"
@@ -1595,7 +1603,7 @@
     "@value" : "Category F - Light Vehicle Traffic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Traffic and parking area for light vehicles (≤ 30 kN gross vehicle weight and ≤ 8 seats not including driver)"
@@ -1604,7 +1612,7 @@
     "@value" : "garages, parking areas, parking halls"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitState",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitState",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.12"
@@ -1624,7 +1632,7 @@
     "@value" : "Limit states define critical conditions that must not be exceeded to ensure structural safety and serviceability"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitStateValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitStateValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1641,7 +1649,7 @@
     "@value" : "Design resistance or serviceability criterion used for verificatinon of a limit state."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitingServicabilityCriterion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.5.1"
@@ -1655,7 +1663,7 @@
     "@value" : "Limiting Serviceability Criterion"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitStateValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitStateValue"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Limiting design value of the relevant serviceability criterion."
@@ -1664,7 +1672,7 @@
     "@value" : "allowable deflection, allowable crack width"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#LinearDeformation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#LinearDeformation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1675,22 +1683,22 @@
     "@value" : "Linear Deformation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Deformation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Deformation"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#VolumetricDeformation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Deformation involving linear displacement of points in the structure."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#LocalizedFailureDesignSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.5"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1704,13 +1712,13 @@
     "@value" : "Accidental design situation involving local failure conditions."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#LowerValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#LowerValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/QuantityValue"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Material",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Material",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.1.3"
@@ -1727,7 +1735,7 @@
     "@value" : "Indication of the principal structural material."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#MaterialProperty",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#MaterialProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 4.2"
@@ -1747,13 +1755,13 @@
     "@value" : "Physical or mechanical property of construction materials."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#MeanValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#MeanValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/QuantityValue"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#MechanicalEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1764,13 +1772,13 @@
     "@value" : "Mechanical Effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EffectOfAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Effect of actions in the form of forces, stresses, or strains in structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#MediumVehicleTraffic",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.7"
@@ -1784,7 +1792,7 @@
     "@value" : "Category G - Medium Vehicle Traffic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Traffic and parking area for medium vehicles (>30 kN, ≤ 160 kN gross vehicle weight, on 2 axles)"
@@ -1793,13 +1801,13 @@
     "@value" : "access routes, delivery zones, zones accessible to fire engines (≤ 160 kN gross vehicle weight)"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#MonumentalBuldingStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Table 2.1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1816,13 +1824,13 @@
     "@value" : "national parliment building, museum of significant importance, major cathedral"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#NominalValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#NominalValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/QuantityValue"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#NormalStress",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#NormalStress",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1833,13 +1841,13 @@
     "@value" : "Normal Stress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Stress"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Stress"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Stress acting in the direction normal to a surface."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#OfficeArea",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#OfficeArea",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -1853,7 +1861,7 @@
     "@value" : "Category B - Office Areas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Office area"
@@ -1862,7 +1870,7 @@
     "@value" : "General office spaces"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#PermanentAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#PermanentAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.3"
@@ -1876,10 +1884,10 @@
     "@value" : "Permanent Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#VariableAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#VariableAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "G"
@@ -1891,13 +1899,13 @@
     "@value" : "self-weight, fixed equipment"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#PersistentDesignSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.4"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignSituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1911,7 +1919,7 @@
     "@value" : "Design situation that is relevant during a period of the same order as the design working life of the structure. Generally refers to conditions of normal use."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#PhysicalActivitiesAreas",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -1925,7 +1933,7 @@
     "@value" : "Category C4 - Physical activities areas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CongregationArea"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CongregationArea"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Area with possible physical activities"
@@ -1934,7 +1942,7 @@
     "@value" : "dance halls, gymnastic rooms, stages"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#PrincipalStress",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#PrincipalStress",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1945,13 +1953,13 @@
     "@value" : "Principal Stress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Stress"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Stress"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Maximum or minimum normal stress at a point."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#QuasiPermanentCombination",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.5.3(2)c"
@@ -1965,7 +1973,7 @@
     "@value" : "Quasi-Permanent Combination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#SLSCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#SLSCombination"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Serviceability combination normally used for long-term effects and the appearance of the structure."
@@ -1974,7 +1982,7 @@
     "@value" : "Used for long-term effects and appearance considerations"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#QuasiStaticAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.13"
@@ -1988,19 +1996,19 @@
     "@value" : "Quasi-Static Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DynamicAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DynamicAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Dynamic action represented by an equivalent static action in a static model."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#RSLS",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#RSLS",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "UNE-EN 1990:2019, Section 1.5.2.14.2"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ServiceabilityLimitState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2014,7 +2022,7 @@
     "@value" : "Serviceability limit state where no consequences of actions exceeding the specified service requirements will remain when the actions are removed."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Reaction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Reaction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -2028,19 +2036,19 @@
     "@value" : "Reaction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EffectOfAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Support reaction force or moment at structural supports."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ReplacableStructuralElements",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Table 2.1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2057,7 +2065,7 @@
     "@value" : "modular steel bridge with replaceable girders, industrial building with precast concrete roof panels"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#RepresentativeAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.20"
@@ -2071,19 +2079,19 @@
     "@value" : "Representative Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Value ofan action used for limit state verification. A representative value may be the characteristic value or an accompanying value."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#RepresentativeValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#RepresentativeValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/QuantityValue"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Residential",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Residential",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -2097,7 +2105,7 @@
     "@value" : "Category A - Domestic and Residential"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Area for domestic and residential activities"
@@ -2106,7 +2114,7 @@
     "@value" : "rooms in residential buildings and houses, bedrooms and wards in hospitals, bedrooms in hotels and hostels, kitchens and toilets"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ResidentialBuilding",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.1.2"
@@ -2120,7 +2128,7 @@
     "@value" : "Residential Building"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Building"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Building"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Building intended primarily for the accommodation and permanent or temporary residence of individuals or households."
@@ -2129,7 +2137,7 @@
     "@value" : "detached house, apartment building, high-rise residential tower"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Resistance",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Resistance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.15"
@@ -2143,7 +2151,7 @@
     "@value" : "Resistance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitStateValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitStateValue"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "R"
@@ -2155,7 +2163,7 @@
     "@value" : "bending resistance, buckling resistance, tension resistance"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Roof",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Roof",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.9"
@@ -2169,7 +2177,7 @@
     "@value" : "Category H - Roofs"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Roof not accessible except for normal maintenance and repair"
@@ -2178,7 +2186,7 @@
     "@value" : "roofs accessible only for maintenance"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Rotation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Rotation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -2192,13 +2200,13 @@
     "@value" : "Rotation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#AngularDeformation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#AngularDeformation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Angular rotation of a structure or structural member."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#SLSCombination",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#SLSCombination",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.5.3"
@@ -2212,22 +2220,22 @@
     "@value" : "Serviceability Limit State Combination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ULSCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ULSCombination"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Combinations of actions for verifying serviceability limit states."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#STR",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#STR",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.4.1(1)P b)"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2241,7 +2249,7 @@
     "@value" : "Internal failure or excessive deformation of the structure or structural members where the strength of construction materials governs."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#SeismicAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#SeismicAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.6"
@@ -2255,7 +2263,7 @@
     "@value" : "Seismic Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#AccidentalAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#AccidentalAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "A_E"
@@ -2264,7 +2272,7 @@
     "@value" : "Action that arises due to earthquake ground motions."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#SeismicCombination",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#SeismicCombination",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.4.3.4"
@@ -2278,7 +2286,7 @@
     "@value" : "Seismic Combination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ULSCombination"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ULSCombination"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Combination of actions for seismic design situations."
@@ -2287,13 +2295,13 @@
     "@value" : "Used for seismic design situations in ULS verifications"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#SeismicDesignSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.7"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignSituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2307,7 +2315,7 @@
     "@value" : "Design situation involving exceptional conditions of the structure when subjected to a seismic event."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#SelfWeight",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#SelfWeight",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002"
@@ -2321,13 +2329,13 @@
     "@value" : "Self-weight"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#PermanentAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#PermanentAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ServiceabilityLimitState",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.14"
@@ -2341,10 +2349,10 @@
     "@value" : "Serviceability Limit State"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitState"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "SLS"
@@ -2353,7 +2361,7 @@
     "@value" : "State that correspond to conditions beyond which specified service requirements for a structure or structural member are no longer met."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ShearForce",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ShearForce",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -2367,7 +2375,7 @@
     "@value" : "Shear Force"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#InternalForce"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#InternalForce"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "V"
@@ -2376,7 +2384,7 @@
     "@value" : "Internal force acting perpendicular to the axis of structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ShearStress",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ShearStress",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2387,13 +2395,13 @@
     "@value" : "Shear Stress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Stress"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Stress"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Stress acting in the direction parallel (tangential) to a surface."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ShoppingAreas",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.1"
@@ -2407,13 +2415,13 @@
     "@value" : "Category D - Shopping Areas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EurocodeZone"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Shopping area"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ShrinkageEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ShrinkageEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2424,13 +2432,13 @@
     "@value" : "Shrinkage Effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#TimeDependentEffect"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Deformation effect due to material shrinkage over time."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#SnowLoad",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#SnowLoad",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-3:2003"
@@ -2444,18 +2452,18 @@
     "@value" : "Snow load"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#VariableAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#VariableAction"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ThermalAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ThermalAction"
   }, {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#WindAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#WindAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#StaticAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#StaticAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.11"
@@ -2469,13 +2477,13 @@
     "@value" : "Static Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Action that does not cause significant acceleration of the structure or structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#StorageAreas",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#StorageAreas",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-1:2002 Table 6.3"
@@ -2489,7 +2497,7 @@
     "@value" : "Category E1 - Storage areas"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#IndustrialandStorage"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Area susceptible to accumulation of goods, including access areas"
@@ -2498,7 +2506,7 @@
     "@value" : "areas for storage use including storage of books and other documents: archives, libraries, stockrooms"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Strain",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Strain",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -2512,13 +2520,13 @@
     "@value" : "Strain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#MechanicalEffect"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Deformation per unit length in structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Stress",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Stress",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -2532,13 +2540,13 @@
     "@value" : "Stress"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#MechanicalEffect"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Internal stress in structural members due to actions."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralMember",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralMember",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:200, Section 1.5.1.7"
@@ -2561,7 +2569,7 @@
     "@value" : "column, beam, slab, foundation pile"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralSystem",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.1.9"
@@ -2581,7 +2589,7 @@
     "@value" : "Flat-slab system with drop panels, steel potal frame, cable-stayed bridge system, trussed roof system"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.1.6"
@@ -2601,13 +2609,13 @@
     "@value" : "Residential building, reatining wall, suspension bridge, underground tunnel"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#TemporaryStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Table 2.1"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2624,7 +2632,7 @@
     "@value" : "formwork system, steel scaffolding, temoprary bridge"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ThermalAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ThermalAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-5:2003"
@@ -2638,16 +2646,16 @@
     "@value" : "Thermal action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#VariableAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#VariableAction"
   } ],
   "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#WindAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#WindAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Thickness",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Thickness",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2658,13 +2666,13 @@
     "@value" : "Thickness"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#GeometricalProperty"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Dimension of a structural element measured perpendicular to its plane or surface."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#TimeDependentEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 3.1(5)"
@@ -2678,13 +2686,13 @@
     "@value" : "Time-Dependent Effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EffectOfAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Effect of actions that varies with time due to material behavior or other time-related factors."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#TorsionalMoment",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.2"
@@ -2698,7 +2706,7 @@
     "@value" : "Torsional Moment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#InternalForce"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#InternalForce"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "T"
@@ -2707,13 +2715,13 @@
     "@value" : "Internal moment causing twisting in structural members."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#TransientDesignSituation",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.3"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignSituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2730,7 +2738,7 @@
     "@value" : "construction phase, repair operations"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#Twist",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#Twist",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2741,13 +2749,13 @@
     "@value" : "Twist"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#AngularDeformation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#AngularDeformation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Angular deformation about the longitudinal axis."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#ULSCombination",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#ULSCombination",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.4.3"
@@ -2761,19 +2769,19 @@
     "@value" : "Ultimate Limit State Combination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Combination of actions for verifying ultimate limit states."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#UPL",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#UPL",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002/A1:2005, Section 6.4.1(1)P e)"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2787,7 +2795,7 @@
     "@value" : "Loss of equilibrium of the structure or the ground due to uplift by water pressure (buoyancy) or other vertical actions."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#UltimateLimitState",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.2.13"
@@ -2801,7 +2809,7 @@
     "@value" : "Ultimate Limit State"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitState"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "ULS"
@@ -2810,7 +2818,7 @@
     "@value" : "State associated with collapse or with other similar forms of structural failure. They generally correspond to the maximum load-carrying resistance of a structure or structural member."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#UnfavourableAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.3.2(3)P"
@@ -2824,19 +2832,19 @@
     "@value" : "UnfavourableAction Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "An action that increases the effect of other actions on a structure, or otherwise reduces structural safety."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#UpperValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#UpperValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/QuantityValue"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#VariableAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#VariableAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.4"
@@ -2850,7 +2858,7 @@
     "@value" : "Variable Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2004/02/skos/core#altLabel" : [ {
     "@value" : "Q"
@@ -2862,7 +2870,7 @@
     "@value" : "imposed loads, wind, snow, thermal actions"
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#VibrationResponse",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#VibrationResponse",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2873,13 +2881,13 @@
     "@value" : "Vibration Response"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DynamicEffect"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DynamicEffect"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Dynamic response of structures to oscillatory actions, important for serviceability considerations."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#VolumetricDeformation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2890,13 +2898,13 @@
     "@value" : "Volumetric Deformation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Deformation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Deformation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Deformation involving change in volume of structural elements."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#WindAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#WindAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1991-1-4:2005"
@@ -2910,53 +2918,53 @@
     "@value" : "Wind action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#VariableAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#VariableAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#appliesTo",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#appliesTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates an action to the structural member or structure it acts upon."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "applies to"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralMember"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralMember"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates an action to the structural member or structure it acts upon."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#causesEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#causesEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a combination of actions to the effects it causes in the structure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "causes effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EffectOfAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a combination of actions to the effects it causes in the structure."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#characteristicValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#characteristicValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2970,7 +2978,7 @@
     "@value" : "characteristic value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CharacteristicValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CharacteristicValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/quantityValue"
@@ -2979,7 +2987,7 @@
     "@value" : "Relates a Quantity  with its Characteristic Value."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#combinationFactor",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#combinationFactor",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.16"
@@ -3002,41 +3010,41 @@
     "@value" : "Factor for combination value of a variable action used in ultimate limit state verifications."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#containsAction",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#containsAction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a combination of actions to the individual actions it contains."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "contains action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Action"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Action"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a combination of actions to the individual actions it contains."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#containsStructuralMember",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a a structural element with the structural syste."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralSystem"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralSystem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "contains structural member"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralMember"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralMember"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/bot#hasElement"
@@ -3045,7 +3053,7 @@
     "@value" : "Relates a a structural element with the structural syste."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#designValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#designValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3059,7 +3067,7 @@
     "@value" : "design value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/quantityValue"
@@ -3068,34 +3076,34 @@
     "@value" : "Relates a Quantity  with its Design Value."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#forLimitState",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#forLimitState",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a limit state value with its corresponding limit state."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitStateValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitStateValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "for limit state"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitState"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a limit state value with its corresponding limit state."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasDesignWorkingLife",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Period during which a structure or structural component is intended to remain functional and to fulfill its performance requirements without major repair or replacement, assuming appropriate maintenance."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3108,27 +3116,27 @@
     "@value" : "Period during which a structure or structural component is intended to remain functional and to fulfill its performance requirements without major repair or replacement, assuming appropriate maintenance."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a structural member to the effect of action."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralMember"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralMember"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has effect"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EffectOfAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a structural member to the effect of action."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasFrequentFactor",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.17"
@@ -3151,67 +3159,67 @@
     "@value" : "Factor for frequent value of a variable action, determined so that either the total time within the reference period during which it is exceeded is only a small given part of the reference period, or the frequency of it being exceeded is limited to a given value."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasGeometricalProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a structural member with its geometrical properties."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralMember"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralMember"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has geometrical property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#GeometricalProperty"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a structural member with its geometrical properties."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasLimitStateValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a structural member to its capacity for the effect of action."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralMember"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralMember"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has limit state value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitStateValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitStateValue"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a structural member to its capacity for the effect of action."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasMaterialProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a material with its properties."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Material"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Material"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#MaterialProperty"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#MaterialProperty"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a material with its properties."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasPartialFactor",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.3.1"
@@ -3234,7 +3242,7 @@
     "@value" : "Safety factor applied to actions or material properties to account for uncertainties."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasQuasiPermanentFactor",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 1.5.3.18"
@@ -3257,7 +3265,7 @@
     "@value" : "Factor for quasi-permanent value of a variable action, determined so that the total period of time for which it will be exceeded is a large fraction of the reference period."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasStructuralMember",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3271,7 +3279,7 @@
     "@value" : "has structural member"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralMember"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralMember"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/bot#hasElement"
@@ -3280,21 +3288,21 @@
     "@value" : "Relates a a structural element with the zone."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasStructure",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a contrution work with the structure."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#ConstructionWork"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#ConstructionWork"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "https://w3id.org/bot#hasElement"
@@ -3303,94 +3311,94 @@
     "@value" : "Relates a contrution work with the structure."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#hasSystem",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a structure with its structural system."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Structure"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has system"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralSystem"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralSystem"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a structure with its structural system."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#imposesCombination",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#imposesCombination",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a design situation to the relevant combination."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignSituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "imposes combination"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a design situation to the relevant combination."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#isDesignedFor",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#isDesignedFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a structural memeber with the design situation it is designed for."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralMember"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralMember"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is designed for"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignSituation"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a structural memeber with the design situation it is designed for."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#isMadeOf",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#isMadeOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a structural member to the material which it is made of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#StructuralMember"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#StructuralMember"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is made of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#Material"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#Material"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a structural member to the material which it is made of."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#isSatisfied",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#isSatisfied",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Result of verification of the limit state."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3403,7 +3411,7 @@
     "@value" : "Result of verification of the limit state."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#lowerValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#lowerValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3417,7 +3425,7 @@
     "@value" : "lower value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LowerValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LowerValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/quantityValue"
@@ -3426,7 +3434,7 @@
     "@value" : "Relates a Quantity  with its Lower Value."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#meanValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#meanValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3440,7 +3448,7 @@
     "@value" : "mean value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#MeanValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#MeanValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/quantityValue"
@@ -3449,7 +3457,7 @@
     "@value" : "Relates a Quantity  with its Mean Value."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#nominalValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#nominalValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3463,7 +3471,7 @@
     "@value" : "nominal value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#NominalValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#NominalValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/quantityValue"
@@ -3472,7 +3480,7 @@
     "@value" : "Relates a Quantity  with its Nominal Value."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#reductionFactor",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#reductionFactor",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://purl.org/dc/terms/source" : [ {
     "@value" : "EN 1990:2002, Section 6.4.3.2"
@@ -3495,7 +3503,7 @@
     "@value" : "Reduction factor for unfavourable permanent action."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#representativeValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#representativeValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3509,7 +3517,7 @@
     "@value" : "representative value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#RepresentativeValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#RepresentativeValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/quantityValue"
@@ -3518,27 +3526,27 @@
     "@value" : "Relates a Quantity  with its Representative Value."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#requiresVerficationOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a limit state to the combination of actions used for its verification."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#DesignSituation"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#DesignSituation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "requires verification of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitState"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a limit state to the combination of actions used for its verification."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#upperValue",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#upperValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3552,7 +3560,7 @@
     "@value" : "upper value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#UpperValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#UpperValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://qudt.org/3.1.2/schema/qudt/quantityValue"
@@ -3561,41 +3569,41 @@
     "@value" : "Relates a Quantity  with its Upper Value."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#verifiedAgainstEffect",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a limitstate value with the Action Effect that needs to be verified against."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitStateValue"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitStateValue"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has limit state value"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#EffectOfAction"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a limitstate value with the Action Effect that needs to be verified against."
   } ]
 }, {
-  "@id" : "http://www.w3id.org/Eurocodes/EC1990#verifiedFor",
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#verifiedFor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Relates a limit state to the combination of actions used for its verification."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#LimitState"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#LimitState"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "verified for"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"
+    "@id" : "http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"
   } ],
   "http://www.w3.org/2004/02/skos/core#definition" : [ {
     "@value" : "Relates a limit state to the combination of actions used for its verification."

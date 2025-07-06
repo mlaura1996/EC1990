@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3id.org/Eurocodes/EC1990#"
-     xml:base="http://www.w3id.org/Eurocodes/EC1990"
+<rdf:RDF xmlns="http://www.w3id.org/eurocodes/ec1990#"
+     xml:base="http://www.w3id.org/eurocodes/ec1990"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:ns1="http://creativecommons.org/ns#"
      xmlns:ns2="http://www.w3.org/2006/vcard/ns#"
@@ -13,13 +13,17 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="https://schema.org/">
-    <owl:Ontology rdf:about="http://www.w3id.org/Eurocodes/EC1990#">
+    <owl:Ontology rdf:about="http://www.w3id.org/eurocodes/ec1990#">
         <owl:imports rdf:resource="https://www.w3id.org/bot"/>
         <ns1:license>http://creativecommons.org/licenses/by/3.0/</ns1:license>
         <terms:contributor>Agnieszka Jędrzejewska (Silesian Unviersity of Technology)</terms:contributor>
         <terms:contributor>Carlos Ramonell (Politechnic University of Catalonia)</terms:contributor>
-        <terms:contributor>Maria Laura Leonardi (University of Minho)</terms:contributor>
-        <terms:creator>Carlos Ramonell Cazador (carlos.ramonell@upc.edu), Agnieszka Jędrzejewska (agnieszka.jedrzejewska@polsl.pl) and Maria Laura Leonardi (mlauraleonardi@gmail.com)</terms:creator>
+        <terms:contributor>Daniel V. Oliveira (ISISE, University of Minho)</terms:contributor>
+        <terms:contributor>Jose Granja (ISISE, University of Minho)</terms:contributor>
+        <terms:contributor>Maria Laura Leonardi (ISISE, University of Minho)</terms:contributor>
+        <terms:contributor>Miguel Azenha (ISISE, University of Minho)</terms:contributor>
+        <terms:contributor>Rolando Chacon (Politechnic University of Catalonia)</terms:contributor>
+        <terms:creator>Carlos Ramonell Cazador (carlos.ramonell@upc.edu), Agnieszka Jędrzejewska (agnieszka.jedrzejewska@polsl.pl), Maria Laura Leonardi (mlauraleonardi@gmail.com), Jose Granja (granja@civil.uminho.pt), Rolando Chacon (rolando.chacon@upc.edu), Daniel V. Oliveira (danvco@civil.uminho.pt), Miguel Azenha (miguel.azenha@civil.uminho.pt)</terms:creator>
         <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-06-30</terms:date>
         <terms:description>Core ontology formalising knowledge from Eurocode 0 for automated structural design and verification</terms:description>
         <terms:format>ttl</terms:format>
@@ -27,14 +31,14 @@
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-06-30</terms:modified>
         <terms:title>ECO - Eurocode Core Ontology</terms:title>
         <vann:preferredNamespacePrefix>ec</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>http://www.w3id.org/Eurocodes/EC1990#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>http://www.w3id.org/eurocodes/ec1990#</vann:preferredNamespaceUri>
         <owl:versionInfo>1.0.0</owl:versionInfo>
-        <skos:hasTopConcept rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
-        <skos:hasTopConcept rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"/>
-        <skos:hasTopConcept rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ConstructionWork"/>
-        <skos:hasTopConcept rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DesignSituation"/>
-        <skos:hasTopConcept rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"/>
-        <skos:hasTopConcept rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitState"/>
+        <skos:hasTopConcept rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
+        <skos:hasTopConcept rdf:resource="http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"/>
+        <skos:hasTopConcept rdf:resource="http://www.w3id.org/eurocodes/ec1990#ConstructionWork"/>
+        <skos:hasTopConcept rdf:resource="http://www.w3id.org/eurocodes/ec1990#DesignSituation"/>
+        <skos:hasTopConcept rdf:resource="http://www.w3id.org/eurocodes/ec1990#EffectOfAction"/>
+        <skos:hasTopConcept rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitState"/>
     </owl:Ontology>
     
 
@@ -166,12 +170,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#appliesTo -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#appliesTo -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#appliesTo">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StructuralMember"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#appliesTo">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#StructuralMember"/>
         <rdfs:comment xml:lang="en">Relates an action to the structural member or structure it acts upon.</rdfs:comment>
         <rdfs:label xml:lang="en">applies to</rdfs:label>
         <skos:definition>Relates an action to the structural member or structure it acts upon.</skos:definition>
@@ -179,12 +183,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#causesEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#causesEffect -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#causesEffect">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#causesEffect">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#EffectOfAction"/>
         <rdfs:comment xml:lang="en">Relates a combination of actions to the effects it causes in the structure.</rdfs:comment>
         <rdfs:label xml:lang="en">causes effect</rdfs:label>
         <skos:definition>Relates a combination of actions to the effects it causes in the structure.</skos:definition>
@@ -192,13 +196,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#characteristicValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#characteristicValue -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#characteristicValue">
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#characteristicValue">
         <rdfs:subPropertyOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/quantityValue"/>
         <rdfs:domain rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CharacteristicValue"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#CharacteristicValue"/>
         <rdfs:comment xml:lang="en">Relates a Quantity  with its Characteristic Value.</rdfs:comment>
         <rdfs:label xml:lang="en">characteristic value</rdfs:label>
         <skos:definition>Relates a Quantity  with its Characteristic Value.</skos:definition>
@@ -206,12 +210,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#containsAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#containsAction -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#containsAction">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#containsAction">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
         <rdfs:comment xml:lang="en">Relates a combination of actions to the individual actions it contains.</rdfs:comment>
         <rdfs:label xml:lang="en">contains action</rdfs:label>
         <skos:definition>Relates a combination of actions to the individual actions it contains.</skos:definition>
@@ -219,13 +223,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#containsStructuralMember -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#containsStructuralMember">
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#containsStructuralMember">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/bot#hasElement"/>
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StructuralSystem"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StructuralMember"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#StructuralSystem"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#StructuralMember"/>
         <rdfs:comment xml:lang="en">Relates a a structural element with the structural syste.</rdfs:comment>
         <rdfs:label xml:lang="en">contains structural member</rdfs:label>
         <skos:definition>Relates a a structural element with the structural syste.</skos:definition>
@@ -233,13 +237,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#designValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#designValue -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#designValue">
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#designValue">
         <rdfs:subPropertyOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/quantityValue"/>
         <rdfs:domain rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DesignValue"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#DesignValue"/>
         <rdfs:comment xml:lang="en">Relates a Quantity  with its Design Value.</rdfs:comment>
         <rdfs:label xml:lang="en">design value</rdfs:label>
         <skos:definition>Relates a Quantity  with its Design Value.</skos:definition>
@@ -247,12 +251,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#forLimitState -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#forLimitState -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#forLimitState">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitStateValue"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitState"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#forLimitState">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitStateValue"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitState"/>
         <rdfs:comment xml:lang="en">Relates a limit state value with its corresponding limit state.</rdfs:comment>
         <rdfs:label xml:lang="en">for limit state</rdfs:label>
         <skos:definition>Relates a limit state value with its corresponding limit state.</skos:definition>
@@ -260,12 +264,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasEffect -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasEffect">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StructuralMember"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasEffect">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#StructuralMember"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#EffectOfAction"/>
         <rdfs:comment xml:lang="en">Relates a structural member to the effect of action.</rdfs:comment>
         <rdfs:label xml:lang="en">has effect</rdfs:label>
         <skos:definition>Relates a structural member to the effect of action.</skos:definition>
@@ -273,12 +277,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasGeometricalProperty -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasGeometricalProperty">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StructuralMember"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasGeometricalProperty">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#StructuralMember"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#GeometricalProperty"/>
         <rdfs:comment xml:lang="en">Relates a structural member with its geometrical properties.</rdfs:comment>
         <rdfs:label xml:lang="en">has geometrical property</rdfs:label>
         <skos:definition>Relates a structural member with its geometrical properties.</skos:definition>
@@ -286,12 +290,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasLimitStateValue -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasLimitStateValue">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StructuralMember"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitStateValue"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasLimitStateValue">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#StructuralMember"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitStateValue"/>
         <rdfs:comment xml:lang="en">Relates a structural member to its capacity for the effect of action.</rdfs:comment>
         <rdfs:label xml:lang="en">has limit state value</rdfs:label>
         <skos:definition>Relates a structural member to its capacity for the effect of action.</skos:definition>
@@ -299,12 +303,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasMaterialProperty -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasMaterialProperty">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Material"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#MaterialProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasMaterialProperty">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#Material"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#MaterialProperty"/>
         <rdfs:comment xml:lang="en">Relates a material with its properties.</rdfs:comment>
         <rdfs:label xml:lang="en">has Property</rdfs:label>
         <skos:definition>Relates a material with its properties.</skos:definition>
@@ -312,13 +316,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasStructuralMember -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasStructuralMember">
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasStructuralMember">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/bot#hasElement"/>
         <rdfs:domain rdf:resource="https://w3id.org/bot#Zone"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StructuralMember"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#StructuralMember"/>
         <rdfs:comment xml:lang="en">Relates a a structural element with the zone.</rdfs:comment>
         <rdfs:label xml:lang="en">has structural member</rdfs:label>
         <skos:definition>Relates a a structural element with the zone.</skos:definition>
@@ -326,13 +330,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasStructure -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasStructure -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasStructure">
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasStructure">
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/bot#hasElement"/>
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ConstructionWork"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Structure"/>
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#ConstructionWork"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#Structure"/>
         <rdfs:comment xml:lang="en">Relates a contrution work with the structure.</rdfs:comment>
         <rdfs:label xml:lang="en">has structure</rdfs:label>
         <skos:definition>Relates a contrution work with the structure.</skos:definition>
@@ -340,12 +344,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasSystem -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasSystem -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasSystem">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Structure"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StructuralSystem"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasSystem">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#Structure"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#StructuralSystem"/>
         <rdfs:comment xml:lang="en">Relates a structure with its structural system.</rdfs:comment>
         <rdfs:label xml:lang="en">has system</rdfs:label>
         <skos:definition>Relates a structure with its structural system.</skos:definition>
@@ -353,12 +357,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#imposesCombination -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#imposesCombination -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#imposesCombination">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DesignSituation"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#imposesCombination">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#DesignSituation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"/>
         <rdfs:comment xml:lang="en">Relates a design situation to the relevant combination.</rdfs:comment>
         <rdfs:label xml:lang="en">imposes combination</rdfs:label>
         <skos:definition>Relates a design situation to the relevant combination.</skos:definition>
@@ -366,12 +370,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#isDesignedFor -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#isDesignedFor -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#isDesignedFor">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StructuralMember"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DesignSituation"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#isDesignedFor">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#StructuralMember"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#DesignSituation"/>
         <rdfs:comment xml:lang="en">Relates a structural memeber with the design situation it is designed for.</rdfs:comment>
         <rdfs:label xml:lang="en">is designed for</rdfs:label>
         <skos:definition>Relates a structural memeber with the design situation it is designed for.</skos:definition>
@@ -379,12 +383,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#isMadeOf -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#isMadeOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#isMadeOf">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StructuralMember"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Material"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#isMadeOf">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#StructuralMember"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#Material"/>
         <rdfs:comment xml:lang="en">Relates a structural member to the material which it is made of.</rdfs:comment>
         <rdfs:label xml:lang="en">is made of</rdfs:label>
         <skos:definition>Relates a structural member to the material which it is made of.</skos:definition>
@@ -392,13 +396,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#lowerValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#lowerValue -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#lowerValue">
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#lowerValue">
         <rdfs:subPropertyOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/quantityValue"/>
         <rdfs:domain rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LowerValue"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#LowerValue"/>
         <rdfs:comment xml:lang="en">Relates a Quantity  with its Lower Value.</rdfs:comment>
         <rdfs:label xml:lang="en">lower value</rdfs:label>
         <skos:definition>Relates a Quantity  with its Lower Value.</skos:definition>
@@ -406,13 +410,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#meanValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#meanValue -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#meanValue">
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#meanValue">
         <rdfs:subPropertyOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/quantityValue"/>
         <rdfs:domain rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#MeanValue"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#MeanValue"/>
         <rdfs:comment xml:lang="en">Relates a Quantity  with its Mean Value.</rdfs:comment>
         <rdfs:label xml:lang="en">mean value</rdfs:label>
         <skos:definition>Relates a Quantity  with its Mean Value.</skos:definition>
@@ -420,13 +424,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#nominalValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#nominalValue -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#nominalValue">
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#nominalValue">
         <rdfs:subPropertyOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/quantityValue"/>
         <rdfs:domain rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#NominalValue"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#NominalValue"/>
         <rdfs:comment xml:lang="en">Relates a Quantity  with its Nominal Value.</rdfs:comment>
         <rdfs:label xml:lang="en">nominal value</rdfs:label>
         <skos:definition>Relates a Quantity  with its Nominal Value.</skos:definition>
@@ -434,13 +438,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#representativeValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#representativeValue -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#representativeValue">
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#representativeValue">
         <rdfs:subPropertyOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/quantityValue"/>
         <rdfs:domain rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#RepresentativeValue"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#RepresentativeValue"/>
         <rdfs:comment xml:lang="en">Relates a Quantity  with its Representative Value.</rdfs:comment>
         <rdfs:label xml:lang="en">representative value</rdfs:label>
         <skos:definition>Relates a Quantity  with its Representative Value.</skos:definition>
@@ -448,12 +452,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#requiresVerficationOf -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#requiresVerficationOf">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DesignSituation"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitState"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#requiresVerficationOf">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#DesignSituation"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitState"/>
         <rdfs:comment xml:lang="en">Relates a limit state to the combination of actions used for its verification.</rdfs:comment>
         <rdfs:label xml:lang="en">requires verification of</rdfs:label>
         <skos:definition>Relates a limit state to the combination of actions used for its verification.</skos:definition>
@@ -461,13 +465,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#upperValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#upperValue -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#upperValue">
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#upperValue">
         <rdfs:subPropertyOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/quantityValue"/>
         <rdfs:domain rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#UpperValue"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#UpperValue"/>
         <rdfs:comment xml:lang="en">Relates a Quantity  with its Upper Value.</rdfs:comment>
         <rdfs:label xml:lang="en">upper value</rdfs:label>
         <skos:definition>Relates a Quantity  with its Upper Value.</skos:definition>
@@ -475,12 +479,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#verifiedAgainstEffect -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#verifiedAgainstEffect">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitStateValue"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#verifiedAgainstEffect">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitStateValue"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#EffectOfAction"/>
         <rdfs:comment xml:lang="en">Relates a limitstate value with the Action Effect that needs to be verified against.</rdfs:comment>
         <rdfs:label xml:lang="en">has limit state value</rdfs:label>
         <skos:definition>Relates a limitstate value with the Action Effect that needs to be verified against.</skos:definition>
@@ -488,12 +492,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#verifiedFor -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#verifiedFor -->
 
 
-    <owl:ObjectProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#verifiedFor">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitState"/>
-        <rdfs:range rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"/>
+    <owl:ObjectProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#verifiedFor">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitState"/>
+        <rdfs:range rdf:resource="http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"/>
         <rdfs:comment xml:lang="en">Relates a limit state to the combination of actions used for its verification.</rdfs:comment>
         <rdfs:label xml:lang="en">verified for</rdfs:label>
         <skos:definition>Relates a limit state to the combination of actions used for its verification.</skos:definition>
@@ -513,10 +517,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#combinationFactor -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#combinationFactor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#combinationFactor">
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#combinationFactor">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <terms:source>EN 1990:2002, Section 1.5.3.16</terms:source>
         <rdfs:comment xml:lang="en">Factor for combination value of a variable action used in ultimate limit state verifications.</rdfs:comment>
@@ -527,11 +531,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasDesignWorkingLife -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasDesignWorkingLife">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Structure"/>
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasDesignWorkingLife">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#Structure"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <rdfs:comment xml:lang="en">Period during which a structure or structural component is intended to remain functional and to fulfill its performance requirements without major repair or replacement, assuming appropriate maintenance.</rdfs:comment>
         <rdfs:label xml:lang="en">has design working life</rdfs:label>
@@ -540,10 +544,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasFrequentFactor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasFrequentFactor">
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasFrequentFactor">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <terms:source>EN 1990:2002, Section 1.5.3.17</terms:source>
         <rdfs:comment xml:lang="en">Factor for frequent value of a variable action, determined so that either the total time within the reference period during which it is exceeded is only a small given part of the reference period, or the frequency of it being exceeded is limited to a given value.</rdfs:comment>
@@ -554,10 +558,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasPartialFactor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasPartialFactor">
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasPartialFactor">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <terms:source>EN 1990:2002, Section 6.3.1</terms:source>
         <rdfs:comment xml:lang="en">Safety factor applied to actions or material properties to account for uncertainties.</rdfs:comment>
@@ -568,10 +572,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#hasQuasiPermanentFactor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#hasQuasiPermanentFactor">
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#hasQuasiPermanentFactor">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <terms:source>EN 1990:2002, Section 1.5.3.18</terms:source>
         <rdfs:comment xml:lang="en">Factor for quasi-permanent value of a variable action, determined so that the total period of time for which it will be exceeded is a large fraction of the reference period.</rdfs:comment>
@@ -582,11 +586,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#isSatisfied -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#isSatisfied -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#isSatisfied">
-        <rdfs:domain rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitState"/>
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#isSatisfied">
+        <rdfs:domain rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitState"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Result of verification of the limit state.</rdfs:comment>
         <rdfs:label xml:lang="en">is satisfied</rdfs:label>
@@ -595,10 +599,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#reductionFactor -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#reductionFactor -->
 
 
-    <owl:DatatypeProperty rdf:about="http://www.w3id.org/Eurocodes/EC1990#reductionFactor">
+    <owl:DatatypeProperty rdf:about="http://www.w3id.org/eurocodes/ec1990#reductionFactor">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
         <terms:source>EN 1990:2002, Section 6.4.3.2</terms:source>
         <rdfs:comment xml:lang="en">Reduction factor for unfavourable permanent action.</rdfs:comment>
@@ -635,11 +639,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AccelerationEffect -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AccelerationEffect">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DynamicEffect"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AccelerationEffect">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#DynamicEffect"/>
         <terms:source>EN 1990:2002, Section 4.1.5(2)</terms:source>
         <rdfs:comment xml:lang="en">Effect involving acceleration of the structure or structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Acceleration Effect</rdfs:label>
@@ -648,11 +652,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AccessibleRoofs -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AccessibleRoofs">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AccessibleRoofs">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EurocodeZone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.9</terms:source>
         <rdfs:comment xml:lang="en">Roof accessible with occupancy according to categories A to G</rdfs:comment>
         <rdfs:label xml:lang="en">Category I - Accessible Roofs</rdfs:label>
@@ -662,11 +666,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AccidentalAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AccidentalAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AccidentalAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AccidentalAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
         <terms:source>EN 1990:2002, Section 1.5.3.5</terms:source>
         <rdfs:comment xml:lang="en">Action, usually of short duration but of significant magnitude, that is unlikely to occur on a given structure during the design working life.</rdfs:comment>
         <rdfs:label xml:lang="en">Accidental Action</rdfs:label>
@@ -677,13 +681,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AccidentalCombination -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AccidentalCombination">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ULSCombination"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#SeismicCombination"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AccidentalCombination">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#ULSCombination"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#FundamentalCombination"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#SeismicCombination"/>
         <terms:source>EN 1990:2002, Section 6.4.3.3</terms:source>
         <rdfs:comment xml:lang="en">Combination of actions for accidental design situations.</rdfs:comment>
         <rdfs:label xml:lang="en">Accidental Combination</rdfs:label>
@@ -693,11 +697,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DesignSituation"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#DesignSituation"/>
         <terms:source>EN 1990:2002, Section 1.5.2.5</terms:source>
         <rdfs:comment xml:lang="en">Design situation involving exceptional conditions of the structure or its exposure, including fire, explosion, impact or local failure.</rdfs:comment>
         <rdfs:label xml:lang="en">Accidental Design Situation</rdfs:label>
@@ -707,12 +711,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AccompanyingVariableAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AccompanyingVariableAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#VariableAction"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AccompanyingVariableAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#VariableAction"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#LeadingVariableAction"/>
         <terms:source>EN 1990:2003 Section 6.4.3.2(2)</terms:source>
         <rdfs:comment xml:lang="en">.</rdfs:comment>
         <rdfs:label xml:lang="en">Accompanying variable action</rdfs:label>
@@ -721,10 +725,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Action -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Action -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Action">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Action">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
         <terms:source>EN 1990:2002, Section 1.5.3.1</terms:source>
         <rdfs:comment xml:lang="en">Set of forces (loads) applied to the structure (direct action) or set of imposed deformations or accelerations caused for example, by temperature changes, moisture variation, uneven settlement or earthquakes (indirect action).</rdfs:comment>
@@ -736,13 +740,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AngularDeformation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AngularDeformation -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AngularDeformation">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Deformation"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LinearDeformation"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AngularDeformation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Deformation"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#LinearDeformation"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#VolumetricDeformation"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Deformation involving rotation or angular change in the structure.</rdfs:comment>
         <rdfs:label xml:lang="en">Angular Deformation</rdfs:label>
@@ -751,11 +755,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AreaWithTables -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AreaWithTables -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AreaWithTables">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CongregationArea"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AreaWithTables">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#CongregationArea"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Area with tables</rdfs:comment>
         <rdfs:label xml:lang="en">Category C1 - Areas with tables</rdfs:label>
@@ -765,11 +769,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AreasWithFixedSeats -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AreasWithFixedSeats">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CongregationArea"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AreasWithFixedSeats">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#CongregationArea"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Area with fixed seats</rdfs:comment>
         <rdfs:label xml:lang="en">Category C2 - Areas with fixed seats</rdfs:label>
@@ -779,11 +783,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AreasWithoutObstacle -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AreasWithoutObstacle">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CongregationArea"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AreasWithoutObstacle">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#CongregationArea"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Area without obstacles for moving people</rdfs:comment>
         <rdfs:label xml:lang="en">Category C3 - Areas without obstacles</rdfs:label>
@@ -793,11 +797,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AxialForce -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AxialForce -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#AxialForce">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#InternalForce"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#AxialForce">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#InternalForce"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Internal force acting along the axis of structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Axial Force</rdfs:label>
@@ -807,11 +811,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#BendingMoment -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#BendingMoment -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#BendingMoment">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#InternalForce"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#BendingMoment">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#InternalForce"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Internal moment causing bending in structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Bending Moment</rdfs:label>
@@ -821,11 +825,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#BendingMomentResistance -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#BendingMomentResistance">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Resistance"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#BendingMomentResistance">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Resistance"/>
         <rdfs:comment xml:lang="en">Design value of the maximum bending moment that a structural cross-section can safely resist without failure.</rdfs:comment>
         <rdfs:label xml:lang="en">Bending Moment Resistance</rdfs:label>
         <skos:altLabel>M_Rd</skos:altLabel>
@@ -834,22 +838,22 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Building -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Building -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Building">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ConstructionWork"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Building">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#ConstructionWork"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#CharacteristicCombination -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#CharacteristicCombination">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#SLSCombination"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#FrequentCombination"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#CharacteristicCombination">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#SLSCombination"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#FrequentCombination"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#QuasiPermanentCombination"/>
         <terms:source>EN 1990:2002, Section 6.5.3(2)a</terms:source>
         <rdfs:comment xml:lang="en">Serviceability combination normally used for irreversible limit states.</rdfs:comment>
         <rdfs:label xml:lang="en">Characteristic Combination</rdfs:label>
@@ -859,20 +863,20 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#CharacteristicValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#CharacteristicValue -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#CharacteristicValue">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#CharacteristicValue">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/QuantityValue"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#CivilEngineeringWork -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringWork">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ConstructionWork"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#CivilEngineeringWork">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#ConstructionWork"/>
         <terms:source>EN 1990:2002, Section 1.5.1.2</terms:source>
         <rdfs:comment xml:lang="en">Type of construction work for civil engineering purposes such as bridges, retaining walls, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Civil Engineering Work</rdfs:label>
@@ -882,10 +886,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#CombinationOfActions -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#CombinationOfActions">
         <terms:source>EN 1990:2002, Section 1.5.3.22</terms:source>
         <rdfs:comment xml:lang="en">Set of design values used for the verification of the structural reliability for a limit state under the simultaneous influence of different actions.</rdfs:comment>
         <rdfs:label xml:lang="en">Combination of Actions</rdfs:label>
@@ -894,11 +898,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#CompressiveStrength -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#CompressiveStrength -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#CompressiveStrength">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#MaterialProperty"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#CompressiveStrength">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#MaterialProperty"/>
         <rdfs:comment xml:lang="en">Compressive strenght of a material.</rdfs:comment>
         <rdfs:label xml:lang="en">Compressive Strength</rdfs:label>
         <skos:definition>Compressive Strength of a material.</skos:definition>
@@ -906,11 +910,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Concrete -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Concrete -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Concrete">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Material"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Concrete">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Material"/>
         <rdfs:comment xml:lang="en">A composite material consisting of a mixture of cement, water, aggregates (coarse and fine), and, where appropriate, admixtures and additions, which develops its strength by hydration of the cement. </rdfs:comment>
         <rdfs:label xml:lang="en">Concrete</rdfs:label>
         <skos:definition>A composite material consisting of a mixture of cement, water, aggregates (coarse and fine), and, where appropriate, admixtures and additions, which develops its strength by hydration of the cement. </skos:definition>
@@ -918,11 +922,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#CongregationArea -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#CongregationArea -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#CongregationArea">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#CongregationArea">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EurocodeZone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Area where people may congregate (except areas under category A, B, and D)</rdfs:comment>
         <rdfs:label xml:lang="en">Category C - Congregation Areas</rdfs:label>
@@ -931,10 +935,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ConstructionWork -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ConstructionWork -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#ConstructionWork">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#ConstructionWork">
         <terms:source>EN 1990:2002, Section 1.5.1.1</terms:source>
         <rdfs:comment xml:lang="en">Everything that is constructed or results from construction operations. The term covers both building and civil engineering works comprising structural, non-structural and geotechnical elements.</rdfs:comment>
         <rdfs:label xml:lang="en">Construction Works</rdfs:label>
@@ -944,11 +948,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#CreepEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#CreepEffect -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#CreepEffect">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#CreepEffect">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#TimeDependentEffect"/>
         <rdfs:comment xml:lang="en">Long-term deformation effect due to sustained loading.</rdfs:comment>
         <rdfs:label xml:lang="en">Creep Effect</rdfs:label>
         <skos:definition>Long-term deformation effect due to sustained loading.</skos:definition>
@@ -956,11 +960,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#DeadLoad -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#DeadLoad -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#DeadLoad">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#PermanentAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#DeadLoad">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#PermanentAction"/>
         <terms:source>EN 1991-1-1:2002</terms:source>
         <rdfs:comment xml:lang="en">.</rdfs:comment>
         <rdfs:label xml:lang="en">Dead load</rdfs:label>
@@ -969,11 +973,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Deflection -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Deflection -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Deflection">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LinearDeformation"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Deflection">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#LinearDeformation"/>
         <terms:source>EN 1990:2002, Section 1.6</terms:source>
         <rdfs:comment xml:lang="en">Vertical deflction of a structural member.</rdfs:comment>
         <rdfs:label xml:lang="en">Deflection</rdfs:label>
@@ -983,11 +987,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Deformation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Deformation -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Deformation">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DeformationEffect"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Deformation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#DeformationEffect"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Change in shape or size of a structure or structural member due to actions.</rdfs:comment>
         <rdfs:label xml:lang="en">Deformation</rdfs:label>
@@ -996,11 +1000,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#DeformationEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#DeformationEffect -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#DeformationEffect">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#DeformationEffect">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EffectOfAction"/>
         <rdfs:comment xml:lang="en">Effect of actions in the form of deformations of the structure or structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Deformation Effect</rdfs:label>
         <skos:definition>Effect of actions in the form of deformations of the structure or structural members.</skos:definition>
@@ -1008,11 +1012,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Density -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Density -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Density">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#MaterialProperty"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Density">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#MaterialProperty"/>
         <rdfs:comment xml:lang="en">Mass per unit volume of a material.</rdfs:comment>
         <rdfs:label xml:lang="en">Density</rdfs:label>
         <skos:definition>Mass per unit volume of a material.</skos:definition>
@@ -1020,11 +1024,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#DepartmentStore -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#DepartmentStore -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#DepartmentStore">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#DepartmentStore">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#ShoppingAreas"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Area in department stores</rdfs:comment>
         <rdfs:label xml:lang="en">Category D2 - Department stores</rdfs:label>
@@ -1034,12 +1038,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#DesignAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#DesignAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#DesignAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#DesignAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#RepresentativeAction"/>
         <terms:source>EN 1990:2002, Section 1.5.3.21</terms:source>
         <rdfs:comment xml:lang="en">Value ofan action used for limit state verification. A design valueo is btained by multiplying the representative value by the partial factor.</rdfs:comment>
         <rdfs:label xml:lang="en">Design Action</rdfs:label>
@@ -1048,10 +1052,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#DesignSituation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#DesignSituation -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#DesignSituation">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#DesignSituation">
         <terms:source>EN 1990:2002, Section 1.5.2.2</terms:source>
         <rdfs:comment xml:lang="en">Sets of physical conditions representing the real conditions occurring during a certain time interval for which the design will demonstrate that relevant limit states are not exceeded.</rdfs:comment>
         <rdfs:label xml:lang="en">Design Situation</rdfs:label>
@@ -1060,21 +1064,21 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#DesignValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#DesignValue -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#DesignValue">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#DesignValue">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/QuantityValue"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#DirectAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#DirectAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#DirectAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#IndirectAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#DirectAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#IndirectAction"/>
         <terms:source>EN 1990:2002, Section 1.5.3.1 a)</terms:source>
         <rdfs:comment xml:lang="en">Set of forces (loads) applied to the structure.</rdfs:comment>
         <rdfs:label xml:lang="en">Direct Action</rdfs:label>
@@ -1083,11 +1087,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Displacement -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Displacement -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Displacement">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LinearDeformation"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Displacement">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#LinearDeformation"/>
         <terms:source>EN 1990:2002, Section 1.6</terms:source>
         <rdfs:comment xml:lang="en">Horizontal displacement of a structure or structural member.</rdfs:comment>
         <rdfs:label xml:lang="en">Displacement</rdfs:label>
@@ -1097,12 +1101,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#DynamicAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#DynamicAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#DynamicAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#StaticAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#DynamicAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#StaticAction"/>
         <terms:source>EN 1990:2002, Section 1.5.3.12</terms:source>
         <rdfs:comment xml:lang="en">Action that causes significant acceleration of the structure or structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Dynamic Action</rdfs:label>
@@ -1111,11 +1115,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#DynamicEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#DynamicEffect -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#DynamicEffect">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#DynamicEffect">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EffectOfAction"/>
         <rdfs:comment xml:lang="en">Effect of actions involving dynamic response, acceleration, or vibration.</rdfs:comment>
         <rdfs:label xml:lang="en">Dynamic Effect</rdfs:label>
         <skos:definition>Effect of actions involving dynamic response, acceleration, or vibration.</skos:definition>
@@ -1123,10 +1127,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#EffectOfAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#EffectOfAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#EffectOfAction">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#EffectOfAction">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Effect of actions on structural members (e.g. internal force, moment, stress, strain) or on the whole structure (e.g. deflection, rotation).</rdfs:comment>
@@ -1139,10 +1143,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#EurocodeZone -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#EurocodeZone -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#EurocodeZone">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Zone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">A space classified according to EN 1991-1-1 usage categories</rdfs:comment>
@@ -1152,11 +1156,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#FatigueAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#FatigueAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#FatigueAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#FatigueAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
         <terms:source>EN 1990:2002, Section 1.5.3.7</terms:source>
         <rdfs:comment xml:lang="en">Repeated or fluctuating mechanical action applied over time, which may cause failure even if the individual stress cycles are below the material&apos;s static strength.</rdfs:comment>
         <rdfs:label xml:lang="en">Fatigue Action</rdfs:label>
@@ -1165,11 +1169,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#FatigueEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#FatigueEffect -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#FatigueEffect">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#FatigueEffect">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#TimeDependentEffect"/>
         <terms:source>EN 1990:2002, Section 3.1(5)</terms:source>
         <rdfs:comment xml:lang="en">Progressive damage effect due to repeated loading cycles.</rdfs:comment>
         <rdfs:label xml:lang="en">Fatigue Effect</rdfs:label>
@@ -1178,12 +1182,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#FavourableAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#FavourableAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#FavourableAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#FavourableAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#UnfavourableAction"/>
         <terms:source>EN 1990:2002, Section 6.3.2(3)P</terms:source>
         <rdfs:comment xml:lang="en">Action that reduces the effect of other actions on a structure, or otherwise contributes to structural safety.</rdfs:comment>
         <rdfs:label xml:lang="en">Favourable Action</rdfs:label>
@@ -1192,12 +1196,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#FixedAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#FixedAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#FixedAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#FreeAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#FixedAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#FreeAction"/>
         <terms:source>EN 1990:2002, Section 1.5.3.8</terms:source>
         <rdfs:comment xml:lang="en">Action that has a fixed distribution and position over the structure or structural member such that the magnitude and direction of the action are determined unambiguously for the whole structure.</rdfs:comment>
         <rdfs:label xml:lang="en">Fixed Action</rdfs:label>
@@ -1207,11 +1211,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#FreeAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#FreeAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#FreeAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#FreeAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
         <terms:source>EN 1990:2002, Section 1.5.3.9</terms:source>
         <rdfs:comment xml:lang="en">Action that may have various spatial distributions over the structure.</rdfs:comment>
         <rdfs:label xml:lang="en">Free Action</rdfs:label>
@@ -1221,12 +1225,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#FrequentCombination -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#FrequentCombination -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#FrequentCombination">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#SLSCombination"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#FrequentCombination">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#SLSCombination"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#QuasiPermanentCombination"/>
         <terms:source>EN 1990:2002, Section 6.5.3(2)b</terms:source>
         <rdfs:comment xml:lang="en">Serviceability combination normally used for reversible limit states.</rdfs:comment>
         <rdfs:label xml:lang="en">Frequent Combination</rdfs:label>
@@ -1236,12 +1240,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#FundamentalCombination -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#FundamentalCombination">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ULSCombination"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#SeismicCombination"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#FundamentalCombination">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#ULSCombination"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#SeismicCombination"/>
         <terms:source>EN 1990:2002, Section 6.4.3.2</terms:source>
         <rdfs:comment xml:lang="en">Combination of actions for persistent or transient design situations.</rdfs:comment>
         <rdfs:label xml:lang="en">Fundamental Combination</rdfs:label>
@@ -1251,11 +1255,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#GeneralRetailShops -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#GeneralRetailShops">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#GeneralRetailShops">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#ShoppingAreas"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Area in general retail shops</rdfs:comment>
         <rdfs:label xml:lang="en">Category D1 - General retail shops</rdfs:label>
@@ -1265,10 +1269,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#GeometricalProperty -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#GeometricalProperty">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
         <terms:source>EN 1990:2002, Section 4.3</terms:source>
         <rdfs:comment xml:lang="en">Geometrical properties and dimensions of structural elements.</rdfs:comment>
@@ -1278,11 +1282,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#GeotechnicalAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#GeotechnicalAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#GeotechnicalAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
         <terms:source>EN 1990:2002, Section 1.5.3.7</terms:source>
         <rdfs:comment xml:lang="en">Action transmitted to the structure by the ground, fill or groundwater.</rdfs:comment>
         <rdfs:label xml:lang="en">Geotechnical Action</rdfs:label>
@@ -1291,11 +1295,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#HelicopterLandingAreas -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#HelicopterLandingAreas">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#HelicopterLandingAreas">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EurocodeZone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.9</terms:source>
         <rdfs:comment xml:lang="en">Roof accessible for special services, such as helicopter landing areas</rdfs:comment>
         <rdfs:label xml:lang="en">Category K - Helicopter Landing Areas</rdfs:label>
@@ -1305,14 +1309,14 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ImposedLoad -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ImposedLoad -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#ImposedLoad">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#VariableAction"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#SnowLoad"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ThermalAction"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#WindAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#ImposedLoad">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#VariableAction"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#SnowLoad"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#ThermalAction"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#WindAction"/>
         <terms:source>EN 1991-1-1:2002</terms:source>
         <rdfs:comment xml:lang="en">.</rdfs:comment>
         <rdfs:label xml:lang="en">Imposed load</rdfs:label>
@@ -1321,11 +1325,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#IndirectAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#IndirectAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#IndirectAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#IndirectAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
         <terms:source>EN 1990:2002, Section 1.5.3.1 b)</terms:source>
         <rdfs:comment xml:lang="en">Set of imposed deformations or accelerations caused for example, by temperature changes, moisture variation, uneven settlement or earthquakes.</rdfs:comment>
         <rdfs:label xml:lang="en">Indirect Action</rdfs:label>
@@ -1334,11 +1338,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#IndustrialUse -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#IndustrialUse -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#IndustrialUse">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#IndustrialUse">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#IndustrialandStorage"/>
         <terms:source>EN 1991-1-1:2002 Table 6.3</terms:source>
         <rdfs:comment xml:lang="en">Industrial use area</rdfs:comment>
         <rdfs:label xml:lang="en">Category E2 - Industrial use</rdfs:label>
@@ -1348,11 +1352,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#IndustrialandStorage -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#IndustrialandStorage">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EurocodeZone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.3</terms:source>
         <rdfs:comment xml:lang="en">Storage and industrial area</rdfs:comment>
         <rdfs:label xml:lang="en">Category E - Storage and Industrial</rdfs:label>
@@ -1361,11 +1365,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#InternalForce -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#InternalForce -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#InternalForce">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#InternalForce">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#MechanicalEffect"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Effect of actions in the form of internal forces in structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Internal Force</rdfs:label>
@@ -1374,11 +1378,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#LargeCrowdsAreas -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#LargeCrowdsAreas">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CongregationArea"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#LargeCrowdsAreas">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#CongregationArea"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Area susceptible to large crowds</rdfs:comment>
         <rdfs:label xml:lang="en">Category C5 - Large crowds areas</rdfs:label>
@@ -1388,11 +1392,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#LeadingVariableAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#LeadingVariableAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#VariableAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#LeadingVariableAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#VariableAction"/>
         <terms:source>EN 1990:2003 Section 6.4.3.2(2)</terms:source>
         <rdfs:comment xml:lang="en">.</rdfs:comment>
         <rdfs:label xml:lang="en">Leading variable action</rdfs:label>
@@ -1401,11 +1405,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#LightVehicleTraffic -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#LightVehicleTraffic">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#LightVehicleTraffic">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EurocodeZone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.7</terms:source>
         <rdfs:comment xml:lang="en">Traffic and parking area for light vehicles (≤ 30 kN gross vehicle weight and ≤ 8 seats not including driver)</rdfs:comment>
         <rdfs:label xml:lang="en">Category F - Light Vehicle Traffic</rdfs:label>
@@ -1415,10 +1419,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#LimitState -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#LimitState -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#LimitState">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#LimitState">
         <terms:source>EN 1990:2002, Section 1.5.2.12</terms:source>
         <rdfs:comment xml:lang="en">State beyond which the structure no longer fulfils the relevant design criteria.</rdfs:comment>
         <rdfs:label xml:lang="en">Limit State</rdfs:label>
@@ -1428,10 +1432,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#LimitStateValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#LimitStateValue -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#LimitStateValue">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#LimitStateValue">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
         <rdfs:comment xml:lang="en">Design resistance or serviceability criterion used for verificatinon of a limit state.</rdfs:comment>
         <rdfs:label xml:lang="en">Limit State Value</rdfs:label>
@@ -1440,11 +1444,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#LimitingServicabilityCriterion -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#LimitingServicabilityCriterion">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitStateValue"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#LimitingServicabilityCriterion">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitStateValue"/>
         <terms:source>EN 1990:2002, Section 6.5.1</terms:source>
         <rdfs:comment xml:lang="en">Limiting design value of the relevant serviceability criterion.</rdfs:comment>
         <rdfs:label xml:lang="en">Limiting Serviceability Criterion</rdfs:label>
@@ -1454,12 +1458,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#LinearDeformation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#LinearDeformation -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#LinearDeformation">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Deformation"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#LinearDeformation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Deformation"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#VolumetricDeformation"/>
         <rdfs:comment xml:lang="en">Deformation involving linear displacement of points in the structure.</rdfs:comment>
         <rdfs:label xml:lang="en">Linear Deformation</rdfs:label>
         <skos:definition>Deformation involving linear displacement of points in the structure.</skos:definition>
@@ -1467,19 +1471,19 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#LowerValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#LowerValue -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#LowerValue">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#LowerValue">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/QuantityValue"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Material -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Material -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Material">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Material">
         <terms:source>EN 1990:2002, Section 1.5.1.3</terms:source>
         <rdfs:comment xml:lang="en">Indication of the principal structural material.</rdfs:comment>
         <rdfs:label xml:lang="en">Material</rdfs:label>
@@ -1488,10 +1492,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#MaterialProperty -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#MaterialProperty -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#MaterialProperty">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#MaterialProperty">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/Quantity"/>
         <terms:source>EN 1990:2002, Section 4.2</terms:source>
         <rdfs:comment xml:lang="en">Physical or mechanical property of construction materials.</rdfs:comment>
@@ -1501,20 +1505,20 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#MeanValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#MeanValue -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#MeanValue">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#MeanValue">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/QuantityValue"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#MechanicalEffect -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#MechanicalEffect">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EffectOfAction"/>
         <rdfs:comment xml:lang="en">Effect of actions in the form of forces, stresses, or strains in structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Mechanical Effect</rdfs:label>
         <skos:definition>Effect of actions in the form of forces, stresses, or strains in structural members.</skos:definition>
@@ -1522,11 +1526,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#MediumVehicleTraffic -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#MediumVehicleTraffic">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#MediumVehicleTraffic">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EurocodeZone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.7</terms:source>
         <rdfs:comment xml:lang="en">Traffic and parking area for medium vehicles (&gt;30 kN, ≤ 160 kN gross vehicle weight, on 2 axles)</rdfs:comment>
         <rdfs:label xml:lang="en">Category G - Medium Vehicle Traffic</rdfs:label>
@@ -1536,20 +1540,20 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#NominalValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#NominalValue -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#NominalValue">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#NominalValue">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/QuantityValue"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#NormalStress -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#NormalStress -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#NormalStress">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Stress"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#NormalStress">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Stress"/>
         <rdfs:comment xml:lang="en">Stress acting in the direction normal to a surface.</rdfs:comment>
         <rdfs:label xml:lang="en">Normal Stress</rdfs:label>
         <skos:definition>Stress acting in the direction normal to a surface.</skos:definition>
@@ -1557,11 +1561,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#OfficeArea -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#OfficeArea -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#OfficeArea">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#OfficeArea">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EurocodeZone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Office area</rdfs:comment>
         <rdfs:label xml:lang="en">Category B - Office Areas</rdfs:label>
@@ -1571,12 +1575,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#PermanentAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#PermanentAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#PermanentAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#VariableAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#PermanentAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#VariableAction"/>
         <terms:source>EN 1990:2002, Section 1.5.3.3</terms:source>
         <rdfs:comment xml:lang="en">Action that is likely to act throughout a given reference period and for which the variation in magnitude with time is negligible, or for which the variation is always in the same direction (monotonic) until the action attains a certain limit value.</rdfs:comment>
         <rdfs:label xml:lang="en">Permanent Action</rdfs:label>
@@ -1587,11 +1591,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#PhysicalActivitiesAreas -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#PhysicalActivitiesAreas">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CongregationArea"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#PhysicalActivitiesAreas">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#CongregationArea"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Area with possible physical activities</rdfs:comment>
         <rdfs:label xml:lang="en">Category C4 - Physical activities areas</rdfs:label>
@@ -1601,11 +1605,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#PrincipalStress -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#PrincipalStress -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#PrincipalStress">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Stress"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#PrincipalStress">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Stress"/>
         <rdfs:comment xml:lang="en">Maximum or minimum normal stress at a point.</rdfs:comment>
         <rdfs:label xml:lang="en">Principal Stress</rdfs:label>
         <skos:definition>Maximum or minimum normal stress at a point.</skos:definition>
@@ -1613,11 +1617,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#QuasiPermanentCombination -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#QuasiPermanentCombination">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#SLSCombination"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#QuasiPermanentCombination">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#SLSCombination"/>
         <terms:source>EN 1990:2002, Section 6.5.3(2)c</terms:source>
         <rdfs:comment xml:lang="en">Serviceability combination normally used for long-term effects and the appearance of the structure.</rdfs:comment>
         <rdfs:label xml:lang="en">Quasi-Permanent Combination</rdfs:label>
@@ -1627,11 +1631,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#QuasiStaticAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#QuasiStaticAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DynamicAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#QuasiStaticAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#DynamicAction"/>
         <terms:source>EN 1990:2002, Section 1.5.3.13</terms:source>
         <rdfs:comment xml:lang="en">Dynamic action represented by an equivalent static action in a static model.</rdfs:comment>
         <rdfs:label xml:lang="en">Quasi-Static Action</rdfs:label>
@@ -1640,11 +1644,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Reaction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Reaction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Reaction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Reaction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EffectOfAction"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Support reaction force or moment at structural supports.</rdfs:comment>
         <rdfs:label xml:lang="en">Reaction</rdfs:label>
@@ -1653,11 +1657,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#RepresentativeAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#RepresentativeAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#RepresentativeAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
         <terms:source>EN 1990:2002, Section 1.5.3.20</terms:source>
         <rdfs:comment xml:lang="en">Value ofan action used for limit state verification. A representative value may be the characteristic value or an accompanying value.</rdfs:comment>
         <rdfs:label xml:lang="en">Representative Action</rdfs:label>
@@ -1666,20 +1670,20 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#RepresentativeValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#RepresentativeValue -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#RepresentativeValue">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#RepresentativeValue">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/QuantityValue"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Residential -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Residential -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Residential">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Residential">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EurocodeZone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Area for domestic and residential activities</rdfs:comment>
         <rdfs:label xml:lang="en">Category A - Domestic and Residential</rdfs:label>
@@ -1689,11 +1693,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ResidentialBuilding -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#ResidentialBuilding">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Building"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#ResidentialBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Building"/>
         <terms:source>EN 1990:2002, Section 1.5.1.2</terms:source>
         <rdfs:comment xml:lang="en">Building intended primarily for the accommodation and permanent or temporary residence of individuals or households.</rdfs:comment>
         <rdfs:label xml:lang="en">Residential Building</rdfs:label>
@@ -1703,11 +1707,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Resistance -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Resistance -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Resistance">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitStateValue"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Resistance">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitStateValue"/>
         <terms:source>EN 1990:2002, Section 1.5.2.15</terms:source>
         <rdfs:comment xml:lang="en">Capacity of a member or component, or a cross-section of a member or component of a structure, to withstand actions without mechanical failure.</rdfs:comment>
         <rdfs:label xml:lang="en">Resistance</rdfs:label>
@@ -1718,11 +1722,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Roof -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Roof -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Roof">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Roof">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EurocodeZone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.9</terms:source>
         <rdfs:comment xml:lang="en">Roof not accessible except for normal maintenance and repair</rdfs:comment>
         <rdfs:label xml:lang="en">Category H - Roofs</rdfs:label>
@@ -1732,11 +1736,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Rotation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Rotation -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Rotation">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#AngularDeformation"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Rotation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#AngularDeformation"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Angular rotation of a structure or structural member.</rdfs:comment>
         <rdfs:label xml:lang="en">Rotation</rdfs:label>
@@ -1745,12 +1749,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#SLSCombination -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#SLSCombination -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#SLSCombination">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ULSCombination"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#SLSCombination">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#ULSCombination"/>
         <terms:source>EN 1990:2002, Section 6.5.3</terms:source>
         <rdfs:comment xml:lang="en">Combinations of actions for verifying serviceability limit states.</rdfs:comment>
         <rdfs:label xml:lang="en">Serviceability Limit State Combination</rdfs:label>
@@ -1759,11 +1763,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#SeismicAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#SeismicAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#SeismicAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#AccidentalAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#SeismicAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#AccidentalAction"/>
         <terms:source>EN 1990:2002, Section 1.5.3.6</terms:source>
         <rdfs:comment xml:lang="en">Action that arises due to earthquake ground motions.</rdfs:comment>
         <rdfs:label xml:lang="en">Seismic Action</rdfs:label>
@@ -1773,11 +1777,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#SeismicCombination -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#SeismicCombination -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#SeismicCombination">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ULSCombination"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#SeismicCombination">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#ULSCombination"/>
         <terms:source>EN 1990:2002, Section 6.4.3.4</terms:source>
         <rdfs:comment xml:lang="en">Combination of actions for seismic design situations.</rdfs:comment>
         <rdfs:label xml:lang="en">Seismic Combination</rdfs:label>
@@ -1787,11 +1791,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#SelfWeight -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#SelfWeight -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#SelfWeight">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#PermanentAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#SelfWeight">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#PermanentAction"/>
         <terms:source>EN 1991-1-1:2002</terms:source>
         <rdfs:comment xml:lang="en">.</rdfs:comment>
         <rdfs:label xml:lang="en">Self-weight</rdfs:label>
@@ -1800,12 +1804,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ServiceabilityLimitState -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitState"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#ServiceabilityLimitState">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitState"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"/>
         <terms:source>EN 1990:2002, Section 1.5.2.14</terms:source>
         <rdfs:comment xml:lang="en">State that correspond to conditions beyond which specified service requirements for a structure or structural member are no longer met.</rdfs:comment>
         <rdfs:label xml:lang="en">Serviceability Limit State</rdfs:label>
@@ -1815,11 +1819,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ShearForce -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ShearForce -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#ShearForce">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#InternalForce"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#ShearForce">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#InternalForce"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Internal force acting perpendicular to the axis of structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Shear Force</rdfs:label>
@@ -1829,11 +1833,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ShearStress -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ShearStress -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#ShearStress">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Stress"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#ShearStress">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Stress"/>
         <rdfs:comment xml:lang="en">Stress acting in the direction parallel (tangential) to a surface.</rdfs:comment>
         <rdfs:label xml:lang="en">Shear Stress</rdfs:label>
         <skos:definition>Stress acting in the direction parallel (tangential) to a surface.</skos:definition>
@@ -1841,11 +1845,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ShoppingAreas -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#ShoppingAreas">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EurocodeZone"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#ShoppingAreas">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EurocodeZone"/>
         <terms:source>EN 1991-1-1:2002 Table 6.1</terms:source>
         <rdfs:comment xml:lang="en">Shopping area</rdfs:comment>
         <rdfs:label xml:lang="en">Category D - Shopping Areas</rdfs:label>
@@ -1854,11 +1858,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ShrinkageEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ShrinkageEffect -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#ShrinkageEffect">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#ShrinkageEffect">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#TimeDependentEffect"/>
         <rdfs:comment xml:lang="en">Deformation effect due to material shrinkage over time.</rdfs:comment>
         <rdfs:label xml:lang="en">Shrinkage Effect</rdfs:label>
         <skos:definition>Deformation effect due to material shrinkage over time.</skos:definition>
@@ -1866,13 +1870,13 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#SnowLoad -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#SnowLoad -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#SnowLoad">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#VariableAction"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ThermalAction"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#WindAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#SnowLoad">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#VariableAction"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#ThermalAction"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#WindAction"/>
         <terms:source>EN 1991-1-3:2003</terms:source>
         <rdfs:comment xml:lang="en">.</rdfs:comment>
         <rdfs:label xml:lang="en">Snow load</rdfs:label>
@@ -1881,11 +1885,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#StaticAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#StaticAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#StaticAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#StaticAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
         <terms:source>EN 1990:2002, Section 1.5.3.11</terms:source>
         <rdfs:comment xml:lang="en">Action that does not cause significant acceleration of the structure or structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Static Action</rdfs:label>
@@ -1894,11 +1898,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#StorageAreas -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#StorageAreas -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#StorageAreas">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#IndustrialandStorage"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#StorageAreas">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#IndustrialandStorage"/>
         <terms:source>EN 1991-1-1:2002 Table 6.3</terms:source>
         <rdfs:comment xml:lang="en">Area susceptible to accumulation of goods, including access areas</rdfs:comment>
         <rdfs:label xml:lang="en">Category E1 - Storage areas</rdfs:label>
@@ -1908,11 +1912,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Strain -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Strain -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Strain">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Strain">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#MechanicalEffect"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Deformation per unit length in structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Strain</rdfs:label>
@@ -1921,11 +1925,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Stress -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Stress -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Stress">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#MechanicalEffect"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Stress">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#MechanicalEffect"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Internal stress in structural members due to actions.</rdfs:comment>
         <rdfs:label xml:lang="en">Stress</rdfs:label>
@@ -1934,10 +1938,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#StructuralMember -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#StructuralMember -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#StructuralMember">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#StructuralMember">
         <rdfs:subClassOf rdf:resource="https://w3id.org/bot#Element"/>
         <terms:source>EN 1990:200, Section 1.5.1.7</terms:source>
         <rdfs:comment xml:lang="en">Physically distinguishable part of a structure, e.g. a column, a beam, a slab, a foundation pile.</rdfs:comment>
@@ -1948,10 +1952,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#StructuralSystem -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#StructuralSystem -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#StructuralSystem">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#StructuralSystem">
         <terms:source>EN 1990:2002, Section 1.5.1.9</terms:source>
         <rdfs:comment xml:lang="en">Load-bearing members of a building or civil engineering works and the way in which these members function together.</rdfs:comment>
         <rdfs:label xml:lang="en">Structural System</rdfs:label>
@@ -1961,10 +1965,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Structure -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Structure -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Structure">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Structure">
         <terms:source>EN 1990:2002, Section 1.5.1.6</terms:source>
         <rdfs:comment xml:lang="en">Organised combination of connected parts designed to carry loads and provide adequate rigidity.</rdfs:comment>
         <rdfs:label xml:lang="en">Structure</rdfs:label>
@@ -1974,12 +1978,12 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ThermalAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ThermalAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#ThermalAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#VariableAction"/>
-        <owl:disjointWith rdf:resource="http://www.w3id.org/Eurocodes/EC1990#WindAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#ThermalAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#VariableAction"/>
+        <owl:disjointWith rdf:resource="http://www.w3id.org/eurocodes/ec1990#WindAction"/>
         <terms:source>EN 1991-1-5:2003</terms:source>
         <rdfs:comment xml:lang="en">.</rdfs:comment>
         <rdfs:label xml:lang="en">Thermal action</rdfs:label>
@@ -1988,11 +1992,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Thickness -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Thickness -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Thickness">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#GeometricalProperty"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Thickness">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#GeometricalProperty"/>
         <rdfs:comment xml:lang="en">Dimension of a structural element measured perpendicular to its plane or surface.</rdfs:comment>
         <rdfs:label xml:lang="en">Thickness</rdfs:label>
         <skos:definition>Dimension of a structural element measured perpendicular to its plane or surface.</skos:definition>
@@ -2000,11 +2004,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#TimeDependentEffect -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#TimeDependentEffect">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#EffectOfAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#TimeDependentEffect">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#EffectOfAction"/>
         <terms:source>EN 1990:2002, Section 3.1(5)</terms:source>
         <rdfs:comment xml:lang="en">Effect of actions that varies with time due to material behavior or other time-related factors.</rdfs:comment>
         <rdfs:label xml:lang="en">Time-Dependent Effect</rdfs:label>
@@ -2013,11 +2017,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#TorsionalMoment -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#TorsionalMoment">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#InternalForce"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#TorsionalMoment">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#InternalForce"/>
         <terms:source>EN 1990:2002, Section 1.5.3.2</terms:source>
         <rdfs:comment xml:lang="en">Internal moment causing twisting in structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Torsional Moment</rdfs:label>
@@ -2027,11 +2031,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Twist -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Twist -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#Twist">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#AngularDeformation"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#Twist">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#AngularDeformation"/>
         <rdfs:comment xml:lang="en">Angular deformation about the longitudinal axis.</rdfs:comment>
         <rdfs:label xml:lang="en">Twist</rdfs:label>
         <skos:definition>Angular deformation about the longitudinal axis.</skos:definition>
@@ -2039,11 +2043,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ULSCombination -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ULSCombination -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#ULSCombination">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#CombinationOfActions"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#ULSCombination">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#CombinationOfActions"/>
         <terms:source>EN 1990:2002, Section 6.4.3</terms:source>
         <rdfs:comment xml:lang="en">Combination of actions for verifying ultimate limit states.</rdfs:comment>
         <rdfs:label xml:lang="en">Ultimate Limit State Combination</rdfs:label>
@@ -2052,11 +2056,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#UltimateLimitState -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#LimitState"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#UltimateLimitState">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#LimitState"/>
         <terms:source>EN 1990:2002, Section 1.5.2.13</terms:source>
         <rdfs:comment xml:lang="en">State associated with collapse or with other similar forms of structural failure. They generally correspond to the maximum load-carrying resistance of a structure or structural member.</rdfs:comment>
         <rdfs:label xml:lang="en">Ultimate Limit State</rdfs:label>
@@ -2066,11 +2070,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#UnfavourableAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#UnfavourableAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#UnfavourableAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
         <terms:source>EN 1990:2002, Section 6.3.2(3)P</terms:source>
         <rdfs:comment xml:lang="en">An action that increases the effect of other actions on a structure, or otherwise reduces structural safety.</rdfs:comment>
         <rdfs:label xml:lang="en">UnfavourableAction Action</rdfs:label>
@@ -2079,20 +2083,20 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#UpperValue -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#UpperValue -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#UpperValue">
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#UpperValue">
         <rdfs:subClassOf rdf:resource="http://qudt.org/3.1.2/schema/qudt/QuantityValue"/>
     </owl:Class>
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#VariableAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#VariableAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#VariableAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Action"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#VariableAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Action"/>
         <terms:source>EN 1990:2002, Section 1.5.3.4</terms:source>
         <rdfs:comment xml:lang="en">Action for which the variation in magnitude with time is neither negligible nor monotonic.</rdfs:comment>
         <rdfs:label xml:lang="en">Variable Action</rdfs:label>
@@ -2103,11 +2107,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#VibrationResponse -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#VibrationResponse -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#VibrationResponse">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DynamicEffect"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#VibrationResponse">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#DynamicEffect"/>
         <rdfs:comment xml:lang="en">Dynamic response of structures to oscillatory actions, important for serviceability considerations.</rdfs:comment>
         <rdfs:label xml:lang="en">Vibration Response</rdfs:label>
         <skos:definition>Dynamic response of structures to oscillatory actions, important for serviceability considerations.</skos:definition>
@@ -2115,11 +2119,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#VolumetricDeformation -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#VolumetricDeformation">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Deformation"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#VolumetricDeformation">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#Deformation"/>
         <rdfs:comment xml:lang="en">Deformation involving change in volume of structural elements.</rdfs:comment>
         <rdfs:label xml:lang="en">Volumetric Deformation</rdfs:label>
         <skos:definition>Deformation involving change in volume of structural elements.</skos:definition>
@@ -2127,11 +2131,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#WindAction -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#WindAction -->
 
 
-    <owl:Class rdf:about="http://www.w3id.org/Eurocodes/EC1990#WindAction">
-        <rdfs:subClassOf rdf:resource="http://www.w3id.org/Eurocodes/EC1990#VariableAction"/>
+    <owl:Class rdf:about="http://www.w3id.org/eurocodes/ec1990#WindAction">
+        <rdfs:subClassOf rdf:resource="http://www.w3id.org/eurocodes/ec1990#VariableAction"/>
         <terms:source>EN 1991-1-4:2005</terms:source>
         <rdfs:comment xml:lang="en">.</rdfs:comment>
         <rdfs:label xml:lang="en">Wind action</rdfs:label>
@@ -2152,11 +2156,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#AgriculturalStructure -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#AgriculturalStructure">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Structure"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#AgriculturalStructure">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#Structure"/>
         <terms:source>EN 1990:2002, Table 2.1</terms:source>
         <rdfs:comment xml:lang="en">A building or construction primarily designed and used for farming-related activities.</rdfs:comment>
         <rdfs:label xml:lang="en">Agricultural Structure</rdfs:label>
@@ -2166,11 +2170,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#BridgeStructure -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#BridgeStructure -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#BridgeStructure">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Structure"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#BridgeStructure">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#Structure"/>
         <terms:source>EN 1990:2002, Table 2.1</terms:source>
         <rdfs:comment xml:lang="en">Engineered construction designed to span physical obstacles such as rivers, valleys, roads, or railways, providing a safe passage for vehicles, pedestrians, or utilities.</rdfs:comment>
         <rdfs:label xml:lang="en">Bridge Structure</rdfs:label>
@@ -2180,10 +2184,10 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#Building -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#Building -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#Building">
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#Building">
         <owl:sameAs rdf:resource="https://w3id.org/bot#Building"/>
     </owl:NamedIndividual>
     
@@ -2192,15 +2196,15 @@
     <!-- https://w3id.org/bot#Building -->
 
 
-    <owl:NamedIndividual rdf:about="https://w3id.org/bot#Building"/>
+    <rdf:Description rdf:about="https://w3id.org/bot#Building"/>
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#BuildingStructure -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#BuildingStructure -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#BuildingStructure">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Structure"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#BuildingStructure">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#Structure"/>
         <terms:source>EN 1990:2002, Table 2.1</terms:source>
         <rdfs:comment xml:lang="en">Load-bearing framework or system designed to support and transfer all applied loads safely to the foundation and ultimately to the ground.</rdfs:comment>
         <rdfs:label xml:lang="en">Building Structure</rdfs:label>
@@ -2210,11 +2214,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#CivilEngineeringStructure -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#CivilEngineeringStructure">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Structure"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#CivilEngineeringStructure">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#Structure"/>
         <terms:source>EN 1990:2002, Table 2.1</terms:source>
         <rdfs:comment xml:lang="en">Constructed system composed of interconnected physical elements designed, analyzed, and built to withstand environmental and operational loads, enabling the provision of essential services such as transport, shelter, water management, or energy distribution.</rdfs:comment>
         <rdfs:label xml:lang="en">Civil Engineering Structure</rdfs:label>
@@ -2224,11 +2228,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#EQU -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#EQU -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#EQU">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#EQU">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"/>
         <terms:source>EN 1990:2002, Section 6.4.1(1)P a)</terms:source>
         <rdfs:comment xml:lang="en">Loss of static equilibrium of the structure or any part of it considered as a rigid body.</rdfs:comment>
         <rdfs:label xml:lang="en">Static Equilibrium</rdfs:label>
@@ -2237,11 +2241,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ExplosionDesignSituation -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#ExplosionDesignSituation">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#ExplosionDesignSituation">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation"/>
         <terms:source>EN 1990:2002, Section 1.5.2.5</terms:source>
         <rdfs:comment xml:lang="en">Accidental design situation involving explosion conditions.</rdfs:comment>
         <rdfs:label xml:lang="en">Explosion Design Situation</rdfs:label>
@@ -2250,11 +2254,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#FAT -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#FAT -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#FAT">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#FAT">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"/>
         <terms:source>EN 1990:2002, Section 6.4.1(1)P d)</terms:source>
         <rdfs:comment xml:lang="en">Fatigue failure of the structure or structural members.</rdfs:comment>
         <rdfs:label xml:lang="en">Fatigue Failure</rdfs:label>
@@ -2263,11 +2267,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#FireDesignSituation -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#FireDesignSituation">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#FireDesignSituation">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation"/>
         <terms:source>EN 1990:2002, Section 1.5.2.5 &amp; 6</terms:source>
         <rdfs:comment xml:lang="en">Accidental design situation involving fire conditions requiring specific design considerations.</rdfs:comment>
         <rdfs:label xml:lang="en">Fire Design Situation</rdfs:label>
@@ -2276,11 +2280,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#GEO -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#GEO -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#GEO">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#GEO">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"/>
         <terms:source>EN 1990:2002, Section 6.4.1(1)P c)</terms:source>
         <rdfs:comment xml:lang="en">Failure or excessive deformation of the ground where the strengths of soil or rock are significant in providing resistance.</rdfs:comment>
         <rdfs:label xml:lang="en">Geotechnical Failure</rdfs:label>
@@ -2289,11 +2293,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#HYD -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#HYD -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#HYD">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#HYD">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"/>
         <terms:source>EN 1990:2002/A1:2005, Section 6.4.1(1)P f)</terms:source>
         <rdfs:comment xml:lang="en">Hydraulic heave, internal erosion and piping in the ground caused by hydraulic gradients.</rdfs:comment>
         <rdfs:label xml:lang="en">Hydraulic Failure</rdfs:label>
@@ -2302,11 +2306,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ISLS -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ISLS -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#ISLS">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#ISLS">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#ServiceabilityLimitState"/>
         <terms:source>UNE-EN 1990:2019, Section 1.5.2.14.1</terms:source>
         <rdfs:comment xml:lang="en">Serviceability limit state where some consequences of actions exceeding the specified service requirements will remain when the actions are removed.</rdfs:comment>
         <rdfs:label xml:lang="en">Irreversible Serviceability Limit State</rdfs:label>
@@ -2315,11 +2319,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ImpactDesignSituation -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#ImpactDesignSituation">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#ImpactDesignSituation">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation"/>
         <terms:source>EN 1990:2002, Section 1.5.2.5</terms:source>
         <rdfs:comment xml:lang="en">Accidental design situation involving impact conditions.</rdfs:comment>
         <rdfs:label xml:lang="en">Impact Design Situation</rdfs:label>
@@ -2328,11 +2332,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#LocalizedFailureDesignSituation -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#LocalizedFailureDesignSituation">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#AccidentalDesignSituation"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#LocalizedFailureDesignSituation">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#AccidentalDesignSituation"/>
         <terms:source>EN 1990:2002, Section 1.5.2.5</terms:source>
         <rdfs:comment xml:lang="en">Accidental design situation involving local failure conditions.</rdfs:comment>
         <rdfs:label xml:lang="en">Localized Failure Design Situation</rdfs:label>
@@ -2341,11 +2345,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#MonumentalBuldingStructure -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#MonumentalBuldingStructure">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Structure"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#MonumentalBuldingStructure">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#Structure"/>
         <terms:source>EN 1990:2002, Table 2.1</terms:source>
         <rdfs:comment xml:lang="en">Large-scale, architecturally significant structure designed to serve as a landmark, memorial, or symbol of cultural, historical, or civic importance.</rdfs:comment>
         <rdfs:label xml:lang="en">Monumental Building Structure</rdfs:label>
@@ -2355,11 +2359,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#PersistentDesignSituation -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#PersistentDesignSituation">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DesignSituation"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#PersistentDesignSituation">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#DesignSituation"/>
         <terms:source>EN 1990:2002, Section 1.5.2.4</terms:source>
         <rdfs:comment xml:lang="en">Design situation that is relevant during a period of the same order as the design working life of the structure. Generally refers to conditions of normal use.</rdfs:comment>
         <rdfs:label xml:lang="en">Persistent Design Situation</rdfs:label>
@@ -2368,11 +2372,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#RSLS -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#RSLS -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#RSLS">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#ServiceabilityLimitState"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#RSLS">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#ServiceabilityLimitState"/>
         <terms:source>UNE-EN 1990:2019, Section 1.5.2.14.2</terms:source>
         <rdfs:comment xml:lang="en">Serviceability limit state where no consequences of actions exceeding the specified service requirements will remain when the actions are removed.</rdfs:comment>
         <rdfs:label xml:lang="en">Reversible Serviceability Limit State</rdfs:label>
@@ -2381,11 +2385,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#ReplacableStructuralElements -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#ReplacableStructuralElements">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Structure"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#ReplacableStructuralElements">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#Structure"/>
         <terms:source>EN 1990:2002, Table 2.1</terms:source>
         <rdfs:comment xml:lang="en">structure designed such that certain primary or secondary structural components can be removed, replaced, or upgraded during its service life without compromising the overall stability, integrity, or usability of the structure.</rdfs:comment>
         <rdfs:label xml:lang="en">Structure with replaceable elements</rdfs:label>
@@ -2395,11 +2399,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#STR -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#STR -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#STR">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#STR">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"/>
         <terms:source>EN 1990:2002, Section 6.4.1(1)P b)</terms:source>
         <rdfs:comment xml:lang="en">Internal failure or excessive deformation of the structure or structural members where the strength of construction materials governs.</rdfs:comment>
         <rdfs:label xml:lang="en">Structural Resistance</rdfs:label>
@@ -2408,11 +2412,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#SeismicDesignSituation -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#SeismicDesignSituation">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DesignSituation"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#SeismicDesignSituation">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#DesignSituation"/>
         <terms:source>EN 1990:2002, Section 1.5.2.7</terms:source>
         <rdfs:comment xml:lang="en">Design situation involving exceptional conditions of the structure when subjected to a seismic event.</rdfs:comment>
         <rdfs:label xml:lang="en">Seismic Design Situation</rdfs:label>
@@ -2421,11 +2425,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#TemporaryStructure -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#TemporaryStructure">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#Structure"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#TemporaryStructure">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#Structure"/>
         <terms:source>EN 1990:2002, Table 2.1</terms:source>
         <rdfs:comment xml:lang="en">Structre that is intended to be used for a limited period of time, typically to support, protect, or provide access during the execution of permanent works, or to serve a short-term purpose.</rdfs:comment>
         <rdfs:label xml:lang="en">Temporary Structure</rdfs:label>
@@ -2435,11 +2439,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#TransientDesignSituation -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#TransientDesignSituation">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#DesignSituation"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#TransientDesignSituation">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#DesignSituation"/>
         <terms:source>EN 1990:2002, Section 1.5.2.3</terms:source>
         <rdfs:comment xml:lang="en">Design situation that is relevant during a period much shorter than the design working life of the structure and which has a high probability of occurrence, e.g. during construction or repair.</rdfs:comment>
         <rdfs:label xml:lang="en">Transient Design Situation</rdfs:label>
@@ -2449,11 +2453,11 @@
     
 
 
-    <!-- http://www.w3id.org/Eurocodes/EC1990#UPL -->
+    <!-- http://www.w3id.org/eurocodes/ec1990#UPL -->
 
 
-    <owl:NamedIndividual rdf:about="http://www.w3id.org/Eurocodes/EC1990#UPL">
-        <rdf:type rdf:resource="http://www.w3id.org/Eurocodes/EC1990#UltimateLimitState"/>
+    <owl:NamedIndividual rdf:about="http://www.w3id.org/eurocodes/ec1990#UPL">
+        <rdf:type rdf:resource="http://www.w3id.org/eurocodes/ec1990#UltimateLimitState"/>
         <terms:source>EN 1990:2002/A1:2005, Section 6.4.1(1)P e)</terms:source>
         <rdfs:comment xml:lang="en">Loss of equilibrium of the structure or the ground due to uplift by water pressure (buoyancy) or other vertical actions.</rdfs:comment>
         <rdfs:label xml:lang="en">Uplift Failure</rdfs:label>
@@ -2478,7 +2482,7 @@
      -->
 
 
-    <rdf:Description rdf:about="http://www.w3id.org/Eurocodes/EC1990#Building">
+    <rdf:Description rdf:about="http://www.w3id.org/eurocodes/ec1990#Building">
         <terms:source>EN 1990:2002, Section 1.5.1.2</terms:source>
         <rdfs:comment xml:lang="en">Type of construction work for building purposes such as dwelling houses, office buildings, etc.</rdfs:comment>
         <rdfs:label xml:lang="en">Building</rdfs:label>
