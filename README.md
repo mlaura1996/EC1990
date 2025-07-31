@@ -1,3 +1,6 @@
+# Eurocode Core Ontology (ECO)
+
+## Introduction
 The Eurocode Core Ontology (ECO) is a formal OWL ontology that encodes the logic and terminology of the Eurocodes—a suite of harmonized European standards governing structural design and safety. These standards are central to engineering practice across Europe but are currently published only in natural language documents, which limits their utility in automated verification, compliance checking, and digital design workflows.
 
 ECO addresses this limitation by providing a machine-readable semantic model of the foundational content in Eurocode 0 (EN 1990:2002) and key concepts from Eurocode 1 (EN 1991). It captures essential constructs such as design situations, limit states, actions, combinations of actions, resistances, and structural members, along with the logic used in structural verification. The ontology supports hierarchical classification, multilingual labels, normative referencing, and quantitative modeling using standard unit systems.
