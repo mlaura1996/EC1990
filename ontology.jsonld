@@ -2777,6 +2777,19 @@
     "@value" : "Relates a Quantity  with its Mean Value."
   } ]
 }, {
+  "@id" : "http://www.w3id.org/eurocodes/ec1990#hasNationallyDefinedValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has nationally defined value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Defines whether parameter has specific value defined in NA."
+  } ]
+}, {
   "@id" : "http://www.w3id.org/eurocodes/ec1990#hasNominalValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {

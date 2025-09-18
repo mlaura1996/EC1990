@@ -334,6 +334,13 @@ xsd:date rdf:type rdfs:Datatype .
                    <http://www.w3.org/2004/02/skos/core#definition> "Factor for frequent value of a variable action, determined so that either the total time within the reference period during which it is exceeded is only a small given part of the reference period, or the frequency of it being exceeded is limited to a given value." .
 
 
+###  http://www.w3id.org/eurocodes/ec1990#hasNationallyDefinedValue
+:hasNationallyDefinedValue rdf:type owl:DatatypeProperty ;
+                           rdfs:range xsd:boolean ;
+                           rdfs:label "has nationally defined value"@en ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "Defines whether parameter has specific value defined in NA." .
+
+
 ###  http://www.w3id.org/eurocodes/ec1990#hasPartialFactor
 :hasPartialFactor rdf:type owl:DatatypeProperty ;
                   rdfs:range xsd:decimal ;
